@@ -69,44 +69,10 @@ options(skipen=999)
 #For dates to display in the proper way the locale needs to be set to English on the local machine
 invisible(Sys.setlocale(locale = "English"))
 #Load required packages
-packages <- c("knitr", 
-              "textreadr", 
-              "tokenizers", 
-              "readxl", 
-              "bookdown", 
-              "RPostgreSQL", 
-              "leaflet", 
-              "leaflet.extras", 
-              "leaflet.minicharts", 
-              "tidyverse", 
-              "ftExtra",
-              "lubridate", 
-              "sf", 
-              "cowplot", 
-              "viridisLite", 
-              "janitor", 
-              "leafsync",  
-              "qdapRegex", 
-              "rstudioapi", 
-              "flextable", 
-              "officer", 
-              "marmap", 
-              "dtplyr",
-              "ggOceanMaps", 
-              "ggnewscale", 
-              "rnaturalearth", 
-              "jsonlite", 
-              "data.table",
-              "RstoxBase", 
-              "RstoxData", 
-              "RstoxFramework", 
-              "ggspatial", 
-              "ggrepel", 
-              "mapview", 
-              "webshot"
+packages <- c("knitr", "textreadr", "tokenizers", "readxl", "bookdown", "tidyverse", "ftExtra",
+              # "cowplot", # "janitor", 
+              "qdapRegex", "flextable", "officer", "webshot"
 )
-
-
 
 installed_packages <- packages %in% rownames(installed.packages())
 if (any(installed_packages == FALSE)) {
