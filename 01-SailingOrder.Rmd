@@ -4,7 +4,7 @@ output:
   html_document: default
 ---
 
-# **SAILING ORDERS** 
+# **SAILING ORDERS** {-}
 
 **R/V _Dr Fridtjof Nansen_** 
 

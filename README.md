@@ -13,16 +13,12 @@ install.packages("bookdown")
 
 ### Running the app from your hard drive
 
-Click "Clone or download" -> "Download ZIP". Find the zip file (typically in your Downloads folder) and extract it to a desired location. Open the SurveyReport.Rproj file in RStudio, open the index.Rmd (look for it in the Files tab of the Viewer Panel in the bottom right of your R-Studio default installation panel view options) and run the first code chunk (name of code chunk 'setup'). Restart your R-Studio, reopen the SurveyReport.Rproj file and then select "bookdown::gitbook" located under the Build tab (click and expand the arrow next to the Build Book button). Running the first index.Rmd chunk from inside R-Studio for the first time **automatically installs and loads** packages used by the code. If you encounter installation problems, please read the error messages carefully. If you cannot solve these errors by installing the required packages manually, please contact the code maintainer.
+Click "Clone or download" -> "Download ZIP". Find the zip file (typically in your Downloads folder) and extract it to a desired location. Open the SailingOrdersDFN.Rproj file in RStudio, open the index.Rmd (look for it in the Files tab of the Viewer Panel in the bottom right of your R-Studio default installation panel view options) and run the first code chunk (name of code chunk 'setup'). Restart your R-Studio, reopen the SurveyReport.Rproj file and then select "bookdown::gitbook" located under the Build tab (click and expand the arrow next to the Build Book button). Running the first index.Rmd chunk from inside R-Studio for the first time **automatically installs and loads** packages used by the code. If you encounter installation problems, please read the error messages carefully. If you cannot solve these errors by installing the required packages manually, please contact the code maintainer.
 
 ## Components
 
-The code contains .Rmd files the order of which for the knitting process is index.Rmd followed by all the numbered Rmd files in the project. If an underscore precedes a numbered Rmd, that Rmd is silenced and not used in the knitting process. A lot of information/comments is currently in the different Rmds.
+The code contains 2 active .Rmd files the order of which for the knitting process is index.Rmd followed by 01-SailingOrder.Rmd. If an underscore precedes a numbered Rmd, that Rmd is silenced and not used in the knitting process. A lot of information/comments is currently in the different Rmds.
 
 ## Dependencies
 
 The necessary packages for executing the code are listed in the index.Rmd
-
-## News
-
-2022-02-11  Working version of the code. 
