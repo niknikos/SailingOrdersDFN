@@ -1,0 +1,187 @@
+---
+title: " "
+output:
+  bookdown::word_document2: default
+  bookdown::html_document2:
+   css: "style.css"
+bookdown::gitbook:
+  css: "style.css"
+always_allow_html: true
+site: bookdown::bookdown_site
+params:
+  surveyNumber:
+    label: "Survey number"
+    value: 2022402
+    input: numeric
+  # runStoX:
+  #   label: "Run StoX project?"
+  #   value: false
+  #   input: select
+  #   choices: [true,false]
+  # SailingOrderOnly:
+  #   label: "Create only the Sailing Order?"
+  #   value: true
+  #   input: select
+  #   choices: [true,false]
+  minDecLon:
+    label: "min dec.lon"
+    value: -27
+    input: numeric
+  maxDecLon:
+    label: "max dec.lon"
+    value: -21
+    input: numeric
+  minDecLat:
+    label: "min dec.lat"
+    value: 14
+    input: numeric
+  maxDecLat:
+    label: "max dec.lat"
+    value: 18
+    input: numeric
+  zoom:
+    label: "zoom"
+    value: 8
+    input: numeric
+
+---
+
+<!-- bookdown::render_book("index.Rmd", "bookdown::word_document2", params="ask") -->
+<!-- ```{r user_settings, echo=FALSE, message=FALSE, warning=FALSE} -->
+<!-- ### This chunck contains settings that can be modified by the user.  -->
+<!-- #finalVersion = FALSE -->
+
+
+<!-- ``` -->
+
+```{r setup, echo=FALSE, message=FALSE, warning=FALSE}
+# runStoXFlag <- as.logical(params$runStoX)
+# SOonlyFlag <- as.logical(params$SailingOrderOnly)
+
+SurveyAreaMap <- data.frame(lon=c(params$minDecLon, params$maxDecLon),
+                            lat=c(params$minDecLat, params$maxDecLat))
+
+# SurveyAreaMap_sf <- st_as_sf(SurveyAreaMap, 
+#                              coords = c("lon","lat"),
+#                              crs="+proj=utm +zone=28 +datum=WGS84 +units=m +no_defs") 
+  
+
+################
+## NOTE TO SELF: to have cross-references compiled correctly, you need to first compile the bookdown:gitbook format, then the word document.
+################
+
+knitr::opts_chunk$set(
+	message = FALSE,
+	warning = FALSE
+)
+
+options(skipen=999)
+#For dates to display in the proper way the locale needs to be set to English on the local machine
+invisible(Sys.setlocale(locale = "English"))
+#Load required packages
+packages <- c("knitr", 
+              "textreadr", 
+              "tokenizers", 
+              "readxl", 
+              "bookdown", 
+              "RPostgreSQL", 
+              "leaflet", 
+              "leaflet.extras", 
+              "leaflet.minicharts", 
+              "tidyverse", 
+              "ftExtra",
+              "lubridate", 
+              "sf", 
+              "cowplot", 
+              "viridisLite", 
+              "janitor", 
+              "leafsync",  
+              "qdapRegex", 
+              "rstudioapi", 
+              "flextable", 
+              "officer", 
+              "marmap", 
+              "dtplyr",
+              "ggOceanMaps", 
+              "ggnewscale", 
+              "rnaturalearth", 
+              "jsonlite", 
+              "data.table",
+              "RstoxBase", 
+              "RstoxData", 
+              "RstoxFramework", 
+              "ggspatial", 
+              "ggrepel", 
+              "mapview", 
+              "webshot"
+)
+
+
+
+installed_packages <- packages %in% rownames(installed.packages())
+if (any(installed_packages == FALSE)) {
+  install.packages(packages[!installed_packages], repos = "http://cran.us.r-project.org")
+}
+
+
+# #The package RstoxData is needed to read in the biotic.xml that contains the catch-related data. The biotic.xml will be used since there is a scheduled switch from the Nansis punching interface to that of the Biotic Editor (from which data are saved in the .xml format). The same biotic.xml format is used as input to the functions utilized by the EAF-Nansen-Biotic-Explorer https://github.com/niknikos/EAF-Nansen-Biotic-Explorer forked and modified from the Biotic Explorer https://github.com/MikkoVihtakari/BioticExplorer, so this is the reasoning for the usage of the biotic.xml format on the survey report. The relevant biotic.xml is now created for past surveys (where Nansis has been used as the punching interface and data are stored in the Nansis table) with the usage of a middleware that has been create for that purpose. The middleware (nansisclient ftp.imr.no/nmd/apps/nansisclient install and make sure you update it to the latest version through the Tools menu) connects to the IMR server or the localhost mode of the Nansis DB, reads in Nansis DB tables and passes the info to the relevant .xml fields.
+# 
+# if (!"RstoxData" %in% installed.packages()[,"Package"]) {
+#   devtools::install_github("StoXProject/RstoxData")
+# }
+# 
+# if (!"ggOceanMaps" %in% installed.packages()[,"Package"]) {
+#   devtools::install_github("MikkoVihtakari/ggOceanMaps")
+# }
+# 
+# if (!"rnaturalearthhires" %in% installed.packages()[,"Package"]) {
+#   devtools::install_github("ropensci/rnaturalearthhires")
+# }
+
+
+# Packages loading
+invisible(lapply(X = packages, FUN = require, character.only = TRUE))
+
+# Install install_phantomjs only if it is not installed
+if (is_phantomjs_installed() == FALSE) {
+  webshot::install_phantomjs()
+}
+
+# End of Packages loading
+# Suppress dplyr's summarizing info
+options(dplyr.summarise.inform = FALSE)
+opts_knit$set(eval.after = "fig.cap")
+#The functions used by the Biotic Explorer require some minor modifications of the Nansen data. These modifications are
+# in lines 25-46 of the processBiotic_functions.R that is shipped with the project under the path below.
+# source("./_R_functions/processBiotic_functions.R", encoding = "utf-8")
+#Sourcing some helper functions and figure functions that are used later in the report creation
+source('./_R_functions/helper_functions.R', encoding = "utf-8")
+source('./_R_functions/figure_functions.R', encoding = "utf-8")
+
+```
+
+
+```{r setTableFormat, message=FALSE, warning=FALSE, include=FALSE, results='hide'}
+# This chunck of code set the format (background color, padding, etc) of the tables produced in the report, so to have it standardized throughout.
+set_flextable_defaults(big.mark = " ", 
+  font.family = 'cambria',
+  font.size = 9, 
+  theme_fun = theme_zebra, 
+  line_spacing = 0.8,
+  padding.bottom = 5, 
+  padding.top = 5,
+  padding.left = 4,
+  padding.right = 4,
+  extra_css = "caption {text-align: left;}")
+
+```
+
+
+```{r data_loading, message=FALSE, warning=FALSE, include=FALSE, results='hide'}
+survey <- as.numeric(params$surveyNumber)
+#Loading of data, tidying up and preparation of the data for further usage
+source('./_R_functions/data_input_and_preparation.R', encoding = "utf-8")
+#Currently, the text input for the various sections of the report is done through calling in a .docx file. For details see the header in the input_text_preparation.R file found in the following path
+source('./_R_functions/input_text_preparation.R', encoding = "utf-8")
+
+```
