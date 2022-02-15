@@ -11,7 +11,7 @@ output:
 **`r input_dataframes$SO.cruise.plan$Survey`**
 
 ```{r ANNEX_SO prep, comment=NA, include=FALSE, results='asis', tidy=FALSE}
-ANNEX_SO <- input_text_SO[(str_which(input_text_SO, input_text_SO$`6. SAILING ORDERS`)+1):(str_which(input_text_SO, input_text_SO$`7. END`))]
+ANNEX_SO <- input_text_SO[(str_which(input_text_SO, input_text_SO$`1. SAILING ORDERS`)+1):(str_which(input_text_SO, input_text_SO$`2. END`))]
 ANNEX_SO <- ANNEX_SO[names(ANNEX_SO)!="NA"]
 ANNEX_SO_names <- names(ANNEX_SO)
 ANNEX_SO <- lapply(seq_along(ANNEX_SO), function(x) paste0('input_text_SO[(str_which(input_text_SO, input_text_SO$`',ANNEX_SO[x],'`)+1):(str_which(input_text_SO, input_text_SO$`',(ANNEX_SO[x+1]),'`)-1)]'))
@@ -25,12 +25,12 @@ ANNEX_SO[length(ANNEX_SO)] <- NULL
 ```
 
 
-## **SURVEY PLAN FOR ** `r input_dataframes$SO.cruise.plan$Survey`
+# **SURVEY PLAN FOR ** `r input_dataframes$SO.cruise.plan$Survey`
 
 <br>
 
 ```{r survey_plan, echo=FALSE, comment=NA, results='asis', tidy=FALSE}
-survey_plan.text <- paste(eval(str2expression(ANNEX_SO$`6.1 SURVEY PLAN FOR`)), collapse = "\n\n")
+survey_plan.text <- paste(eval(str2expression(ANNEX_SO$`1.1 SURVEY PLAN FOR`)), collapse = "\n\n")
 writeLines(unlist(survey_plan.text))
 ```
 
@@ -47,10 +47,10 @@ set_table_properties(ft_surveyplan,layout = "autofit")
 
 <br>
 
-### **Survey objectives** 
+## **Survey objectives** 
 
 ```{r survey_obj_SO, echo=FALSE, comment=NA, results='asis', tidy=FALSE}
-survey_obj.text <- eval(str2expression(ANNEX_SO$`6.1.1 Survey objectives`))
+survey_obj.text <- eval(str2expression(ANNEX_SO$`1.1.1 Survey objectives`))
 # objective.text <- grep(":", survey_obj.text)
 # sub_objective.text <- survey_obj.text[-(1:objective.text)]
 # survey_obj.text <- survey_obj.text[1:objective.text]
@@ -70,10 +70,10 @@ writeLines(unlist(survey_obj.text))
 
 
 
-### **Survey area** 
+## **Survey area** 
 
 ```{r survey_area_SO, echo=FALSE, comment=NA, results='asis', tidy=FALSE}
-survey_area_SO.text <- paste(eval(str2expression(ANNEX_SO$`6.1.2 Survey area`)), collapse = "\n\n")
+survey_area_SO.text <- paste(eval(str2expression(ANNEX_SO$`1.1.2 Survey area`)), collapse = "\n\n")
 writeLines(unlist(survey_area_SO.text))
 ```
 
@@ -84,20 +84,20 @@ knitr::include_graphics("./_images/sailingOrders/surveyareamapSOfig.png")
 
 <br>
 
-### **Proposed participation in different legs and experience required** 
+## **Proposed participation in different legs and experience required** 
 
 ```{r SOreqpart, echo=FALSE, comment=NA, results='asis', tidy=FALSE}
-SOreqpart.text <- paste(eval(str2expression(ANNEX_SO$`6.1.3 Proposed participation in different legs and experience required`)), collapse = "\n\n")
+SOreqpart.text <- paste(eval(str2expression(ANNEX_SO$`1.1.3 Proposed participation in different legs and experience required`)), collapse = "\n\n")
 writeLines(unlist(SOreqpart.text))
 ```
 
 
 
-## **SCIENTIFIC RATIONALE** 
+# **SCIENTIFIC RATIONALE** 
 
 
 ```{r scienceplanSO, echo=FALSE, comment=NA, results='asis', tidy=FALSE}
-scienceplan_SO.text <- paste(eval(str2expression(ANNEX_SO$`6.2 SCIENTIFIC RATIONALE`)), collapse = "\n\n")
+scienceplan_SO.text <- paste(eval(str2expression(ANNEX_SO$`1.2 SCIENTIFIC RATIONALE`)), collapse = "\n\n")
 writeLines(unlist(scienceplan_SO.text))
 ```
 
@@ -124,11 +124,11 @@ set_table_properties(ft_SOsciencethemestab,layout = "autofit")
 <br>
 
 
-### **Specific objectives and scientific questions for the survey** 
+## **Specific objectives and scientific questions for the survey** 
 
 ```{r specific_survey_obj, echo=FALSE, comment=NA, results='asis', tidy=FALSE}
 
-survey_obj.text <- eval(str2expression(ANNEX_SO$`6.2.1 Specific objectives and scientific questions for the survey`))
+survey_obj.text <- eval(str2expression(ANNEX_SO$`1.2.1 Specific objectives and scientific questions for the survey`))
 # objective.text <- grep(":", survey_obj.text)
 # sub_objective.text <- survey_obj.text[-(1:objective.text)]
 # survey_obj.text <- survey_obj.text[1:objective.text]
@@ -147,50 +147,52 @@ writeLines(unlist(survey_obj.text))
 ```
 
 
-## **SAMPLING METHODS** 
+# **SAMPLING METHODS** 
+
+## **Survey design** {-}
 
 ```{r samplingmethods_SO, echo=FALSE, comment=NA, results='asis', tidy=FALSE}
-samplingmethods_SO.text <- paste(eval(str2expression(ANNEX_SO$`6.3.1 Survey design`)), collapse = "\n\n")
+samplingmethods_SO.text <- paste(eval(str2expression(ANNEX_SO$`1.3.1 Survey design`)), collapse = "\n\n")
 writeLines(unlist(samplingmethods_SO.text))
 ```
 
 
-### **Meteorological and hydrographic sampling in surface water** 
+## **Meteorological and hydrographic sampling in surface water** 
 
-#### *Weather Station* 
+### *Weather Station* 
 
 ```{r meteooceanosampling_SO, echo=FALSE, comment=NA, results='asis', tidy=FALSE}
-meteooceanosampling_SO.text <- paste(eval(str2expression(ANNEX_SO$`6.3.2.1 Weather Station`)), collapse = "\n\n")
+meteooceanosampling_SO.text <- paste(eval(str2expression(ANNEX_SO$`1.3.2.1 Weather Station`)), collapse = "\n\n")
 writeLines(unlist(meteooceanosampling_SO.text))
 ```
 
-#### *Thermosalinograph* 
+### *Thermosalinograph* 
 
 ```{r thermosalinograph_SO, echo=FALSE, comment=NA, results='asis', tidy=FALSE}
-thermosalinograph_SO.text <- paste(eval(str2expression(ANNEX_SO$`6.3.2.2 Thermosalinograph`)), collapse = "\n\n")
+thermosalinograph_SO.text <- paste(eval(str2expression(ANNEX_SO$`1.3.2.2 Thermosalinograph`)), collapse = "\n\n")
 writeLines(unlist(thermosalinograph_SO.text))
 ```
 
-#### *Underway pCO~2~* 
+### *Underway pCO~2~* 
 
 ```{r pCO2_SO, echo=FALSE, comment=NA, results='asis', tidy=FALSE}
-pCO2_SO.text <- paste(eval(str2expression(ANNEX_SO$`6.3.2.3 Underway pCO2`)), collapse = "\n\n")
+pCO2_SO.text <- paste(eval(str2expression(ANNEX_SO$`1.3.2.3 Underway pCO2`)), collapse = "\n\n")
 writeLines(unlist(pCO2_SO.text))
 ```
 
-#### *Current speed and direction measurements - ADCP* 
+### *Current speed and direction measurements - ADCP* 
 
 ```{r currents_SO, echo=FALSE, comment=NA, results='asis', tidy=FALSE}
-currents_SO.text <- paste(eval(str2expression(ANNEX_SO$`6.3.2.4 Current speed and direction measurements - ADCP`)), collapse = "\n\n")
+currents_SO.text <- paste(eval(str2expression(ANNEX_SO$`1.3.2.4 Current speed and direction measurements - ADCP`)), collapse = "\n\n")
 writeLines(unlist(currents_SO.text))
 ```
 
-### **Hydrographic sampling in the water column** 
+## **Hydrographic sampling in the water column** 
 
-#### *CTD* 
+### *CTD* 
 
 ```{r ctd_SO, echo=FALSE, comment=NA, results='asis', tidy=FALSE}
-ctd_SO.text <- paste(eval(str2expression(ANNEX_SO$`6.3.3.1 CTD`)), collapse = "\n\n")
+ctd_SO.text <- paste(eval(str2expression(ANNEX_SO$`1.3.3.1 CTD`)), collapse = "\n\n")
 writeLines(unlist(ctd_SO.text))
 ```
 
@@ -200,63 +202,63 @@ knitr::include_graphics("./_images/sailingOrders/envtransectsSOfig.png")
 
 <br>
 
-#### *Ocean Acidification parameters - pH and total alkalinity* 
+### *Ocean Acidification parameters - pH and total alkalinity* 
 
 ```{r pH_TA_SO, echo=FALSE, comment=NA, results='asis', tidy=FALSE}
-pH_TA_SO_SO.text <- paste(eval(str2expression(ANNEX_SO$`6.3.3.2 Ocean Acidification parameters - pH and total alkalinity`)), collapse = "\n\n")
+pH_TA_SO_SO.text <- paste(eval(str2expression(ANNEX_SO$`1.3.3.2 Ocean Acidification parameters - pH and total alkalinity`)), collapse = "\n\n")
 writeLines(unlist(pH_TA_SO_SO.text))
 ```
 
 <br>
 
-#### *Dissolved Nutrients* 
+### *Dissolved Nutrients* 
 
 ```{r nutrients_SO, echo=FALSE, comment=NA, results='asis', tidy=FALSE}
-nutrients_SO.text <- paste(eval(str2expression(ANNEX_SO$`6.3.3.3 Dissolved Nutrients`)), collapse = "\n\n")
+nutrients_SO.text <- paste(eval(str2expression(ANNEX_SO$`1.3.3.3 Dissolved Nutrients`)), collapse = "\n\n")
 writeLines(unlist(nutrients_SO.text))
 ```
 
-### **Primary productivity** 
+## **Primary productivity** 
 
 ```{r primprod_SO, echo=FALSE, comment=NA, results='asis', tidy=FALSE}
-primprod_SO.text <- paste(eval(str2expression(ANNEX_SO$`6.3.4 Primary productivity`)), collapse = "\n\n")
+primprod_SO.text <- paste(eval(str2expression(ANNEX_SO$`1.3.4 Primary productivity`)), collapse = "\n\n")
 writeLines(unlist(primprod_SO.text))
 ```
 
-### **Zooplankton** 
+## **Zooplankton** 
 
 ```{r zooplankton_SO, echo=FALSE, comment=NA, results='asis', tidy=FALSE}
-zooplankton_SO.text <- paste(eval(str2expression(ANNEX_SO$`6.3.5 Zooplankton`)), collapse = "\n\n")
+zooplankton_SO.text <- paste(eval(str2expression(ANNEX_SO$`1.3.5 Zooplankton`)), collapse = "\n\n")
 writeLines(unlist(zooplankton_SO.text))
 ```
 
-### **Ichthyoplankton** 
+## **Ichthyoplankton** 
 
 ```{r ichthyoplankton_SO, echo=FALSE, comment=NA, results='asis', tidy=FALSE}
-ichthyoplankton_SO.text <- paste(eval(str2expression(ANNEX_SO$`6.3.6 Ichthyoplankton`)), collapse = "\n\n")
+ichthyoplankton_SO.text <- paste(eval(str2expression(ANNEX_SO$`1.3.6 Ichthyoplankton`)), collapse = "\n\n")
 writeLines(unlist(ichthyoplankton_SO.text))
 ```
 
-### **Benthos and benthic habitats**
+## **Benthos and benthic habitats**
 
-#### *Bottom habitats* 
+### *Bottom habitats* 
 
 ```{r botthabitats, echo=FALSE, comment=NA, results='asis', tidy=FALSE}
-botthabitats.text <- paste(eval(str2expression(ANNEX_SO$`6.3.7.1 Bottom habitats`)), collapse = "\n\n")
+botthabitats.text <- paste(eval(str2expression(ANNEX_SO$`1.3.7.1 Bottom habitats`)), collapse = "\n\n")
 writeLines(unlist(botthabitats.text))
 ```
 
-### **Microplastics** 
+## **Microplastics** 
 
 ```{r microplastics_SO, echo=FALSE, comment=NA, results='asis', tidy=FALSE}
-microplastics_SO.text <- paste(eval(str2expression(ANNEX_SO$`6.3.8 Microplastics`)), collapse = "\n\n")
+microplastics_SO.text <- paste(eval(str2expression(ANNEX_SO$`1.3.8 Microplastics`)), collapse = "\n\n")
 writeLines(unlist(microplastics_SO.text))
 ```
 
-### **Biological sampling for fisheries resources** 
+## **Biological sampling for fisheries resources** 
 
 ```{r fisheries_SO, echo=FALSE, comment=NA, results='asis', tidy=FALSE}
-fisheries_SO.text <- paste(eval(str2expression(ANNEX_SO$`6.3.9 Biological sampling for fisheries resources`)), collapse = "\n\n")
+fisheries_SO.text <- paste(eval(str2expression(ANNEX_SO$`1.3.9 Biological sampling for fisheries resources`)), collapse = "\n\n")
 writeLines(unlist(fisheries_SO.text))
 ```
 
@@ -278,64 +280,65 @@ set_table_properties(ft_SObiosamplingtab,layout = "autofit")
 
 <br>
 
-#### *Demersal fish*  
+### *Demersal fish*  
 
 ```{r demersal_SO, echo=FALSE, comment=NA, results='asis', tidy=FALSE}
-demersal_SO.text <- paste(eval(str2expression(ANNEX_SO$`6.3.9.1 Demersal fish`)), collapse = "\n\n")
+demersal_SO.text <- paste(eval(str2expression(ANNEX_SO$`1.3.9.1 Demersal fish`)), collapse = "\n\n")
 writeLines(unlist(demersal_SO.text))
 ```
 
-#### *Pelagic fish*  
+### *Pelagic fish*  
 
 ```{r pelagic_SO, echo=FALSE, comment=NA, results='asis', tidy=FALSE}
-pelagic_SO.text <- paste(eval(str2expression(ANNEX_SO$`6.3.9.2 Pelagic fish`)), collapse = "\n\n")
+pelagic_SO.text <- paste(eval(str2expression(ANNEX_SO$`1.3.9.2 Pelagic fish`)), collapse = "\n\n")
 writeLines(unlist(pelagic_SO.text))
 ```
 
-#### *Other trawl-related sampling*  
+### *Other trawl-related sampling*  
 
 ```{r othertrawl_SO, eval=FALSE, comment=NA, include=FALSE, results='asis', tidy=FALSE}
-othertrawl_SO.text <- paste(eval(str2expression(ANNEX_SO$`6.3.9.3 Other trawl-related sampling`)), collapse = "\n\n")
+othertrawl_SO.text <- paste(eval(str2expression(ANNEX_SO$`1.3.9.3 Other trawl-related sampling`)), collapse = "\n\n")
 writeLines(unlist(othertrawl_SO.text))
 ```
 
-##### *Fish and macroinvertebrates samples for regional taxonomy course and post-survey taxonomic studies* {-}
+#### *Fish and macroinvertebrates samples for regional taxonomy course and post-survey taxonomic studies* {-}
 
 ```{r taxonomy_SO, echo=FALSE, comment=NA, results='asis', tidy=FALSE}
-taxonomy_SO.text <- paste(eval(str2expression(ANNEX_SO$`6.3.9.3.1 Fish and macroinvertebrates samples for regional taxonomy course and post-survey taxonomic studies`)), collapse = "\n\n")
+taxonomy_SO.text <- paste(eval(str2expression(ANNEX_SO$`1.3.9.3.1 Fish and macroinvertebrates samples for regional taxonomy course and post-survey taxonomic studies`)), collapse = "\n\n")
 writeLines(unlist(taxonomy_SO.text))
 ```
 
-##### *Cartilaginous fish* {-}
+#### *Cartilaginous fish* {-}
 
 ```{r cartilaginous_SO, echo=FALSE, comment=NA, results='asis', tidy=FALSE}
-cartilaginous_SO.text <- paste(eval(str2expression(ANNEX_SO$`6.3.9.3.2 Cartilaginous fish`)), collapse = "\n\n")
+cartilaginous_SO.text <- paste(eval(str2expression(ANNEX_SO$`1.3.9.3.2 Cartilaginous fish`)), collapse = "\n\n")
 writeLines(unlist(cartilaginous_SO.text))
 ```
 
 <br>
 
+#### *Samples for food safety studies and* {-}
 
 ```{r foodsafety_SO, echo=FALSE, comment=NA, results='asis', tidy=FALSE}
-foodsafety_SO.text <- paste(eval(str2expression(ANNEX_SO$`6.3.9.3.3 Sardinella samples for food safety analysis`)), collapse = "\n\n")
+foodsafety_SO.text <- paste(eval(str2expression(ANNEX_SO$`1.3.9.3.3 Samples for food safety studies and nutrition`)), collapse = "\n\n")
 writeLines(unlist(foodsafety_SO.text))
 ```
 
 <br>
 
-##### *Marine debris* {-}
+#### *Marine debris* {-}
 
 ```{r debris_SO, echo=FALSE, comment=NA, results='asis', tidy=FALSE}
-debris_SO.text <- paste(eval(str2expression(ANNEX_SO$`6.3.9.3.4 Marine debris`)), collapse = "\n\n")
+debris_SO.text <- paste(eval(str2expression(ANNEX_SO$`1.3.9.3.4 Marine debris`)), collapse = "\n\n")
 writeLines(unlist(debris_SO.text))
 ```
 
 <br>
 
-##### *Epibenthos* {-}
+#### *Epibenthos* {-}
 
 ```{r epibenthos_SO, echo=FALSE, comment=NA, results='asis', tidy=FALSE}
-epibenthos_SO.text <- paste(eval(str2expression(ANNEX_SO$`6.3.9.3.5 Epibenthos`)), collapse = "\n\n")
+epibenthos_SO.text <- paste(eval(str2expression(ANNEX_SO$`1.3.9.3.5 Epibenthos`)), collapse = "\n\n")
 writeLines(unlist(epibenthos_SO.text))
 ```
 
@@ -347,45 +350,45 @@ knitr::include_graphics("./_images/sailingOrders/epibenthosSOfig.png")
 
 <br>
 
-#### *Demersal fish biomass estimated based on the swept area method*  
+### *Demersal fish biomass estimated based on the swept area method*  
 
 ```{r demestimates_SO, echo=FALSE, comment=NA, results='asis', tidy=FALSE}
-demestimates_SO.text <- paste(eval(str2expression(ANNEX_SO$`6.3.9.4 Demersal fish biomass estimated based on the swept area method`)), collapse = "\n\n")
+demestimates_SO.text <- paste(eval(str2expression(ANNEX_SO$`1.3.9.4 Demersal fish biomass estimated based on the swept area method`)), collapse = "\n\n")
 writeLines(unlist(demestimates_SO.text))
 ```
 
 <!-- #### *Pelagic fish biomass estimation - acoustics*   -->
 
 ```{r pelbiomass_SO, eval=FALSE, comment=NA, include=FALSE, results='asis', tidy=FALSE}
-pelbiomass_SO.text <- paste(eval(str2expression(ANNEX_SO$`6.3.9.5 Pelagic fish biomass estimation - acoustics`)), collapse = "\n\n")
+pelbiomass_SO.text <- paste(eval(str2expression(ANNEX_SO$`1.3.9.5 Pelagic fish biomass estimation - acoustics`)), collapse = "\n\n")
 writeLines(unlist(pelbiomass_SO.text))
 ```
 
 
 
-## **DATA COLLECTED AND STANDARD PROCEDURE FOR HANDING OVER SAMPLES TO PARTNERS**
+# **DATA COLLECTED AND STANDARD PROCEDURE FOR HANDING OVER SAMPLES TO PARTNERS**
 
 ```{r collecteddata_SO, echo=FALSE, comment=NA, results='asis', tidy=FALSE}
-collecteddata_SO.text <- paste(eval(str2expression(ANNEX_SO$`6.4 DATA COLLECTED AND STANDARD PROCEDURE FOR HANDING OVER SAMPLES TO PARTNERS`)), collapse = "\n\n")
+collecteddata_SO.text <- paste(eval(str2expression(ANNEX_SO$`1.4 DATA COLLECTED AND STANDARD PROCEDURE FOR HANDING OVER SAMPLES TO PARTNERS`)), collapse = "\n\n")
 writeLines(unlist(collecteddata_SO.text))
 ```
 
 
-## **REFERENCES** {-}
+# **REFERENCES** {-}
 
 ```{r references_SO, eval=FALSE, comment=NA, include=FALSE, results='asis', tidy=FALSE}
-references_SO.text <- paste(eval(str2expression(ANNEX_SO$`6.6 REFERENCES`)), collapse = "\n\n")
+references_SO.text <- paste(eval(str2expression(ANNEX_SO$`1.6 REFERENCES`)), collapse = "\n\n")
 writeLines(unlist(references_SO.text))
 ```
 
 \newpage
 
-## **ANNEXES** {-}
+# **ANNEXES** {-}
 
-### **ANNEX I. Requested participation** {.unnumbered #ANNEX_I}
+## **ANNEX I. Requested participation** {.unnumbered #ANNEX_I}
 
 ```{r ANNEX1_SO, eval=FALSE, comment=NA, include=FALSE, label='ANNEX1_SO', results='asis', tidy=FALSE}
-ANNEX1_SO.text <- paste(eval(str2expression(ANNEX_SO$`6.6.1 ANNEX I. Requested participation`)), collapse = "\n\n")
+ANNEX1_SO.text <- paste(eval(str2expression(ANNEX_SO$`1.1.1 ANNEX I. Requested participation`)), collapse = "\n\n")
 writeLines(unlist(ANNEX1_SO.text))
 ```
 
@@ -408,10 +411,10 @@ set_table_properties(ft_SOreqparttab,layout = "autofit")
 
 \newpage
 
-### **ANNEX II. Planned participation** {.unnumbered #ANNEX_II}
+## **ANNEX II. Planned participation** {.unnumbered #ANNEX_II}
 
 ```{r ANNEX2_SO, eval=FALSE, comment=NA, include=FALSE, label='ANNEX2_SO', results='asis', tidy=FALSE}
-ANNEX2_SO.text <- paste(eval(str2expression(ANNEX_SO$`6.6.2 ANNEX II. Planned list of participants`)), collapse = "\n\n")
+ANNEX2_SO.text <- paste(eval(str2expression(ANNEX_SO$`1.1.2 ANNEX II. Planned list of participants`)), collapse = "\n\n")
 writeLines(unlist(ANNEX2_SO.text))
 ```
 
@@ -434,7 +437,7 @@ set_table_properties(ft_SOplannedparticipantstab,layout = "autofit")
 
 \newpage
 
-### **ANNEX III. Fish lab workflow** {.unnumbered #ANNEX_III}
+## **ANNEX III. Fish lab workflow** {.unnumbered #ANNEX_III}
 
 <br>
 
@@ -446,7 +449,7 @@ knitr::include_graphics("./_images/sailingOrders/catchsamplingworkflowSOfig.png"
 
 \newpage
 
-### **ANNEX IV. Scales used for biological sampling** {.unnumbered #ANNEX_IV}
+## **ANNEX IV. Scales used for biological sampling** {.unnumbered #ANNEX_IV}
 
 <br>
 
@@ -467,7 +470,7 @@ set_table_properties(ft_SOmatstagetab,layout = "autofit")
 
 \newpage
 
-### **ANNEX V. Survey-specific additional sampling** {.unnumbered #ANNEX_V}
+## **ANNEX V. Survey-specific additional sampling** {.unnumbered #ANNEX_V}
 
 <br>
 
@@ -486,17 +489,17 @@ set_table_properties(ft_SOtaxonomytab,layout = "autofit")
 
 <br>
 
-#### **Sampling procedure** {-}
+### **Sampling procedure** {-}
 
 ```{r sampling_SO, eval=FALSE, comment=NA, include=FALSE, results='asis', tidy=FALSE}
-sampling_SO.text <- paste(eval(str2expression(ANNEX_SO$`6.6.5.1 Sampling procedure`)), collapse = "\n\n")
+sampling_SO.text <- paste(eval(str2expression(ANNEX_SO$`1.6.5.1 Sampling procedure`)), collapse = "\n\n")
 writeLines(unlist(sampling_SO.text))
 ```
 
 
-#### *STEP 1* {-}
+### *STEP 1* {-}
 ```{r step1_SO, echo=FALSE, comment=NA, results='asis', tidy=FALSE}
-step1_SO.text <- paste(eval(str2expression(ANNEX_SO$`6.6.5.2 STEP 1`)), collapse = "\n\n")
+step1_SO.text <- paste(eval(str2expression(ANNEX_SO$`1.6.5.2 STEP 1`)), collapse = "\n\n")
 writeLines(unlist(step1_SO.text))
 ```
 
@@ -515,9 +518,9 @@ set_table_properties(ft_SOaddsamplingtab,layout = "autofit")
 
 <br>
 
-#### *STEP 2* {-}
+### *STEP 2* {-}
 ```{r step2_SO, echo=FALSE, comment=NA, results='asis', tidy=FALSE}
-step2_SO.text <- paste(eval(str2expression(ANNEX_SO$`6.6.5.3 STEP 2`)), collapse = "\n\n")
+step2_SO.text <- paste(eval(str2expression(ANNEX_SO$`1.6.5.3 STEP 2`)), collapse = "\n\n")
 writeLines(unlist(step2_SO.text))
 ```
 
@@ -529,9 +532,9 @@ knitr::include_graphics("./_images/sailingOrders/Taxonomy/examplephotoSOfig.JPG"
 
 <br>
 
-#### *STEP 3* {-}
+### *STEP 3* {-}
 ```{r step3_SO, echo=FALSE, comment=NA, results='asis', tidy=FALSE}
-step3_SO.text <- paste(eval(str2expression(ANNEX_SO$`6.6.5.4 STEP 3`)), collapse = "\n\n")
+step3_SO.text <- paste(eval(str2expression(ANNEX_SO$`1.6.5.4 STEP 3`)), collapse = "\n\n")
 writeLines(unlist(step3_SO.text))
 ```
 
@@ -555,9 +558,9 @@ knitr::include_graphics("./_images/sailingOrders/Taxonomy/Cartilaginous_fishes_t
 
 <br>
 
-#### *STEP 4* {-}
+### *STEP 4* {-}
 ```{r step4_SO, echo=FALSE, comment=NA, results='asis', tidy=FALSE}
-step4_SO.text <- paste(eval(str2expression(ANNEX_SO$`6.6.5.5 STEP 4`)), collapse = "\n\n")
+step4_SO.text <- paste(eval(str2expression(ANNEX_SO$`1.6.5.5 STEP 4`)), collapse = "\n\n")
 writeLines(unlist(step4_SO.text))
 ```
 
@@ -581,9 +584,9 @@ knitr::include_graphics("./_images/sailingOrders/Taxonomy/Tagging_Bony_fishes_sm
 
 <br>
 
-#### *STEP 5* {-}
+### *STEP 5* {-}
 ```{r step5_SO, echo=FALSE, comment=NA, results='asis', tidy=FALSE}
-step5_SO.text <- paste(eval(str2expression(ANNEX_SO$`6.6.5.6 STEP 5`)), collapse = "\n\n")
+step5_SO.text <- paste(eval(str2expression(ANNEX_SO$`1.6.5.6 STEP 5`)), collapse = "\n\n")
 writeLines(unlist(step5_SO.text))
 ```
 
@@ -601,16 +604,16 @@ knitr::include_graphics("./_images/sailingOrders/Taxonomy/Boxes_frozen_samples_w
 
 <br>
 
-#### *STEP 6* {-}
+### *STEP 6* {-}
 ```{r step6_SO, echo=FALSE, comment=NA, results='asis', tidy=FALSE}
-step6_SO.text <- paste(eval(str2expression(ANNEX_SO$`6.6.5.7 STEP 6`)), collapse = "\n\n")
+step6_SO.text <- paste(eval(str2expression(ANNEX_SO$`1.6.5.7 STEP 6`)), collapse = "\n\n")
 writeLines(unlist(step6_SO.text))
 ```
 
 
 \newpage
 
-### **ANNEX VI. Biological sampling plan for caught species** {.unnumbered #ANNEX_VI}
+## **ANNEX VI. Overview of component sampled and equipment used during the survey** {.unnumbered #ANNEX_VI}
 
 <br>
 
@@ -631,7 +634,7 @@ set_table_properties(ft_SOequipmenttab,layout = "autofit")
 
 \newpage
 
-### **ANNEX VII. Biological sampling plan for caught species** {.unnumbered #ANNEX_VII}
+## **ANNEX VII. Data to be collected and handover plan** {.unnumbered #ANNEX_VII}
 
 <br>
 
@@ -652,7 +655,7 @@ set_table_properties(ft_SOdatahandovertab,layout = "autofit")
 
 \newpage
 
-### **ANNEX VIII. Biological sampling plan for caught species** {.unnumbered #ANNEX_VIII}
+## **ANNEX VIII. Samples to be collected, preservation and follow-up work** {.unnumbered #ANNEX_VIII}
 
 <br>
 
