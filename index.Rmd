@@ -3,7 +3,7 @@ title: " "
 output:
   bookdown::word_document2: default
   bookdown::html_document2:
-   css: "style.css"
+  css: "style.css"
 bookdown::gitbook:
   css: "style.css"
 always_allow_html: true

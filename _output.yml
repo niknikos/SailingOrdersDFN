@@ -3,7 +3,7 @@ bookdown::gitbook:
   config:
     toc:
       before: |
-        <li><a href="./">Sailing Orders RV Dr Fritdjof Nansen</a></li>
+        <li><a href="./">Sailing Orders</a></li>
       after: |
     download: ["pdf", "epub"]
 bookdown::pdf_book:

@@ -421,7 +421,8 @@ writeLines(unlist(ANNEX2_SO.text))
 <br>
 
 ```{r SOplannedparticipantstab, echo=FALSE, tidy=TRUE, label="SOplannedparticipantstab"}
-ft_SOplannedparticipantstab <- flextable(input_dataframes$SO.planned.participants) %>% theme_booktabs(bold_header = TRUE) %>% bg(bg='transparent', part = "header") %>% ftExtra::colformat_md()
+ft_SOplannedparticipantstab <- flextable(input_dataframes$SO.planned.participants) %>% theme_booktabs(bold_header = TRUE) %>% bg(bg='transparent', part = "header") 
+# %>% ftExtra::colformat_md()
 # Add caption
 autonum <- run_autonum(seq_id = "tab", bkm = "SOplannedparticipantstab", pre_label = "Table ")
 ft_SOplannedparticipantstab <- set_caption(ft_SOplannedparticipantstab, caption =  paste(input_dataframes$SO.tab.captions[input_dataframes$SO.tab.captions$`tab name`=="SOplannedparticipantstab","caption"]), style = "Table Caption"
@@ -454,7 +455,8 @@ knitr::include_graphics("./_images/sailingOrders/catchsamplingworkflowSOfig.png"
 <br>
 
 ```{r SOmatstagetab, echo=FALSE, tidy=TRUE, label="SOmatstagetab"}
-ft_SOmatstagetab <- flextable(input_dataframes$SO.matstagetab) %>% theme_booktabs(bold_header = TRUE) %>% bg(bg='transparent', part = "header") %>% ftExtra::colformat_md()
+ft_SOmatstagetab <- flextable(input_dataframes$SO.matstagetab) %>% theme_booktabs(bold_header = TRUE) %>% bg(bg='transparent', part = "header") 
+#%>% ftExtra::colformat_md()
 # Add caption
 autonum <- run_autonum(seq_id = "tab", bkm = "SOmatstagetab", pre_label = "Table ")
 ft_SOmatstagetab <- set_caption(ft_SOmatstagetab, caption = paste(input_dataframes$SO.tab.captions[input_dataframes$SO.tab.captions$`tab name`=="SOmatstagetab","caption"]), style = "Table Caption"
@@ -475,7 +477,8 @@ set_table_properties(ft_SOmatstagetab,layout = "autofit")
 <br>
 
 ```{r SOtaxonomytab, echo=FALSE, tidy=TRUE, label="SOtaxonomytab"}
-ft_SOtaxonomytab <- flextable(input_dataframes$SO.taxonomy) %>% theme_booktabs(bold_header = TRUE) %>% bg(bg='transparent', part = "header") %>% ftExtra::colformat_md()
+ft_SOtaxonomytab <- flextable(input_dataframes$SO.taxonomy) %>% theme_booktabs(bold_header = TRUE) %>% bg(bg='transparent', part = "header") 
+#%>% ftExtra::colformat_md()
 # Add caption
 autonum <- run_autonum(seq_id = "tab", bkm = "SOtaxonomytab", pre_label = "Table ")
 ft_SOtaxonomytab <- set_caption(ft_SOtaxonomytab, caption = paste(input_dataframes$SO.tab.captions[input_dataframes$SO.tab.captions$`tab name`=="SOtaxonomytab","caption"]), style = "Table Caption"
@@ -504,7 +507,8 @@ writeLines(unlist(step1_SO.text))
 ```
 
 ```{r SOaddsamplingtab, echo=FALSE, tidy=TRUE, label="SOaddsamplingtab"}
-ft_SOaddsamplingtab <- flextable(input_dataframes$SO.additional.sampling) %>% theme_booktabs(bold_header = TRUE) %>% bg(bg='transparent', part = "header") %>% ftExtra::colformat_md()
+ft_SOaddsamplingtab <- flextable(input_dataframes$SO.additional.sampling) %>% theme_booktabs(bold_header = TRUE) %>% bg(bg='transparent', part = "header") 
+#%>% ftExtra::colformat_md()
 # Add caption
 autonum <- run_autonum(seq_id = "tab", bkm = "SOaddsamplingtab", pre_label = "Table ")
 ft_SOaddsamplingtab <- set_caption(ft_SOaddsamplingtab, caption = paste(input_dataframes$SO.tab.captions[input_dataframes$SO.tab.captions$`tab name`=="SOaddsamplingtab","caption"]), style = "Table Caption"
@@ -618,7 +622,8 @@ writeLines(unlist(step6_SO.text))
 <br>
 
 ```{r SOequipmenttab, echo=FALSE, tidy=TRUE, label="SOequipmenttab"}
-ft_SOequipmenttab <- flextable(input_dataframes$SO.equipmenttab) %>% theme_booktabs(bold_header = TRUE) %>% bg(bg='transparent', part = "header") %>% ftExtra::colformat_md()
+ft_SOequipmenttab <- flextable(input_dataframes$SO.equipmenttab) %>% theme_booktabs(bold_header = TRUE) %>% bg(bg='transparent', part = "header") 
+#%>% ftExtra::colformat_md()
 # Add caption
 autonum <- run_autonum(seq_id = "tab", bkm = "SOequipmenttab", pre_label = "Table ")
 ft_SOequipmenttab <- set_caption(ft_SOequipmenttab, caption = paste(input_dataframes$SO.tab.captions[input_dataframes$SO.tab.captions$`tab name`=="SOequipmenttab","caption"]), style = "Table Caption"
@@ -639,7 +644,8 @@ set_table_properties(ft_SOequipmenttab,layout = "autofit")
 <br>
 
 ```{r SOdatahandovertab, echo=FALSE, tidy=TRUE, label="SOdatahandovertab"}
-ft_SOdatahandovertab <- flextable(input_dataframes$SO.datahandovertab) %>% theme_booktabs(bold_header = TRUE) %>% bg(bg='transparent', part = "header") %>% ftExtra::colformat_md()
+ft_SOdatahandovertab <- flextable(input_dataframes$SO.datahandovertab) %>% theme_booktabs(bold_header = TRUE) %>% bg(bg='transparent', part = "header") 
+#%>% ftExtra::colformat_md()
 # Add caption
 autonum <- run_autonum(seq_id = "tab", bkm = "SOdatahandovertab", pre_label = "Table ")
 ft_SOdatahandovertab <- set_caption(ft_SOdatahandovertab, caption = paste(input_dataframes$SO.tab.captions[input_dataframes$SO.tab.captions$`tab name`=="SOdatahandovertab","caption"]), style = "Table Caption"
@@ -660,7 +666,8 @@ set_table_properties(ft_SOdatahandovertab,layout = "autofit")
 <br>
 
 ```{r SOcollectedsamplestab, echo=FALSE, tidy=TRUE, label="SOcollectedsamplestab"}
-ft_SOcollectedsamplestab <- flextable(input_dataframes$SO.collectedsamplestab) %>% theme_booktabs(bold_header = TRUE) %>% bg(bg='transparent', part = "header") %>% ftExtra::colformat_md()
+ft_SOcollectedsamplestab <- flextable(input_dataframes$SO.collectedsamplestab) %>% theme_booktabs(bold_header = TRUE) %>% bg(bg='transparent', part = "header") 
+#%>% ftExtra::colformat_md()
 # Add caption
 autonum <- run_autonum(seq_id = "tab", bkm = "SOcollectedsamplestab", pre_label = "Table ")
 ft_SOcollectedsamplestab <- set_caption(ft_SOcollectedsamplestab, caption = paste(input_dataframes$SO.tab.captions[input_dataframes$SO.tab.captions$`tab name`=="SOcollectedsamplestab","caption"]), style = "Table Caption"
