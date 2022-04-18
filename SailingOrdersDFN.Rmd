@@ -1,0 +1,712 @@
+---
+date: "`r Sys.Date()`"
+# author: "Your Name"
+title: "**SAILING ORDERS R/V _Dr Fridtjof Nansen_**"
+output: 
+  officedown::rdocx_document:
+    mapstyles:
+#      Normal: ['First Paragraph']
+editor_options: 
+  markdown: 
+    wrap: sentence
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, fig.cap = TRUE, message = FALSE, warning = FALSE)
+
+options(skipen=999)
+#For dates to display in the proper way the locale needs to be set to English on the local machine
+invisible(Sys.setlocale(locale = "English"))
+#Load required packages
+packages <- c("knitr", "readxl", "bookdown", "tidyverse", "ftExtra", "qdapRegex", "flextable", "officer", "imager", "officedown")
+
+installed_packages <- packages %in% rownames(installed.packages())
+if (any(installed_packages == FALSE)) {
+  install.packages(packages[!installed_packages], repos = "http://cran.us.r-project.org")
+}
+
+# Packages loading
+invisible(lapply(X = packages, FUN = require, character.only = TRUE))
+
+# End of Packages loading
+# Suppress dplyr's summarizing info
+options(dplyr.summarise.inform = FALSE)
+opts_knit$set(eval.after = "fig.cap")
+opts_knit$set(eval.after = "fig.asp")
+
+```
+
+```{r data_loading, message=FALSE, warning=FALSE, include=FALSE, results='hide'}
+#Loading of data, tidying up and preparation of the data for further usage
+#Read in info from the input_dataframes excel file
+input_dataframes_filepath <- list.files(path = "./_tables/", pattern = "input_dataframes.xlsx", full.names = TRUE)
+
+sheets <- excel_sheets(input_dataframes_filepath)
+input_dataframes <- lapply(excel_sheets(input_dataframes_filepath), 
+                           function(x) 
+                             data.frame(read_excel( input_dataframes_filepath, x, col_names = TRUE, col_types = "text")))
+
+names(input_dataframes) <- sheets
+input_dataframes <- purrr::map(.x = input_dataframes, .f = ~rename_with(.x, ~ gsub(".", " ", .x, fixed = TRUE)))
+
+```
+
+```{r setTableFormat, message=FALSE, warning=FALSE, include=FALSE, results='hide'}
+# This chunck of code set the format (background color, padding, etc) of the tables produced in the report, so to have it standardized throughout.
+set_flextable_defaults(big.mark = " ", 
+  font.family = 'cambria',
+  font.size = 9, 
+  theme_fun = theme_zebra, 
+  line_spacing = 0.8,
+  padding.bottom = 5, 
+  padding.top = 5,
+  padding.left = 4,
+  padding.right = 4,
+  extra_css = "caption {text-align: left;}")
+
+```
+
+# **SURVEY PLAN FOR** `r input_dataframes$surveyplantab$Survey`
+
+The survey will start and end in Las Palmas, Spain (Table \@ref(tab:surveyplantab)).
+
+```{r surveyplantab, echo=FALSE, tidy=TRUE, label="surveyplantab"}
+ft_surveyplan <- flextable(input_dataframes$surveyplantab) %>% theme_booktabs(bold_header = TRUE) %>% bg(bg='transparent', part = "header") %>% ftExtra::colformat_md()
+# Add caption
+autonum <- run_autonum(seq_id = "tab", bkm = "surveyplantab", pre_label = "Table ", start_at=1)
+ft_surveyplan <- set_caption(ft_surveyplan, caption = paste(input_dataframes$tab_captions[input_dataframes$tab_captions$`tab name`=="surveyplantab","caption"]), style = "Table Caption", autonum=autonum)
+
+# # set table width to span page width
+set_table_properties(ft_surveyplan,layout = "autofit")
+```
+
+## **Survey objectives**
+
+The overall objectives of the surveys were initially discussed in connection with the Eighth Session of the CECAF Scientific Sub-Committee (October 2018, Abidjan, Côte d'Ivoire) and later at the occasion of the meeting of the CECAF Working Group on the Assessment of Demersal Resources, sub-group North (December 2019, Nouakchott).
+The survey was also planned in the context of the second phase of the CCLME project (FAO, UNEP and participating countries in the region).
+This survey aims at covering the demersal resources in the deeper part of the shelf and the upper slope.
+While fishery resources represent the key priority, other aspects are also addressed to improve knowledge on composition and diversity of demersal communities, of habitats, understanding the environmental conditions within which they are found, including the presence of marine debris.
+
+Based on the above, the following is proposed (in a prioritized order):
+
+1.  Obtain information on demersal fish abundance, species and size composition, and distribution.
+
+2.  Carry out standard biological sampling of priority species (including length, weight, sex and maturity).
+
+3.  Obtain measurements of environmental variables of the water column (salinity, temperature, dissolved oxygen, fluorescence, dissolved nutrients, pH, total alkalinity, chlorophyll *a*) through CTD casts and water samples.
+
+4.  Obtain current measurementss with Acoustic Doppler Current Profiller (ADCP).
+
+5.  Carry out mesozooplankton and ichthyoplankton sampling.
+
+6.  Obtain samples with the Manta trawl for mapping the presence of microplastics in surface waters.
+
+7.  Sample epibenthic organisms occurring in the trawl.
+
+8.  Collect sediment cores in selected sites to reconstruct development in Oxygen Minimum Zones.
+
+Data will be used to prepare a survey report, and scientific reports/papers as part of the science plan.
+The data collected will also feed into regional resource assessment work (CECAF demersal Working Group North).
+
+## **Survey area**
+
+The survey area is within one of the major upwelling regions of the world, characterised by high productivity and important pelagic and demersal fishery resources.
+Leg 2 (2.1 and 2.2) covers the demersal resources in the deeper part of the continental shelf and the upper slope of Northwest Africa, from Casablanca (Morocco) to the southern border of Guinea Figure \@ref(fig:surveyareamap).
+In some areas (e.g. north of Cap Bojador and off Senegal), bottom deeper than about 200 m depth can be rather uneven and unsuitable for trawling and sampling in these depths can be a challenge.
+It is recommended that positions of trawl stations from earlier surveys are used for identifying trawlable grounds.
+
+Standard sampling will be carried out as during most surveys conducted by the R/V *Dr Fridtjof Nansen* (e.g., oceanographic conditions, including oceans pH and carbonate system, primary productivity, food safety, microplastics, marine debris, biodiversity, pelagic and demersal fish resources).
+Sampling protocols are standardized to the extent possible to allow comparability across larger geographic scales.
+
+The survey will start on 29th Feb in Las Palmas and the vessel will then go straight to the southern limit (border between Guinea and Sierra Leone) and work it way northwards, with a change of crew in Las Palmas between leg 2.1 and 2.2 from 30th March -- 1st April.
+The survey will then continue norwards, ending off Casablanca before returing to Las Palmas on 3rd May.
+
+The area to be surveyed by the R/V *Dr Fridtjof Nansen* in 2022 includes the continental shelf and upper slope off North-West Africa, from 50 to 1000 m (Figure \@ref(fig:surveyareamap)).
+
+```{r surveyareamap, echo=FALSE, fig.cap=paste(input_dataframes$fig_captions[input_dataframes$fig_captions$`fig name`=="surveyareamap","caption"]), fig.align='center', fig.width=6.5, fig.height=6,  label='surveyareamap'}
+knitr::include_graphics("./_images/surveyareamap.png")
+```
+
+## **Proposed participation in different legs and experience required**
+
+Typically, the surveys with the R/V *Dr Fridtjof Nansen* include participations from different countries and institutions.
+Regarding qualifications, a mix of experienced scientists /technicians and less experienced ones, to receive training, will receive on-the-job training in sampling procedures.
+Scientists from Spain, and IEO (Instituto Español de Oceanografia) and the University of Vigo, will also be invited to deliver specific expertise, given their experience in the field of fisheries and marine habitats in the region.
+An overview of the main types of expertise and number of participants required for Leg 2 is provided in [ANNEX I](#ANNEX_I) and the list of the planned survey participants is shown in [ANNEX II](#ANNEX_II).
+
+It should be noted that a maximum number of 19 local participants can be allowed, in addition to the scientific crew from Norway and the FAO taxonomy expert.
+
+\newpage
+
+# **SCIENTIFIC RATIONALE**
+
+The overall framework and rationale for the surveys carried out by the R/V *Dr Fridtjof Nansen* are provided by the EAF-Nansen Programme Science Plan which covers three main pillars (Figure \@ref(fig:scienceplan)).
+Within this framework, the scope and objectives of the surveys in 2021 have been identified with partners, based on national and regional priorities.
+In addition, data recorded, and samples collected during the survey will be analysed through collaborations initiated through the various Science Plan Themes.
+
+```{r scienceplan, echo=FALSE, fig.cap=paste(input_dataframes$fig_captions[input_dataframes$fig_captions$`fig name`=="scienceplan","caption"]), fig.align='center', fig.width=6.5, fig.height=4.5,   label='scienceplan'}
+knitr::include_graphics("./_images/scienceplan.png")
+```
+
+An overview of the Science Plan themes for which this survey is most relevant and associated projects is provided in Table \@ref(tab:sciencethemestab).
+
+```{r sciencethemestab, echo=FALSE, tidy=TRUE, label="sciencethemestab"}
+ft_sciencethemestab <- flextable(input_dataframes$sciencethemestab) %>% theme_booktabs(bold_header = TRUE) %>% bg(bg='transparent', part = "header") %>% ftExtra::colformat_md()
+# Add caption
+autonum <- run_autonum(seq_id = "tab", bkm = "sciencethemestab", pre_label = "Table ")
+ft_sciencethemestab <- set_caption(ft_sciencethemestab, caption = paste(input_dataframes$tab_captions[input_dataframes$tab_captions$`tab name`=="sciencethemestab","caption"]), style = "Table Caption"
+                             , autonum=autonum
+                             )
+
+# # set table width to span page width
+set_table_properties(ft_sciencethemestab,layout = "autofit")
+
+```
+
+## **Specific objectives and scientific questions for the survey**
+
+The specific objectives of the survey are listed below; the emphasis will be based on local needs and scientific importance.
+
+-   Hydrography:
+
+    -   To map the hydrographic and environmental conditions in the survey area (temperature, salinity, dissolved oxygen, chlorophyll *a*, nutrients, pH, total alkalinity and ocean currents).
+    -   To obtain information on dissolved oxygen concentrations, ocean acidification and the calcium carbonate saturation state relevant for calcifying organisms.
+    -   To capture OMZ and identify vulnerable or high-risk areas
+    -   Detect current patterns at different depth strata (ADCP), along the survey track.
+
+-   Primary productivity, mesozooplankton, ichthyoplankton and microplastics:
+
+    -   To describe the abundance and biomass patterns of meso-zooplankton community, as well as its species composition.
+
+    -   To provide information on the abundance patterns of ichthyoplankton community (fish eggs and larvae), at the lowest possible taxonomic level to identify possible spawning areas for commercial valuable fish species.
+
+    -   Map the occurrence of microplastics to identify hotspots or degree of pollution
+
+-   Demersal resources (see also section 1.3.8):
+
+    -   Swept-area biomass estimation of the following priority demersal resources:
+
+        -   ***Merluccius merluccius***, ***M. senegalensis***, ***M. polli***
+        -   ***Pagellus*** spp. and ***Dentex macrophthalmus***.
+
+    -   Species composition and diversity of the demersal community (all species caught in the bottom trawl)
+
+    -   Map the occurrence of juvenile hake (***Merluccius*** spp.)
+
+    -   Total catch weight and numbers of all fish species caught in each bottom trawl haul.
+
+    -   Length-weight relationships for priority fish species caught in the bottom trawl measuring the length and weight of the first 100 invidual fish at each trawl station.
+
+    -   Length measurements and sex determination of selected shrimp species caught in the demersal haul.
+        Up to 100 individual shrimp will be measured / determined sex of at each station.
+        Species sampled will be:
+
+        -   ***Parapenaeus longirostris*** and ***Aristeus varidens***.
+
+    -   Determining sex and maturity staging and biological sampling of priority demersal resources caught in the bottom trawl:
+
+        -   ***Merluccius merluccius***, ***M. senegalensis***, ***M. polli,*** ***Pagellus*** spp., ***Dentex macrophthalmus*** and ***Pagrus caeruleostictus***.
+
+    -   To collect samples for analysis of parasites, genetics and morphometrics for selected species:
+
+        -   ***Merluccius merluccius***, ***M. senegalensis*** and ***M. polli***.
+
+-   Other trawl-related sampling:
+
+    -   Map occurrence, abundance and biological parameters (length, weight, sex, and maturity staging for males) of priority cartilaginous fish.
+
+    -   Collection of samples for taxonomic courses and further analysis in the framework of the EAF-Nansen Programme.
+
+    -   Collection of frozen samples of whole sardinella for food safety analysis.
+
+    -   Record the occurrence of marine debris collected during demersal trawling by using the draft protocol and take photos for future inclusion in the protocol itself.
+
+    -   Record epibenthic macrofauna organisms
+
+-   Benthic studies (sediments and bathymetry):
+
+    -   Collect sediment samples for analysis of sediment and of benthic macrofauna, from grab deployments (species identification, abundance and species composition) at four superstation transects off Mauritania.
+
+    -   Bottom mapping (multibeam) along the cruise track (low resolution)
+
+-   Marine debris:
+
+    -   Map the occurrence of microplastics to identify hotspots or degree of pollution.
+
+    -   Record the occurrence of macro-litter collected during demersal trawling by using the draft protocol and take photos for future inclusion in the protocol itself.
+
+-   Other objectives:
+
+    -   Paleo-reconstruction of OMZ through sediment core sampling.
+
+    -   On-the-job training in the various laboratories
+
+    -   Communication through social media
+
+\newpage
+
+# **SAMPLING METHODS**
+
+## **Survey design** {.unnumbered}
+
+The survey design will consist of parallel transects spaced 20 NM and perpendicular to the coast, with depth-stratified random sampling along the transects, from 50 to 1000 m.
+
+Specific environmental transects with superstations and box-core sediment sampling will be carried out at every third transect (every 1° latitude).
+
+[**Superstations: CTD, zooplankton and box-corer.**]{.ul}
+
+CTD deployments will be carried at superstations along transects every 1° (60NM) as well as at every bottom trawl station.
+In addition, historical transects and oceanographic master stations will be covered with CTD deployments as in previous coverages.
+
+Zooplankton sampling will also be carried out at stations along the environmental superstation transects (see above), using WP2 and Bongo nets.
+
+Microplastic sampling using manta trawl will be carried out at the same stations as for zooplankton sampling.
+
+Sediment sampling using box-corer will be carried out at the same stations as for zooplankton, with two grab deployments per station.
+
+[**Bottom trawl stations**]{.ul}
+
+The depth stratification for the bottom trawl stations is as follows:
+
+50-100 m, 100-200, 200-300, 300-500 m, 500-700 m, 700-1000 m.
+
+Bottom trawl stations for the estimation of catch rates of demersal resources will be placed at approximately the same positions as during the survey in 2011, to ensure comparability between the two surveys.
+The possibility to carry out additional bottom trawl stations will be explored depending on time availability.
+
+Bottom trawls shallower than 300 m, shall as far as possible, only be taken during daytime.
+Deeper trawl hauls can be taken also at night-time.
+Distance between trawl hauls should not be \>15 NM.
+
+Detailed sampling protocols for what is considered as standard sampling on DFN can be found in the Nansen wiki (<https://nansen-surveys.imr.no/doku.php>).
+
+Other sampling protocols, area specific information and detailed description of the sampling conducted, will be given below.
+
+## **Meteorological and hydrographic sampling in surface water**
+
+### *Weather Station*
+
+Wind direction, wind speed, air pressure, relative humidity, air temperature and solar radiation data are averaged every 60 seconds and logged continuously from the Aanderaa Automatic Weather Station 2700.
+
+### *Thermosalinograph*
+
+A SBE 21 SeaCAT Thermosalinograph (TSG) runs continuously during the survey, obtaining samples at 4 m depth to measure seawater salinity and temperature every 10 seconds.
+The 4 m engine cooling water intake is also equipped with a Turner Designs C3 Submersible Fluorometer with added turbidity detection capability.
+
+### *Underway pCO~2~*
+
+The pCO2 sensor is due to maintainance not operational during the survey.
+
+### *Current speed and direction measurements - ADCP*
+
+Ocean current data is collected with a vessel-mounted Teledyne RDI Ocean Surveyor Acoustic Doppler Profiler operating at 150 kHz with a depth range of 400 m.
+The ADCP runs in narrow band mode and averages data in 8 m vertical bins.
+Heading, pitch, roll and positional data are acquired by a Kongsberg Marine SEAPATH unit.
+Teledyne's VmDAS software is used to collect the raw current data, whereas the data is processed using software created at IMR.
+
+## **Hydrographic sampling in the water column**
+
+### *CTD*
+
+A Sea-Bird 911plus CTD with the following sensors is mounted to a 12-bottle rosette water sampler for use at every hydrographic station.
+All sensor data logging and real-time profiling is performed using Sea-Bird's Seasave software.
+
+-   2 x SBE 3Plus Temperature ('T') sensors
+
+-   2 x SBE 4C Conductivity sensors for salinity ('S')
+
+-   Digiquartz Pressure ('P') sensor
+
+-   SBE 43 dissolved oxygen ('DO') sensor
+
+-   WET Labs ECO-AFL Fluorometer ('F')
+
+-   Satlantic Photosynthetically Active Radiation ('PAR') LOG ICSW sensor
+
+CTD deployments will be carried out at every trawl station as well as at every station where environmental sampling is conducted ('super-station', see below), in accordance with IMRs Standard depth designations shown in Figure \@ref(fig:envtransects).
+
+Additional sampling devices will be deployed for collection of plankton (including ichthyoplankton) and microplastics.
+The water samples from the rosette bottles will be used for measurements of pH, total alkalinity, dissolved nutrients (nitrite, nitrate, silicate and phosphate), dissolved oxygen, chlorophyll-*a* and salinity.
+Detailed sampling protocols for these parameters can be found in the Nansen manual site (<http://nansen-surveys.imr.no/doku.php?id=ctd_lab_information>).
+
+```{r envtransects, echo=FALSE, fig.cap=paste(input_dataframes$fig_captions[input_dataframes$fig_captions$`fig name`=="envtransects","caption"]), fig.align='center', fig.width=6, fig.height=5, label='envtransects'}
+knitr::include_graphics("./_images/envtransects.png")
+```
+
+### *Ocean Acidification parameters - pH and total alkalinity*
+
+Seawater samples for the analysis of pH and total alkalinity are collected together in 250 ml borosilicate glass bottles with silicone tubing.
+Samples are collected from the rosette water sampler in accordance with IMRs Standard Depth designations.
+If oxygen water samples are not being collected, these pH/AT samples will be collected first from the rosette bottles due to their gas sensitivity that will alter the pH.
+
+-   pH is determined using an Agilent Cary 8454 UV-Vis Diode Array spectrophotometer and a 2-mM m-cresol purple indicator dye solution.
+    See the pH protocol for further details in addition to sampling and analysis procedures.
+
+-   Total alkalinity is determined via an open-cell potentiometric titration using a 0.05 M HCl solution with a sodium chloride background as the titrant (Dickson et al. 2007).
+    See the total alkalinity protocol for further details in addition to sampling and analysis procedures.
+
+To assess the ocean acidification state and change in the region, the pH and total alkalinity data will be combined with phosphate, silicate, temperature, salinity and depth to calculate additional parameters of the carbonate system such as dissolved inorganic carbon, and the calcium carbonate saturation states for aragonite and calcite.
+
+### *Dissolved Nutrients*
+
+Seawater samples for the analysis of nitrite, nitrate, silicate and phosphate are collected in 20 ml polyethylene vials.
+Samples are collected from the rosette water sampler in accordance with IMRs Standard Depth designations.
+Samples are frozen for preservation until analysis in January 2022 with a SEAL QuAAtro39 continuous segmented flow analyser.
+
+## **Primary productivity**
+
+Seawater samples for the analysis of chlorophyll *a* and phaeopigments are collected in 269 ml high-density polyethylene bottles from depths ranging from 5 to 200 m.
+Samples are filtered with 25 mm Munktell MG F filters with 0.7 µm particle retention on a 200 mm Hg vacuum pumped filtration system.
+The filters are stored in a -20°C freezer until ready for extraction for 15-24 hours with 10 ml of 90% acetone at 4°C.
+Samples are then centrifuged and transferred to cuvettes for analysis on a Turner Designs 10AU Fluorometer (Welshmeyer, 1994; Jeffrey and Humphrey, 1975).
+Samples are first measured without acid for chlorophyll a determination and then a second time with two drops of 5% HCl for phaeopigment determination.
+The 10AU is calibrated approximately once a year with standards created from a chlorophyll a solid.
+See the chlorophyll *a* protocol for further details in addition to sampling and analysis procedures.
+
+## **Zooplankton**
+
+Zooplankton samples are to be collected at selected superstations stations positioned at the isobaths 30 m, 100 m, 500 or 1000 m).
+Samples will be collected by vertical hauls of a WP2 net (56 cm diameter, mesh size 180 µm) at a speed of 0.5 m sec^-1^.
+The net will be towed **within 5 m from the bottom** to the surface, or from 200 m depth to the surface at deep stations.
+The plankton leader should ensure that this procedure is followed accurately on deck, write the actual depth of the tow (displayed in the monitor), and take flowmeter counts before and after the tow.
+
+In summary, the WP2 samples will be processed as follows:
+
+-   The sample will be halved into parts with a Motoda splitter.
+
+-   One half will be used for biomass estimation (size fractionation through 2000 μm, 1000 μm and 180 μm mesh sizes.
+
+-   The second half will be preserved in 4% borax buffered formaldehyde solution and will be processed onboard through the FlowCam-Macro.
+
+The exact procedure to be followed is described in detail in the Nansen Plankton Guidelines (see <https://nansen-surveys.imr.no/doku.php?id=plankton_lab_information> ).
+
+## **Ichthyoplankton**
+
+Ichthyoplankton is collected at all zooplankton stations, with double oblique tows of a Bongo net equipped with 405 μm nets.
+
+The Bongo will be towed obliquely within 5 m from the bottom or **a maximum depth of 200 m** to the surface at deep stations.
+**Wire speed and the vessel speed should strictly follow the Nansen Plankton Guidelines (see <https://nansen-surveys.imr.no/doku.php?id=plankton_lab_information> ).**
+
+Once the Bongo net is on board, the samples will be transferred in the lab and will be processed as follows:
+
+-   The sample of the right net (H) will be preserved directly in 95% ethanol.
+
+-   The sample of the left net (V) will be used for estimation of the Zooplankton Displacement Volume (details in the Nansen Plankton Guidelines).
+    Afterwards, the sample will be examined under the microscope and all fish larvae (and eggs if possible) will be sorted out.
+    Plankton examination should be done thoroughly and in small amounts.
+    When sorting has finished, the bulk sample should be preserved in 4% formlaldehyde solution (especially made for ichthyoplankton) in bottles labelled bottles as "sorted".
+    The sorted ichthyoplankton will be photographed and preserved with 4% formlaldehyde solution (especially made for ichthyoplankton) in small labelled scintillation vials indicating clearly which net was used for sorting, the preservative, station etc.
+    In case of lack of time or bad weather conditions, an alternative approach is to fix the total sample for ichthyoplankton without separating larvae from the sample onboard.
+    However, to the extent possible this method should be avoided.
+    More details on the sample processing can be found in the **Nansen Plankton Guidelines (see <https://nansen-surveys.imr.no/doku.php?id=plankton_lab_information> ).**
+
+-   If Bongo deployment is not possible due to net malfunction etc., ichthyoplankton will be sampled by Multinet (midi or mammoth) according to the instructions in the **Nansen Plankton Guidelines (see <https://nansen-surveys.imr.no/doku.php?id=plankton_lab_information> ).**
+
+## **Benthos and benthic habitats**
+
+### *Bottom habitats*
+
+The EM 710 and EM 302 multibeam bottom mapping echosounders will be used to record and store bottom depth information in the Olex system onboard.
+The EM 710 is a high to very high-resolution seabed mapping system for depth \<1500 m while the EM 302 is designed to map the ocean floor at depths down to 7000 m, but no high-resolution data will be collected.
+
+***Benthic macrofauna and sediment***
+
+Sediment samples for the characterization of infauna communities will be collected in Mauritania for each super-transect crossing the shelf in Mauritanian waters, i.e. 17^o^N, 18^o^N and 19^o^N.
+In all, grab samples will be collected at 50, 100 and 500 m along these 3 transects.
+Only 1 grab will be collected at each station therefore to total campaign entails 9 grab samples (4x3x1).
+Samples should be taken following the EAF-sediment sampling protocol (available on the computers onboard on the Nansen information pages under Benthos lab tab, see links below), briefly explained in the following text.
+
+Sampling will be carried out by the crew using one of the vessels grabs.
+The crew has good experience operating the grab.
+The sediment is emptied into a black plastic crate (you will find these in the scientific store in the bow) and are moved to the washing table.
+There are sieves with four mesh sizes available on board (you will find these in the hauster store (ask crew, starboard aft).
+The standard procedure is to sieve through a 1 mm sieve with a 5 mm sieve.
+The larger animals are picked out by hand from the large sieve and stored separately.
+The sieves are placed in the drawers that folds out under the washing table, largest mesh size first and the smaller below.
+Subsampling is recommended if the volume of fine sediments is very large, either by collecting e.g. 1 of 3 l of the fine fraction or by just scraping off the top 5-7 cm of sediment in the grab and sieving this.
+
+Use the white bottles with white or red lid (inner and outer) in scientific store (available in many different sizes).
+Do not other bottles as there is a high risk of risk of leakage during transport.
+Bottles should also be placed in plastic bag.
+ID not should be placed in the plastic bag.
+Plastic bags are stored under bench top in benthos deck lab.
+Labels are printed on waterproof paper (find these in scientific office).
+Formalin and borax are stored in the chemical storage (on 3rd deck).
+Only use formalin out on deck in the little hook next to benthos lab.
+Do not store formalin inside the vessel but in pallet on deck.
+Always use gloves and glasses when preserving these samples.
+
+**Nansen Benthos Sampling Procedures (see: <https://nansen-surveys.imr.no/lib/exe/fetch.php?media=nansen-surveys:benthos_benthos_sampling_procedure_nansen.pdf>)**
+
+**Sampling Processing diagrams (see: <https://nansen-surveys.imr.no/lib/exe/fetch.php?media=nansen-surveys:benthos_processing_benthos_samples_float_diagrams_for_general_overview.docx>)** . 
+
+## **Microplastics**
+
+A manta trawl (19 cm (height) × 61 cm (width), 335 μm mesh size) is towed outside the wake of the vessel at 3 knots (1.5 m/s) for 15 min at each plankton station.
+Procedures of sampling and sample processing are described in the Nansen Plankton Guidelines (see Nansen wiki).
+Sampling processing in summary involves sorting of:
+
+**Microplastics**: These should be photographed, washed in fresh water and stored in labelled eppendorf tubes with the station information.
+Polymer identification to be done by ATR FTIR in Bergen.
+
+**Larval fish:** These will be sorted, photographed, preserved in 96% ethanol for genetics in small scintillation vials.
+
+The bulk of neuston samples after sorting should be preserved in 96% ethanol.
+In case of lack of time for analyses or bad weather, samples should be directly preserved in the same way and processed later.
+
+## **Biological sampling of demersal species caught in the bottom trawl**
+
+According to the size of the catch, either the whole catch is sorted and measured or subsamples are taken.
+At all trawl hauls, the catch is sorted according to species, and number and weight measurements will be taken for all fish species.
+For priority species length and weight are recorded using an electronic fish meter connected to a customized data acquisition system (Fish2Data and Biotic Editor) running on the server of the vessel.
+In addition, further biological sampling will be done for pre-agreed priority species (Table \@ref(tab:biosamplingtab)).
+
+In [ANNEX III](ANNEX_III) and [ANNEX IV](ANNEX_IV), the fish lab workflow overview and guidelines on the detailed sampling protocols in the fish lab can be found.
+As a preparation for the work in the fish lab, a training course will be provided on the use of the electronic fish meter, Fish2Data and Biotic Editor software.
+
+**Stratification of sampling of priority species at each trawl station**
+
+Length and weight: 100 fish (all fish with less than 100 individuals in the catch).
+
+Sex, maturity and otoliths: 1 fish per 5cm length group at all stations.
+
+The sampling protocol will be programmed into the Fish2Data software and be installed on the iPads used during the measurement of length and weight.
+
+**Samples for population structure of priority species**
+
+Samples of ***Merluccius*** species for studies of population structure will be taken as follows:
+
+-   5 small (\<40 cm TL) and 5 large (\>40 cm TL) hake of each species are to be collected per 1° latitude (i.e. 28-29°S, 29-30°S, etc) or longitude (i.e. 20-21°E, 21-22°E, etc) block along the coast; totals to 10 fish per species per 1° block.
+
+-   The distal 5 mm of the left pectoral fin (i.e. a 0.5cm fin clip) is to be removed and stored in a labelled (label sequentially from HKC-001(NAM/SA) or HKP-001(NAM/SA) onwards) plastic vial containing 97% ethanol.
+
+-   The station number, depth, size and sex of fish are to be recorded on the label.
+
+-   The fin clipped whole fish (DO NOT CUT OPEN ENTIRE BODY CAVITY TO SEX) are to be labeled (trawl number and date, and latitude/longitude degree block), bagged and frozen, with the samples separated by species (i.e. don't mix) and by 1° block.
+
+-   A logbook recording the numbers of fish per sample is to be kept.
+
+Extraction of otoliths, parasites and measurements for morphometrics will be carried out on land.
+
+<!---BLOCK_LANDSCAPE_START--->
+
+```{r biosamplingtab, echo=FALSE, tidy=TRUE, label="biosamplingtab"}
+ft_biosamplingtab <- flextable(input_dataframes$biosamplingtab) %>% theme_booktabs(bold_header = TRUE) %>% bg(bg='transparent', part = "header") %>% ftExtra::colformat_md()
+# Add caption
+autonum <- run_autonum(seq_id = "tab", bkm = "biosamplingtab", pre_label = "Table ")
+ft_biosamplingtab <- set_caption(ft_biosamplingtab, caption = paste(input_dataframes$tab_captions[input_dataframes$tab_captions$`tab name`=="biosamplingtab","caption"]), style = "Table Caption"
+                             , autonum=autonum
+                             )
+
+# # set table width to span page width
+set_table_properties(ft_biosamplingtab,layout = "autofit")
+
+```
+
+<!---BLOCK_LANDSCAPE_STOP--->
+
+### *Other trawl-related sampling*
+
+#### *Fish and macroinvertebrates samples for regional taxonomy course and post-survey taxonomic studies* {.unnumbered}
+
+Representative samples of selected families will be retained from the trawl catches to be used for the practical sessions of the taxonomy training course.
+The families for the taxonomy course can be found in and [ANNEX V](ANNEX_V) (Table \@ref(tab:taxonomytab)) and is intended to provide collectors with a broad selection of taxa that might be available in the catches with the goal of having enough variety of species/families and enough specimens.
+The detailed sampling protocol and list of species groups to be sampled can be found in and [ANNEX V](ANNEX_V).
+
+#### *Cartilaginous fish* {.unnumbered}
+
+Individual length and weight , sex and maturity status shall be measured of all cartilaginous fish caught.
+Vulnerable species that are alive shall be released as soon as possible after the catch is on deck.
+If the individuals are too large to weight individually only length is to be measured.
+
+The protocol that will be followed for cartilaginous will be the same as for demersal / pelagic resources described above.
+Specimens for taxonomic courses will be collected also following the protocol described above.
+Species that cannot be identified should be preserved in formalin or frozen (and labelled according to the procedure above) and sent to taxonomic experts for identification after the survey.
+
+#### *Samples for food safety studies and nutrition* {.unnumbered}
+
+Samples will be taken of sardinella and anchovy for future analysis of nutrient profiles, contaminants and microplastics.
+
+A total of 25 specimens of each species at 3 different stations will be frozen and later analyzed for determination of nutrients and food safety parameters.
+If catches are small, sample a minimum of 5 fish from each station.
+
+The fish will be stored in plastic bags marked with species, station, and date.
+The trawl form with station information should follow the samples.
+An electronical copy should be sent to [marian.kjellevold\@hi.no](mailto:marian.kjellevold@hi.no).
+
+#### *Marine debris* {.unnumbered}
+
+Marine debris will be registered and classified at each station according to the categories listed in the sampling protocol for marine litter (<https://nansen-surveys.imr.no/doku.php?id=biological_sampling_procedures>).
+All pieces of litter should be weighed and counted, and when possible, photos should be taken of the individual pieces for a reference catalogue.
+Data should be recorded in designated Excel sheet and photos should be clearly labelled and saved in a folder in the work catalogue marked 'Marine Debris'.
+One person from each shift will be responsible for recording this data.
+
+#### *Epibenthos* {.unnumbered}
+
+For epibenthos sampling, specimens in the trawl catches will be identified and pictures of all epibenthos (one picture per trawl, all species included, see Figure \@ref(fig:epibenthos)) should be taken.
+Sampling will be done in accordance with the **Nansen Benthos Sampling Procedures (see: <https://nansen-surveys.imr.no/lib/exe/fetch.php?media=nansen-surveys:benthos_benthos_sampling_procedure_nansen.pdf>) and the Sampling Processing diagrams (see: <https://nansen-surveys.imr.no/lib/exe/fetch.php?media=nansen-surveys:benthos_processing_benthos_samples_float_diagrams_for_general_overview.docx>)**.
+
+A representative collection of samples to be preserved in alcohol (80%) or formalin (4%) solutions, for posterior analysis in laboratory.
+
+### *Demersal fish biomass estimated based on the swept area method*
+
+The biomass indices of priority demersal fish (see below) will be estimated by the swept area method (<https://nansen-surveys.imr.no/doku.php?id=biomass_calculations>) using the StoX [[StoX(stoxproject.github.io)](https://stoxproject.github.io/StoX/)] software.
+Biomass indices will be estimated as total biomass and by length groups (for the species with suffient length data).
+Prior to the survey the EAF Nansen Programme organised a demersal biomass estimation course specifically aimed at this region, and the survey participants who took part in the course will be given the chance to apply their newly aquired skills in biomass estimation using StoX.
+
+Priority demersal species for biomass estimation by the swept-area method will be:
+
+-   ***Merluccius merluccius***, ***M. senegalensis*** and ***M. polli.***
+
+-   ***Pagellus bellottii***, ***P. acarne***, ***Pagellus*** spp.
+
+-   ***Dentex macrophthalmus***
+
+\newpage
+
+# **DATA COLLECTED AND STANDARD PROCEDURE FOR HANDING OVER SAMPLES TO PARTNERS**
+
+In line with the Nansen Data Policy, the Cruise Leader is to ensure that each national institution represented in the survey receives a copy of the draft report and the basic data (e.g. catch data) pertaining to the particular survey and for their national waters before leaving the vessel.
+An overview of the equipment that is going to be used for the collection of the various data can be found in Table \@ref(tab:equipmenttab) ([ANNEX VI](ANNEX_VI)).
+The different types of data expected to be recorded, their storage and delivery can be found in Table \@ref(tab:datahandovertab) ([ANNEX VII](ANNEX_VII)).
+
+Finally, the samples to be collected, their preservation and planned follow-up work is detailed in Table \@ref(tab:collectedsamplestab) ([ANNEX VIII](ANNEX_VIII)).
+
+The Cruise Leader is expected to document what data and samples have been shared and with whom.
+
+The cruise participants are expected to sign and conform the Data policy of the EAF-Nansen Programme.
+
+Persons responsible for samples need to inform about the status of analysis, and report about this at the post-survey meeting as well as send a copy of the analysis/results to IMR ([nansen_data\@hi.no](mailto:nansen_data@hi.no)).
+IMR, as a data custodian for the EAF-Nansen Programme, is required to have an overview of the samples/analysis at any point in time to:
+
+1.  Ensure that data life-cycle management is carried out in the expected way
+
+2.  Be used for capacity building purposes (e.g. workshops, training courses, etc.)
+
+3.  Advance collaboration and publishing through the EAF-Nansen Science Plan
+
+4.  Maintain reference libraries (e.g., for taxonomic purposes) and DNA barcoding
+
+5.  Plan efficiently future surveys in the same area.
+
+# **REFERENCES** {.unnumbered}
+
+\newpage
+
+# **ANNEXES** {.unnumbered}
+
+## **ANNEX I. Requested participation** {#ANNEX_I .unnumbered}
+
+```{r reqparttab, echo=FALSE, tidy=TRUE, label="reqparttab"}
+ft_reqparttab <- flextable(input_dataframes$reqparttab) %>% theme_booktabs(bold_header = TRUE) %>% bg(bg='transparent', part = "header") %>% ftExtra::colformat_md()
+# Add caption
+autonum <- run_autonum(seq_id = "tab", bkm = "reqparttab", pre_label = "Table ")
+ft_reqparttab <- set_caption(ft_reqparttab, caption =  paste(input_dataframes$tab_captions[input_dataframes$tab_captions$`tab name`=="reqparttab","caption"]), style = "Table Caption"
+                             , autonum=autonum
+                             )
+
+# # set table width to span page width
+set_table_properties(ft_reqparttab,layout = "autofit")
+
+```
+
+\newpage
+
+## **ANNEX II. Planned participation** {#ANNEX_II .unnumbered}
+
+```{r plannedparticipantstab, echo=FALSE, tidy=TRUE, label="plannedparticipantstab"}
+ft_plannedparticipantstab <- flextable(input_dataframes$plannedparticipantstab) %>% theme_booktabs(bold_header = TRUE) %>% bg(bg='transparent', part = "header") 
+# %>% ftExtra::colformat_md()
+# Add caption
+autonum <- run_autonum(seq_id = "tab", bkm = "plannedparticipantstab", pre_label = "Table ")
+ft_plannedparticipantstab <- set_caption(ft_plannedparticipantstab, caption =  paste(input_dataframes$tab_captions[input_dataframes$tab_captions$`tab name`=="plannedparticipantstab","caption"]), style = "Table Caption"
+                             , autonum=autonum
+                             )
+
+# # set table width to span page width
+set_table_properties(ft_plannedparticipantstab,layout = "autofit")
+
+```
+
+\newpage
+
+## **ANNEX III. Fish lab workflow** {#ANNEX_III .unnumbered}
+
+```{r catchsamplingworkflow, echo=FALSE, fig.cap=paste(input_dataframes$fig_captions[input_dataframes$fig_captions$`fig name`=="catchsamplingworkflow","caption"]), fig.align='center', fig.width=5.5, fig.height=8.5, label='catchsamplingworkflow'}
+knitr::include_graphics("./_images/catchsamplingworkflow.png")
+```
+
+\newpage
+
+## **ANNEX IV. Scales used for biological sampling** {#ANNEX_IV .unnumbered}
+
+```{r SOmatstagetab, echo=FALSE, tidy=TRUE, label="matstagetab"}
+ft_matstagetab <- flextable(input_dataframes$matstagetab) %>% theme_booktabs(bold_header = TRUE) %>% bg(bg='transparent', part = "header") 
+#%>% ftExtra::colformat_md()
+# Add caption
+autonum <- run_autonum(seq_id = "tab", bkm = "matstagetab", pre_label = "Table ")
+ft_matstagetab <- set_caption(ft_matstagetab, caption = paste(input_dataframes$tab_captions[input_dataframes$tab_captions$`tab name`=="matstagetab","caption"]), style = "Table Caption"
+                             , autonum=autonum
+                             )
+
+# # set table width to span page width
+set_table_properties(ft_matstagetab,layout = "autofit")
+
+```
+
+\newpage
+
+## **ANNEX V. Survey-specific additional sampling** {#ANNEX_V .unnumbered}
+
+\newpage
+
+## **ANNEX VI. Overview of component sampled and equipment used during the survey** {#ANNEX_VI .unnumbered}
+
+```{r equipmenttab, echo=FALSE, tidy=TRUE, label="equipmenttab"}
+ft_equipmenttab <- flextable(input_dataframes$equipmenttab) %>% theme_booktabs(bold_header = TRUE) %>% bg(bg='transparent', part = "header") 
+#%>% ftExtra::colformat_md()
+# Add caption
+autonum <- run_autonum(seq_id = "tab", bkm = "equipmenttab", pre_label = "Table ")
+ft_equipmenttab <- set_caption(ft_equipmenttab, caption = paste(input_dataframes$tab_captions[input_dataframes$tab_captions$`tab name`=="equipmenttab","caption"]), style = "Table Caption"
+                             , autonum=autonum
+                             )
+
+# # set table width to span page width
+set_table_properties(ft_equipmenttab,layout = "autofit")
+
+```
+
+\newpage
+
+## **ANNEX VII. Data to be collected and handover plan** {#ANNEX_VII .unnumbered}
+
+```{r datahandovertab, echo=FALSE, tidy=TRUE, label="datahandovertab"}
+ft_datahandovertab <- flextable(input_dataframes$datahandovertab) %>% theme_booktabs(bold_header = TRUE) %>% bg(bg='transparent', part = "header") 
+#%>% ftExtra::colformat_md()
+# Add caption
+autonum <- run_autonum(seq_id = "tab", bkm = "datahandovertab", pre_label = "Table ")
+ft_datahandovertab <- set_caption(ft_datahandovertab, caption = paste(input_dataframes$tab_captions[input_dataframes$tab_captions$`tab name`=="datahandovertab","caption"]), style = "Table Caption"
+                             , autonum=autonum
+                             )
+
+# # set table width to span page width
+set_table_properties(ft_datahandovertab,layout = "autofit")
+
+```
+
+\newpage
+
+## **ANNEX VIII. Samples to be collected, preservation and follow-up work** {#ANNEX_VIII .unnumbered}
+
+```{r collectedsamplestab, echo=FALSE, tidy=TRUE, label="collectedsamplestab"}
+ft_collectedsamplestab <- flextable(input_dataframes$collectedsamplestab) %>% theme_booktabs(bold_header = TRUE) %>% bg(bg='transparent', part = "header") 
+#%>% ftExtra::colformat_md()
+# Add caption
+autonum <- run_autonum(seq_id = "tab", bkm = "collectedsamplestab", pre_label = "Table ")
+ft_collectedsamplestab <- set_caption(ft_collectedsamplestab, caption = paste(input_dataframes$tab_captions[input_dataframes$tab_captions$`tab name`=="collectedsamplestab","caption"]), style = "Table Caption"
+                             , autonum=autonum
+                             )
+
+# # set table width to span page width
+set_table_properties(ft_collectedsamplestab,layout = "autofit")
+
+```
