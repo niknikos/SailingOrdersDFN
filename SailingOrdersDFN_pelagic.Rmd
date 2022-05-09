@@ -490,6 +490,7 @@ reqparttab <- input_dataframes$reqparttab %>%
   rename("Position/laboratory"=`Position laboratory`,
          "DFN core team (IMR)"=`DFN core team  IMR `,
          "DFN core team (non-IMR)"=`DFN core team  non IMR `,
+         "FAO/External experts"=`FAO External experts`,
          "Total non-IMR personnel"=`Total non IMR personnel`
          ) %>%
   dplyr::select(-c("Min personnel","Missing personnel")) %>%
@@ -497,7 +498,7 @@ reqparttab <- input_dataframes$reqparttab %>%
   arrange(Leg) %>% 
   group_by(Leg) %>% 
   nest() %>%
-  mutate(data = map(data, ~ .x %>% adorn_totals(where = c("row","col"), name = "Total", fill = "", na.rm = T, ... = c("DFN core team", "Total non-IMR personnel")))) %>%
+  mutate(data = map(data, ~ .x %>% adorn_totals(where = c("row","col"), name = "Total", fill = "", na.rm = T))) %>%
   mutate(data = map(data, ~ .x %>% add_row() )) %>%
   unnest(cols = c(data)) %>% 
   mutate(Leg = if_else(is.na(Total), "", Leg))
