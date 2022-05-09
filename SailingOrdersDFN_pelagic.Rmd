@@ -68,8 +68,7 @@ set_flextable_defaults(big.mark = " ",
 
 # **SURVEY PLAN FOR** `r input_dataframes$surveyplantab$Survey`
 
-The
-survey will start in Walvis Bay, Namibia and end in Cape Town, South-Africa (Table \@ref(tab:surveyplantab)).
+The survey will start in Walvis Bay, Namibia and end in Cape Town, South-Africa (Table \@ref(tab:surveyplantab)).
 
 ```{r surveyplantab, echo=FALSE, tidy=TRUE, label="surveyplantab"}
 ft_surveyplan <- flextable(input_dataframes$surveyplantab) %>% theme_booktabs(bold_header = TRUE) %>% bg(bg='transparent', part = "header") %>% ftExtra::colformat_md()
@@ -85,8 +84,7 @@ set_table_properties(ft_surveyplan,layout = "autofit")
 
 The overall objectives of this regional survey effort in the BCC (South-Africa, Namibia and Angola) area were discussed in connection with the EAF-Nansen Programme Annual Forum in Benin in 2019.
 These plans were not further developed because of the Covid-19 pandemic.
-As the surveys with the DFN
-vessel were resumed in 2021, a zoom meeting was held on 27 July 2021 to reschedule the proposed surveys and revise survey objectives as it may be desirable (Filomena Vaz Velho, Virgilio Estevao, Beau Tjizou, Paul Kainge, Janet Coetzee, Carl van der Lingen, Deon Durholtz, Gabriella Bianchi participated in the meeting).
+As the surveys with the DFN vessel were resumed in 2021, a zoom meeting was held on 27 July 2021 to reschedule the proposed surveys and revise survey objectives as it may be desirable (Filomena Vaz Velho, Virgilio Estevao, Beau Tjizou, Paul Kainge, Janet Coetzee, Carl van der Lingen, Deon Durholtz, Gabriella Bianchi participated in the meeting).
 
 The general feedback indicated that the overall objectives as earlier agreed were still relevant.
 **Leg 4 consists of 3 surveys** that aims at covering the pelagic fish resources on the shelf and the upper slope outside South-Africa, Namibia and Angola.
@@ -94,12 +92,11 @@ While fishery resources represent the key priority, other aspects are also addre
 Leg 4.1 is thus part of a larger effort, even though the focus will be on stock assesment of the commercially important pelagic fish species.
 
 Data will be used to prepare a survey report, and various scientific reports/papers as part of the EAF-Nansen Science Plan.
-The data collected will also feed into regional fisheries resource assessment work (Benguela Current Convention BCC --<https://www>[. benguelacc.org/home]{.ul}).
+The data collected will also feed into regional fisheries resource assessment work (Benguela Current Convention BCC -- [[https://www](https://www.benguelacc.org/home)](https://www){.uri}[[.benguelacc.org/home]{.ul}](https://www.benguelacc.org/home)).
 
 ## **Survey area**
 
-The survey area for the Leg 4 covers south-west and south African continental shelf area including the
-Beguela upwelling system, one of the major upwelling regions of the world, characterized by high productivity and important pelagic and demersal fishery resources.
+The survey area for the Leg 4 covers south-west and south African continental shelf area including the Beguela upwelling system, one of the major upwelling regions of the world, characterized by high productivity and important pelagic and demersal fishery resources.
 Leg 4.1 will cover the pelagic fish resources of South-Africa, from Orange River to Port Alfred.
 Leg 4.2 will cover the area from Walvis Bay (Namibia) northwards to about Benguela (Angola).
 Leg 4.3 will continue from Benguela northwards up to the Congo River mouth.
@@ -110,8 +107,7 @@ The survey leg 4.1 will start on 11^th^ June in Walvis Bay.
 The vessel will start the first acoustic transect off Orange River and and work its way southwards, towards Port Alfred.
 There will be a port call in Cape Town at 26'th June.
 The vessel will return to Walvis Bay latest 18^th^ July.
-Leg 4.2 will begin 19^th^ July
-from Walvis Bay and return to Walvis Bay at the end of the survey.
+Leg 4.2 will begin 19^th^ July from Walvis Bay and return to Walvis Bay at the end of the survey.
 Leg 4.3 will begin 20^th^ August to continue survey work northwards and will end at the Congo River mouth and will either return to Walvis Bay or Luanda on the 19^th^ September.
 
 The Leg 4 area to be surveyed by the R/V Dr Fridtjof Nansen in 2022 includes the continental shelf and upper slope off south and southwest Africa.
@@ -126,9 +122,9 @@ knitr::include_graphics("./_images/surveyareamap.png")
 
 ## **Proposed participation in different legs and experience required**
 
-Typically, the surveys with the R/V \_Dr Fridtjof Nansen\_ include participations from different countries and institutions.
+Typically, the surveys with the R/V Dr Fridtjof Nansen include participations from different countries and institutions.
 Regarding qualifications, a mix of experienced scientists /technicians and less experienced ones, will receive on-the-job training in sampling procedures.
-An overview of the main types of expertise and number of participants required for Leg 4 is provided in \[ANNEX I\](#ANNEX_I) and the list of the planned survey participants for leg 4.1 is shown in \[ANNEX II\](#ANNEX_II).
+An overview of the main types of expertise and number of participants required for Leg 4 is provided in [ANNEX I](#ANNEX_I) and the list of the planned survey participants for leg 4.1 is shown in [ANNEX II](#ANNEX_II).
 
 It should be noted that a maximum number of 19 local participants can be allowed, in addition to the scientific crew from Norway and FAO experts.
 
@@ -136,8 +132,7 @@ It should be noted that a maximum number of 19 local participants can be allowed
 
 # **SCIENTIFIC RATIONALE**
 
-The overall framework and rationale for the surveys carried out by the R/V \_Dr Fridtjof Nansen\_ are
-provided by the EAF-Nansen Programme Science Plan which covers three main pillars (Figure \@ref(fig:scienceplanSOfig)).
+The overall framework and rationale for the surveys carried out by the R/V \_Dr Fridtjof Nansen\_ are provided by the EAF-Nansen Programme Science Plan which covers three main pillars (Figure \@ref(fig:scienceplan)).
 Within this framework, the scope and objectives of the surveys in 2022 have been identified with partners, based on national and regional priorities.
 In addition, data recorded, and samples collected during the survey will be analysed through collaborations initiated through the various Science Plan Themes.
 
@@ -164,13 +159,11 @@ In the table above we should identify project as follow-up from the sampling con
 
 ## **Specific objectives and scientific questions for the survey**
 
-The specific objectives of the survey are listed below; the emphasis
-will be based on local needs and scientific importance.
+The specific objectives of the survey are listed below; the emphasis will be based on local needs and scientific importance.
 
 -   Acoustic sampling:
 
-    -   Estimation of the
-        biomass and population length structure of anchovy, sardine, round herring, horse mackerel and meso-pelagic fish off South Africa by means of echo-integration and midwater trawling.
+    -   Estimation of the biomass and population length structure of anchovy, sardine, round herring, horse mackerel and meso-pelagic fish off South Africa by means of echo-integration and midwater trawling.
 
     -   Provide acoustic backscatter estimates (a proxy for biomass) of the pelagic resources that are grouped into acoustic categories: Sardinella spp., Mackerel, Horse mackerel, pilchard, sardinops, anchovy, Pelagic Group I and Pelagic Group II, demersal fish, mesopelagic fish, plankton and other (see Annex ?? for detailed fish species list)
 
@@ -211,7 +204,7 @@ will be based on local needs and scientific importance.
 
     -   Jellyfish?
 
--   Ichthyoplancton sampling:
+-   Ichthyoplankton sampling:
 
     -   Collection of CUFES (underway only) samples during Leg 2 of the survey and from Line 61 to Line 80 only for mapping of sardine and round herring (and perhaps anchovy) egg distributions.
 
@@ -234,8 +227,7 @@ The ship will sample to at least Cape Agulhas (Transect 50) before returning to 
 As soon as possible, the ship will then return to Cape Agulhas and continue eastward as far as Port Alfred, returning to Cape Town at the end of the survey on 12th July 2022.
 The Cruise leader/Co-Cruise leader may, and is expected to, truncate, extend or omit lines where necessary (but in accordance with the transect ranking, Table 2) to maximise survey efficiency according to the fish distribution found, or to accommodate time constraints.
 As anchovy recruits, in particular, are likely to be concentrated close inshore, it is imperative that the inshore position of each transect, and the inshore transits between transects, be placed as close inshore as safety permits.
-It is noted that the ultimate decision on the position of transects and the need to deviate from transects for safety reasons lies with the Captain
-of the vessel.
+It is noted that the ultimate decision on the position of transects and the need to deviate from transects for safety reasons lies with the Captain of the vessel.
 When the acoustic transect line is interrupted (such as break-off for trawling), the transect must be resumed from the point of interruption, preferably with a small overlap to the interrupted transect.
 This ensures continuous acoustic data coverage along the intended transect line.
 
@@ -258,8 +250,7 @@ ADCP's and bottom mapping sonars should be kept OFF while sailing on acoustic tr
 [**Sonar**]{.ul}
 
 The Simrad SU90 sonar will be used to record acoustic data continuously during the survey.
-The sonar must be set to a frequency of 26 kHz, in FM Normal mode and operated using "Trawl 2" (old "Bow
-up/180 deg") operation mode with the bearing of the vertical beams 90 deg, perpendicular to the vessel direction with a range of 450 m and with the horizontal beams set to 450 m with a tilt angle of 3 deg.
+The sonar must be set to a frequency of 26 kHz, in FM Normal mode and operated using "Trawl 2" (old "Bow up/180 deg") operation mode with the bearing of the vertical beams 90 deg, perpendicular to the vessel direction with a range of 450 m and with the horizontal beams set to 450 m with a tilt angle of 3 deg.
 Default filter values must be used except for the Noise filter which must be turned off.
 These settings including range and tilt must be kept the same during the whole survey except during trawling operations where the sonar can at times be used actively to focus in on targets.
 If time allows, scrutinizing of sonar data will be done daily.
@@ -282,8 +273,7 @@ If there **are strong echoes on the echogram and a subsequent trawl fails to col
 
 ### *Weather Station*
 
-Wind direction, wind speed, air pressure, relative humidity, air temperature and solar radiation data are
-averaged every 60 seconds and logged continuously from the Aanderaa Automatic Weather Station 2700.
+Wind direction, wind speed, air pressure, relative humidity, air temperature and solar radiation data are averaged every 60 seconds and logged continuously from the Aanderaa Automatic Weather Station 2700.
 
 ### *Thermosalinograph*
 
@@ -310,8 +300,7 @@ Underway CUFES samples are to be collected along EVERY survey transect and along
 
 Underway CUFES intervals will be of 30 minutes duration (equivalent to approximately 5 n.miles of survey transect, and 15 000 litres assuming a flow rate of 500 l.min-1).
 The flow-rate is to be estimated once each interval by recording the time taken to fill a 25 litre plastic bucket).
-The CUFES sample should be
-examined under a dissection microscope immediately after collection (and before preservation), and on-board estimates of sardine and round herring eggs and comments (e.g. lots of copepods, no copepods, etc) should be recorded in the CUFES logbook for each sample together with pertinent information (date, sample number, sample grid, begin and end times, and estimated flow rate).
+The CUFES sample should be examined under a dissection microscope immediately after collection (and before preservation), and on-board estimates of sardine and round herring eggs and comments (e.g. lots of copepods, no copepods, etc) should be recorded in the CUFES logbook for each sample together with pertinent information (date, sample number, sample grid, begin and end times, and estimated flow rate).
 The CUFES logbook is to be checked by the fish team leader at the end of each shift.
 
 The CUFES concentrator is to be regularly checked for blockage of the mesh; if this occurs the pump is to be stopped and the mesh cleaned.
@@ -348,7 +337,7 @@ set_table_properties(ft_biosamplingtab,layout = "autofit")
 
 ```
 
-In \[ANNEX III\](ANNEX_III) and \[ANNEX IV\](ANNEX_IV), the fish lab workflow overview and guidelines on the detailed sampling protocols in the fish lab can be found.
+In [ANNEX III](#ANNEX_III) and [ANNEX IV](#ANNEX_IV), the fish lab workflow overview and guidelines on the detailed sampling protocols in the fish lab can be found.
 As a preparation for the work in the fish lab, a training course will be provided on the use of the electronic fish meter, Fish2Data and Biotic Editor software.
 
 The sampling protocol will be programmed into the Fish2Data software and be installed on the iPads used during the measurement of length and weight.
@@ -374,8 +363,7 @@ The following tasks are to be carried out.
 
 3.  **Full biological analysis** of fifty (50) individuals of anchovy, sardine and West Coast round herring selected from the length frequency samples.
     Care should be taken that this sub-sample covers the size range observed in the length frequency distribution.
-    The wet body weight (to the nearest 0.1g) of each fish is to be measured, then the visceral cavity of each fish must be opened and their sex,
-    gonad maturity stage and fat stage assigned following visual assessment of their gonads and mesenteric fat levels and recorded for each fish on the data sheet / electronic system provided (corresponding to the unique number, and caudal length assigned to each fish in point 2 above).
+    The wet body weight (to the nearest 0.1g) of each fish is to be measured, then the visceral cavity of each fish must be opened and their sex, gonad maturity stage and fat stage assigned following visual assessment of their gonads and mesenteric fat levels and recorded for each fish on the data sheet / electronic system provided (corresponding to the unique number, and caudal length assigned to each fish in point 2 above).
     **LENGTH FREQUENCY DETERMINATIONS AND FULL BIOLOGICALS MUST BE DONE FOR EVERY SINGLE TRAWL.**
 
 4.  **For all three epipelagic species, the otoliths** of the first 20 fish from which biological data were collected should be extracted, **cleaned in fresh water**, dried with a tissue and stored dry in a vial.
@@ -392,12 +380,10 @@ The following tasks are to be carried out.
     A record of the date, grid and station numbers, and number of fish per species, is to be kept by the fish team leader.
 
 7.  **Collection of sardine, anchovy and round herring for assessment of their anthropogenic pollutant (herbicides, pharmaceuticals, etc) levels**.
-    Samples of 3 fish (of similar size) per species are to be taken from each of 10 trawls spread approximately equally across the survey area between the Orange River mouth and Port Alfred, with 5 trawls sampled to the west of Cape Agulhas and 5 trawls to the east of Cape Agulhas (so 15 individual fish collected WoCA and 15 individuals EoCA per
-    species).
+    Samples of 3 fish (of similar size) per species are to be taken from each of 10 trawls spread approximately equally across the survey area between the Orange River mouth and Port Alfred, with 5 trawls sampled to the west of Cape Agulhas and 5 trawls to the east of Cape Agulhas (so 15 individual fish collected WoCA and 15 individuals EoCA per species).
     Ideally, fish of each species should be collected from the same trawls, but in case this cannot be achieved "back-up" samples of each species should be collected so as to ensure full coverage of the surveyed area (final samples for analysis can be selected after the survey).
     Each fish is to be placed in its own zip-lock plastic bag, and the three individuals collected from each trawl are then to be placed together in a larger zip-lock plastic bag containing a label (written using a 2B pencil) with the date, grid and station numbers, and marked "***SPECIES*** **NAME ANTHROP. POLLUTANTS**", then immediately blast frozen.
-    A record of the date, grid and station numbers, and
-    number of fish per species, is to be kept by the fish team leader.
+    A record of the date, grid and station numbers, and number of fish per species, is to be kept by the fish team leader.
 
 8.  **Collection of chub mackerel (*Scomber* sp.) for collection of meristic and morphometric information for stock/species identification**.
     Ten to 25 individual chub mackerel are to be collected from trawls where this species is caught in sufficient numbers, with several samples to be collected from the west (west of Cape Agulhas), south (Cape Agulhas to Mossel Bay) and the southeast (Mossel Bay to Port Alfred) coasts to enable wide spatial coverage.
@@ -405,23 +391,19 @@ The following tasks are to be carried out.
     A record of the date, grid and station numbers, numbers of fish and their approximate size range for samples of all species is to be kept by each fish team leader.
 
 9.  **Collection of Hector's lanternfish and lightfish for basic biological studies**.
-    Samples of
-    25-50 individuals of these species are to be collected from each trawl in which they are caught, placed in zip-lock bags (separated by species) containing a label (written using a 2B pencil) with the date, grid and station numbers, and marked externally "**LANTERNFISH/LIGHTFISH**" with a koki pen, and then immediately blast frozen.
+    Samples of 25-50 individuals of these species are to be collected from each trawl in which they are caught, placed in zip-lock bags (separated by species) containing a label (written using a 2B pencil) with the date, grid and station numbers, and marked externally "**LANTERNFISH/LIGHTFISH**" with a koki pen, and then immediately blast frozen.
     A record of the date, grid and station numbers, numbers of fish and their approximate size range for samples of all species is to be kept by each fish team leader.
 
-10. **Collection of uncommon mesopelagic fish species for identification and basic biological studies. ALL mesopelagic fishes other than Hector's lanternfish or lightfish are to be retained; particularly bogue lanternfish *Symbolophorus boops*.** Mesopelagic fishes are to be placed in zip-lock bags (separated by genus/species/type if feasible) containing a label (written using a 2B pencil)
-    with the date, grid and station numbers, and marked externally "UNIDENTIFIED/OTHER MESOPELAGICS" with a koki pen, and then immediately blast frozen.
+10. **Collection of uncommon mesopelagic fish species for identification and basic biological studies. ALL mesopelagic fishes other than Hector's lanternfish or lightfish are to be retained; particularly bogue lanternfish *Symbolophorus boops*.** Mesopelagic fishes are to be placed in zip-lock bags (separated by genus/species/type if feasible) containing a label (written using a 2B pencil) with the date, grid and station numbers, and marked externally "UNIDENTIFIED/OTHER MESOPELAGICS" with a koki pen, and then immediately blast frozen.
     A record of the date, grid and station numbers, numbers of fish and their approximate size range for samples of all species is to be kept by each fish team leader.
     Specimens that could not be identified at sea will be identified after the survey and the information sent to the Nansen for inclusion in the survey records.
 
 11. **Collection of pelagic gobies (*Sufflogobius bibarbatus*) for general biological studies**.
     A sample of 50 (or all gobies caught in the trawl if this number is \<50) individual pelagic gobies covering the observed size range are to be collected from all trawls in which they occur.
-    Samples are to be placed in zip-lock bags containing a label (written using a 2B pencil) with the date, grid and station
-    numbers, and marked externally "**GOBIES**" with a koki pen, and then immediately blast frozen.
+    Samples are to be placed in zip-lock bags containing a label (written using a 2B pencil) with the date, grid and station numbers, and marked externally "**GOBIES**" with a koki pen, and then immediately blast frozen.
     A record of the date, grid and station numbers, numbers of fish and their approximate size range for samples is to be kept by each fish team leader.
 
-12. Specimens of large jellyfish that may be caught in the trawl, and which appear to be in a good condition should be fixed in 4% formalin, **AFTER** a piece of tissue from the oral arms has been removed and fixed in 96% ethanol with the jar labelled (internally using a **2B** pencil and externally using a marker -- note that ethanol will remove external markings so care should be taken to keep
-    labels legible) with the species, date, grid and station number and "**JELLYFISH -- M GIBBONS**".
+12. Specimens of large jellyfish that may be caught in the trawl, and which appear to be in a good condition should be fixed in 4% formalin, **AFTER** a piece of tissue from the oral arms has been removed and fixed in 96% ethanol with the jar labelled (internally using a **2B** pencil and externally using a marker -- note that ethanol will remove external markings so care should be taken to keep labels legible) with the species, date, grid and station number and "**JELLYFISH -- M GIBBONS**".
     The ethanol is to be replaced **TWICE WITHIN 36-48 HOURS AFTER COLLECTION**; the first replacement should occur 6-12 hours after the sample was collected (used ethanol should be discarded) and the second replacement should occur 24 hours later It is important to ensure that the volume of alcohol should be large (4-5 times as much) in comparison with the volume of jellyfish material in the sample jar.
     All jars containing jellyfish for genetic analysis are to be kept together in a sample box and all such samples should be clearly labelled as previously.
 
@@ -432,8 +414,7 @@ Printouts of each trawl must be provided to the acoustic team timeously.
 The fish team leader of each watch is responsible for validation of the AMTS data: **SUCH VALIDATION MUST BE DONE AFTER EACH TRAWL.**
 
 The trawling/acoustic watch keeper and the fish sampling team leader on watch should work interactively at all stages to ensure the optimum allocation of sampling effort.
-In particular, more
-frequent trawling is required in areas of high fish density, and the fish sampling team leader may adapt the sampling strategy and/or take larger samples in these areas to increase the precision of, for example, age composition estimates.
+In particular, more frequent trawling is required in areas of high fish density, and the fish sampling team leader may adapt the sampling strategy and/or take larger samples in these areas to increase the precision of, for example, age composition estimates.
 
 ### *Other trawl-related sampling*
 
@@ -446,11 +427,9 @@ Individual length and weight, sex and maturity status shall be measured of all c
 Vulnerable species that are alive shall be released as soon as possible after the catch is on deck.
 If the individuals are too large to weight individually only length is to be measured.
 
-The protocol that will be followed for cartilaginous will be the same as for demersal / pelagic resources
-described above.
+The protocol that will be followed for cartilaginous will be the same as for demersal / pelagic resources described above.
 Specimens for taxonomic courses will be collected also following the protocol described above.
-Species that cannot be identified should be preserved in formalin or frozen (and labelled according to the procedure above) and sent to taxonomic experts for identification after the
-survey
+Species that cannot be identified should be preserved in formalin or frozen (and labelled according to the procedure above) and sent to taxonomic experts for identification after the survey
 
 #### *Samples for food safety studies and nutrition* {.unnumbered}
 
@@ -464,8 +443,7 @@ survey
 
 The biomass indices of priority pelagic fish (see below) will be estimated by the acoustic estimate method (<https://nansen-surveys.imr.no/doku.php?id=biomass_calculations>) using the StoX \[[StoX(stoxproject.github.io)](https://stoxproject.github.io/StoX/)\] software.
 Biomass indices will be estimated as total biomass and by length groups (for the species with sufficient length data).
-Prior to the survey the EAF Nansen Programme will
-organise a pelagic biomass estimation course (preliminary dates 9-13 May 2022) and the survey participants that will have taken part in the course will be given the chance to apply their newly aquired skills in biomass estimation using StoX.
+Prior to the survey the EAF Nansen Programme will organise a pelagic biomass estimation course (preliminary dates 9-13 May 2022) and the survey participants that will have taken part in the course will be given the chance to apply their newly aquired skills in biomass estimation using StoX.
 
 Priority pelagic species for biomass estimation by acoustics and targeted trawl sampling: *Sardinella aurita* and *Sardinella maderensis* combined as *Sardinella* spp., *Trachurus* spp., Pelagic Group I, and Pelagic Group II.
 
@@ -479,9 +457,9 @@ Allocation of acoustic densities to species groups will be done according to Tab
 # **DATA COLLECTED AND STANDARD PROCEDURE FOR HANDING OVER SAMPLES TO PARTNERS**
 
 In line with the Nansen Data Policy, the Cruise Leader is to ensure that each national institution represented in the survey receives a copy of the draft report and the basic data (e.g. catch data) pertaining to the particular survey and for their national waters before leaving the vessel.
-An overview of the equipment that is going to be used for the collection of the various data can be found in Table \@ref(tab:equipmenttab) (\[ANNEX VI\](ANNEX_VI)).
-The different types of data expected to be recorded, their storage and delivery can be found in Table \@ref(tab:datahandovertab) (\[ANNEX VII\](ANNEX_VII)).
-Finally, the samples to be collected, their preservation and planned follow-up work is detailed in Table \@ref(tab:collectedsamplestab) (\[ANNEX VIII\](ANNEX_VIII)).
+An overview of the equipment that is going to be used for the collection of the various data can be found in Table \@ref(tab:equipmenttab) ([ANNEX VI](#ANNEX_VI)).
+The different types of data expected to be recorded, their storage and delivery can be found in Table \@ref(tab:datahandovertab) ([ANNEX VII](#ANNEX_VII)).
+Finally, the samples to be collected, their preservation and planned follow-up work is detailed in Table \@ref(tab:collectedsamplestab) ([ANNEX VIII](#ANNEX_VIII)).
 The Cruise Leader is expected to document what data and samples have been shared and with whom.
 
 The cruise participants are expected to sign and conform the Data policy of the EAF-Nansen Programme.
@@ -539,24 +517,6 @@ set_table_properties(ft_reqparttab,layout = "autofit")
 
 \newpage
 
-## **ANNEX II. Planned participation** {#ANNEX_II .unnumbered}
-
-```{r plannedparticipantstab, echo=FALSE, tidy=TRUE, label="plannedparticipantstab"}
-ft_plannedparticipantstab <- flextable(input_dataframes$plannedparticipantstab) %>% theme_booktabs(bold_header = TRUE) %>% bg(bg='transparent', part = "header") 
-# %>% ftExtra::colformat_md()
-# Add caption
-autonum <- run_autonum(seq_id = "tab", bkm = "plannedparticipantstab", pre_label = "Table ")
-ft_plannedparticipantstab <- set_caption(ft_plannedparticipantstab, caption =  paste(input_dataframes$tab_captions[input_dataframes$tab_captions$`tab name`=="plannedparticipantstab","caption"]), style = "Table Caption"
-                             , autonum=autonum
-                             )
-
-# # set table width to span page width
-set_table_properties(ft_plannedparticipantstab,layout = "autofit")
-
-```
-
-\newpage
-
 ## **ANNEX III. Fish lab workflow** {#ANNEX_III .unnumbered}
 
 ```{r catchsamplingworkflow, echo=FALSE, fig.cap=paste(input_dataframes$fig_captions[input_dataframes$fig_captions$`fig name`=="catchsamplingworkflow","caption"]), fig.align='center', fig.width=5.5, fig.height=8.5, label='catchsamplingworkflow'}
@@ -581,8 +541,6 @@ set_table_properties(ft_matstagetab,layout = "autofit")
 
 ```
 
-
-
 ```{r fatstageanchtab, echo=FALSE, tidy=TRUE, label="fatstageanchtab"}
 ft_fatstageanchtab <- flextable(input_dataframes$fatstageanchtab) %>% theme_booktabs(bold_header = TRUE) %>% bg(bg='transparent', part = "header") 
 #%>% ftExtra::colformat_md()
@@ -597,13 +555,9 @@ set_table_properties(ft_fatstageanchtab,layout = "autofit")
 
 ```
 
-
-
 ```{r anchovymat, echo=FALSE, fig.cap=paste(input_dataframes$fig_captions[input_dataframes$fig_captions$`fig name`=="anchovymat","caption"]), fig.align='center', fig.width=4, fig.height=6,  label='anchovymat'}
 knitr::include_graphics("./_images/anchovymat.png")
 ```
-
-
 
 ```{r fatstagesarhtab, echo=FALSE, tidy=TRUE, label="fatstagesarhtab"}
 ft_fatstagesarhtab <- flextable(input_dataframes$fatstagesarhtab) %>% theme_booktabs(bold_header = TRUE) %>% bg(bg='transparent', part = "header") 
@@ -618,8 +572,6 @@ ft_fatstagesarhtab <- set_caption(ft_fatstagesarhtab, caption = paste(input_data
 set_table_properties(ft_fatstagesarhtab,layout = "autofit")
 
 ```
-
-
 
 ```{r sardinemat, echo=FALSE, fig.cap=paste(input_dataframes$fig_captions[input_dataframes$fig_captions$`fig name`=="sardinemat","caption"]), fig.align='center', fig.width=4, fig.height=6,  label='sardinemat'}
 knitr::include_graphics("./_images/sardinemat.png")
