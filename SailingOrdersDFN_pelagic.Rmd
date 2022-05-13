@@ -802,6 +802,8 @@ set_table_properties(ft_collectedsamplestab,layout = "autofit")
 
 ## ANNEX IX. Acoustics transects
 
+
+
 ```{r transectpostab, echo=FALSE, tidy=TRUE, label="transectpostab"}
 ft_transectpostab <- flextable(input_dataframes$transectpostab) %>% theme_booktabs(bold_header = TRUE) %>% bg(bg='transparent', part = "header") 
 #%>% ftExtra::colformat_md()
@@ -816,9 +818,10 @@ set_table_properties(ft_transectpostab,layout = "autofit")
 
 ```
 
+
+
 ```{r transectranktab, echo=FALSE, tidy=TRUE, label="transectranktab"}
-ft_transectranktab <- flextable(input_dataframes$transectranktab) %>% theme_booktabs(bold_header = TRUE) %>% bg(bg='transparent', part = "header") 
-#%>% ftExtra::colformat_md()
+ft_transectranktab <- flextable(input_dataframes$transectranktab) %>% theme_booktabs(bold_header = TRUE) %>% bg(bg='transparent', part = "header") %>% ftExtra::colformat_md()
 # Add caption
 autonum <- run_autonum(seq_id = "tab", bkm = "transectranktab", pre_label = "Table ")
 ft_transectranktab <- set_caption(ft_transectranktab, caption = paste(input_dataframes$tab_captions[input_dataframes$tab_captions$`tab name`=="transectranktab","caption"]), style = "Table Caption"
@@ -855,6 +858,6 @@ set_table_properties(ft_transectranktab,layout = "autofit")
 
 -   Samples should be kept at 4^o^C until use, and if long-term storage is needed, ethanol should be checked periodically and refilled to ensure that the sample will not dry out.
 
-```{r geneticsamplingprot, echo=FALSE, fig.cap=paste(input_dataframes$fig_captions[input_dataframes$fig_captions$`fig name`=="geneticsamplingprot","caption"]), fig.align='center', fig.width=3, fig.height=275,  label='geneticsamplingprot'}
+```{r geneticsamplingprot, echo=FALSE, fig.cap=paste(input_dataframes$fig_captions[input_dataframes$fig_captions$`fig name`=="geneticsamplingprot","caption"]), fig.align='center', fig.width=3, fig.height=2.75,  label='geneticsamplingprot'}
 knitr::include_graphics("./_images/geneticsamplingprot.png")
 ```
