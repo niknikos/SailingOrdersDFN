@@ -17,7 +17,6 @@ output:
 editor_options: 
   markdown: 
     wrap: sentence
-
 ---
 
 ```{r setup, include=FALSE}
@@ -100,7 +99,7 @@ The general feedback indicated that the overall objectives as earlier agreed wer
 While fishery resources represent the key priority, other aspects are also addressed to improve knowledge on composition and diversity of pelagic communities and habitats, understanding the environmental conditions within which they are found, including the presence of marine debris.
 Leg 4.1 is thus part of a larger effort, even though the focus will be on the biomass, population structure, distribution and behavioural patterns of the commercially important epipelagic fish species, as well as of mesopelagic fish species.
 
-The collected data will be used to prepare a survey report, and various scientific reports/papers as part of the EAF-Nansen Science Plan, as well as provide input to the regional fisheries resource assessment work [Benguela Current Convention (BCC) [https://www.benguelacc.org/home](https://www.bengualacc.org/home){.uri}].
+The collected data will be used to prepare a survey report, and various scientific reports/papers as part of the EAF-Nansen Science Plan, as well as provide input to the regional fisheries resource assessment work (Benguela Current Convention (BCC): [https://www.benguelacc.org/home](https://www.bengualacc.org/home){.uri}).
 
 ## **Survey area**
 
@@ -219,7 +218,7 @@ The specific objectives of the survey are listed below; the emphasis will be bas
 
 -   Ichthyoplankton sampling:
 
-    -   Collection of ichhyoplankton samples (with custom-CUFES and only underway)  during Leg 2 of the survey and from Line 61 to Line 80 only for mapping of sardine and round herring (and perhaps anchovy) egg distributions.
+    -   Collection of ichhyoplankton samples (with custom-CUFES and only underway) during Leg 2 of the survey and from Line 61 to Line 80 only for mapping of sardine and round herring (and perhaps anchovy) egg distributions.
 
 -   Other objectives:
 
@@ -247,21 +246,24 @@ As anchovy recruits, in particular, are likely to be concentrated close inshore,
 
 It is noted that the ultimate decision on the position of transects and the need to deviate from transects for safety reasons lies with the Captain of the vessel.
 
-When the acoustic transect line is interrupted (such as break-off for trawling), the transect must be resumed from the point of interruption, preferably with a small overlap to the interrupted transect. This ensures continuous acoustic data coverage along the intended transect line.
+When the acoustic transect line is interrupted (such as break-off for trawling), the transect must be resumed from the point of interruption, preferably with a small overlap to the interrupted transect.
+This ensures continuous acoustic data coverage along the intended transect line.
 
 [**Acoustics**]{.ul}
 
 Acoustic data at all available frequencies from the Simrad EK80 echo sounder operating in **CW (narrow band)** mode is to be collected continuously while the ship is steaming along and between transects.
 
-Acoustic data is to be logged to a depth of 250m when the water depth is less than 250m and to a depth of 500m when the depth exceeds 250m. This requires that the acoustic operator is at all times aware of the water depth and switches the maximum depth logged by the EK80 on time.
+Acoustic data is to be logged to a depth of 250m when the water depth is less than 250m and to a depth of 500m when the depth exceeds 250m.
+This requires that the acoustic operator is at all times aware of the water depth and switches the maximum depth logged by the EK80 on time.
 
 Copies of the .Raw data files are to be stored on a removable hard drive for processing with Echoview.
 
-Weather and sea permitting, a constant survey speed of 10 knots will normally be maintained. However, at times the vessel may have to be slowed (at the request of the acoustic watch-keeper) to reduce acoustic noise.
+Weather and sea permitting, a constant survey speed of 10 knots will normally be maintained.
+However, at times the vessel may have to be slowed (at the request of the acoustic watch-keeper) to reduce acoustic noise.
 
 The pulse duration of all transducers is to be standardized at 1ms throughout the survey at a ping rate of 1ping s^-1^.
 
-The integrated echo intensities at 38 kHz, averaged over the water column, are to be converted to fish density on board using both echoview and the LSSS and anchovy, sardine, redeye, horse mackerel, lanternfish and lightfish abundance estimated as the survey progresses. 
+The integrated echo intensities at 38 kHz, averaged over the water column, are to be converted to fish density on board using both echoview and the LSSS and anchovy, sardine, redeye, horse mackerel, lanternfish and lightfish abundance estimated as the survey progresses.
 
 The Captain/Navigating officer on watch must inform the acoustic watch keeper when the vessel starts/ends each transect or when the vessel crosses a boundary line between strata (see Fig. \@ref(fig:surveyareamap)) so that the ship's log and the time can be recorded for later use in data processing.
 
@@ -273,14 +275,24 @@ ADCP's and bottom mapping sonars should be kept OFF while sailing on acoustic tr
 
 The Simrad SU90 sonar will be used to record acoustic data continuously during the survey.
 
-The sonar must be set to a frequency of 26 kHz, in FM Normal mode and operated using "Trawl 2" (old "Bow up/180 deg") operation mode with the bearing of the vertical beams 90 deg, perpendicular to the vessel direction with a range of 450m and with the horizontal beams set to 450m with a tilt angle of 3 deg. Default filter values must be used except for the Noise filter which must be turned off. These settings including range and tilt must be kept the same during the whole survey except during trawling operations where the sonar can at times be used actively to focus in on targets.
+The sonar must be set to a frequency of 26 kHz, in FM Normal mode and operated using "Trawl 2" (old "Bow up/180 deg") operation mode with the bearing of the vertical beams 90 deg, perpendicular to the vessel direction with a range of 450m and with the horizontal beams set to 450m with a tilt angle of 3 deg.
+Default filter values must be used except for the Noise filter which must be turned off.
+These settings including range and tilt must be kept the same during the whole survey except during trawling operations where the sonar can at times be used actively to focus in on targets.
 If time allows, scrutinizing of sonar data will be done daily.
 
 [**Midwater trawling**]{.ul}
 
-Frequent *ad hoc* target identification tows will be made at the request of the cruise leader/co-cruise leader, or the acoustic watch-keeper, using either the bottom trawl (Gisund Super) with floats, the small pelagic (Åkra trawl) or the large pelagic (MultPelt) trawl. If available, and if technical expertise is available to operate the DeepVision system, it should be installed in the MultPelt trawl and data logged for each trawl.
+Frequent *ad hoc* target identification tows will be made at the request of the cruise leader/co-cruise leader, or the acoustic watch-keeper, using either the bottom trawl (Gisund Super) with floats, the small pelagic (Åkra trawl) or the large pelagic (MultPelt) trawl.
+If available, and if technical expertise is available to operate the DeepVision system, it should be installed in the MultPelt trawl and data logged for each trawl.
 
-Species composition, length frequencies and biological sampling has to be done for every trawl sample. The number of trawl samples will depend on the density and distribution of acoustic targets observed and the need for species identification. Trawls may be requested at any stage during the day or night. The frequency of tows will depend on the presence of acoustic targets requiring identification as judged by the acoustic watch keeper, but allowance has been made for an average of 6 hours trawling per day. This is an average figure, and on some days more than 6 hours may be requested. The emphasis will be on catching relatively small amounts of fish in good condition for target identification and biological analysis. To conduct a trawl, the ship will break off from the survey grid. After completion of the trawl, the ship is to return to the point at which the survey was interrupted.
+Species composition, length frequencies and biological sampling has to be done for every trawl sample.
+The number of trawl samples will depend on the density and distribution of acoustic targets observed and the need for species identification.
+Trawls may be requested at any stage during the day or night.
+The frequency of tows will depend on the presence of acoustic targets requiring identification as judged by the acoustic watch keeper, but allowance has been made for an average of 6 hours trawling per day.
+This is an average figure, and on some days more than 6 hours may be requested.
+The emphasis will be on catching relatively small amounts of fish in good condition for target identification and biological analysis.
+To conduct a trawl, the ship will break off from the survey grid.
+After completion of the trawl, the ship is to return to the point at which the survey was interrupted.
 
 If there **are strong echoes on the echogram and a subsequent trawl fails to collect a decent sample (at least 40 fish of the dominant species), the acoustic operator will need to request another trawl straight away to try and get a representative sample.**
 
@@ -328,7 +340,8 @@ Not relevant for the survey.
 
 ## **Ichthyoplankton**
 
-Ichthyoplankton sampling will be conducted using a custom Continuous Underway Fish Egg Sampler (custom-CUFES) and only from Line 61 onwards to the end of the survey (Line 80). Ichthyoplankton samples are to be collected along EVERY survey transect and along **ALL** inshore and offshore transits.
+Ichthyoplankton sampling will be conducted using a custom Continuous Underway Fish Egg Sampler (custom-CUFES) and only from Line 61 onwards to the end of the survey (Line 80).
+Ichthyoplankton samples are to be collected along EVERY survey transect and along **ALL** inshore and offshore transits.
 
 Ichthyoplankton sampling intervals will be of 30 minutes duration (equivalent to approximately 5 nautical miles of survey transect, and 15 000 litres assuming a flow rate of 500 l.min^-1^).
 The flow-rate is to be estimated once each interval by recording the time taken to fill a 25 litres plastic bucket).
@@ -337,7 +350,8 @@ The ichthyoplankton sample should be examined under a dissection microscope imme
 
 The ichthyoplankton sampling logbook is to be checked by the fish team leader at the end of each shift.
 
-The custom-CUFES concentrator is to be regularly checked for blockage of the mesh; if this occurs the pump is to be stopped and the mesh cleaned. Fish team members should alternate with regard to ichthyoplankton sampling duties; all fish team members are to do a ichthyoplankton sampling watch, and one member of the fish team is to be designated this responsibility at all times.
+The custom-CUFES concentrator is to be regularly checked for blockage of the mesh; if this occurs the pump is to be stopped and the mesh cleaned.
+Fish team members should alternate with regard to ichthyoplankton sampling duties; all fish team members are to do a ichthyoplankton sampling watch, and one member of the fish team is to be designated this responsibility at all times.
 
 Ichthyoplankton samples are to be preserved in 5% formalin in plastic sample jars with the sample information written on a label placed inside the jar and on the lid of the jar.
 
@@ -345,7 +359,8 @@ Ichthyoplankton samples are to be preserved in 5% formalin in plastic sample jar
 
 ### *Bottom topography*
 
-Bottom depth is obtained continuously from the EK80 echosounder (down to 700m depth, 38kHz) and passed into the Olex bottom mapping system used by the vessel. The information is also registered in the "Survey Logger" (Toktlogger) system, through the appropriate NMEA message.
+Bottom depth is obtained continuously from the EK80 echosounder (down to 700m depth, 38kHz) and passed into the Olex bottom mapping system used by the vessel.
+The information is also registered in the "Survey Logger" (Toktlogger) system, through the appropriate NMEA message.
 
 ### *Bottom habitats*
 
@@ -359,7 +374,8 @@ Not relevant for the survey.
 
 According to the size of the catch, either the whole catch is sorted and measured or subsamples are taken.
 
-At all trawl hauls, the catch is sorted according to species, and number and weight measurements will be taken for all ***fish???*** species.vFor priority species length and weight are recorded using an electronic fish meter connected to a standard data acquisition system used onboard the vessel (Fish2Data and Biotic Editor) connected on the server of the vessel. In addition, further biological sampling will be done for pre-agreed priority species (Table \@ref(tab:biosamplingtab)).
+At all trawl hauls, the catch is sorted according to species, and number and weight measurements will be taken for all ***fish???*** species.vFor priority species length and weight are recorded using an electronic fish meter connected to a standard data acquisition system used onboard the vessel (Fish2Data and Biotic Editor) connected on the server of the vessel.
+In addition, further biological sampling will be done for pre-agreed priority species (Table \@ref(tab:biosamplingtab)).
 
 <!---BLOCK_LANDSCAPE_START--->
 
@@ -380,11 +396,10 @@ set_table_properties(ft_biosamplingtab,layout = "autofit")
 
 ```
 
-
 <!---BLOCK_LANDSCAPE_STOP--->
 
-
-In [ANNEX III](#ANNEX_III) and [ANNEX IV](#ANNEX_IV), the fish lab workflow overview and guidelines on the detailed sampling protocols in the fish lab can be found. As a preparation for the work in the fish lab, a training course will be provided on the use of the electronic fish meter, Fish2Data and Biotic Editor software.
+In [ANNEX III](#ANNEX_III) and [ANNEX IV](#ANNEX_IV), the fish lab workflow overview and guidelines on the detailed sampling protocols in the fish lab can be found.
+As a preparation for the work in the fish lab, a training course will be provided on the use of the electronic fish meter, Fish2Data and Biotic Editor software.
 
 The Fish2Data software will be pre-configured with the sampling protocol and will be accessible through the iPads facilitating the biological measurements of individuals.
 
@@ -394,7 +409,8 @@ The Fish2Data software will be pre-configured with the sampling protocol and wil
 
 ### Pelagic species
 
-The primary objectives of sampling midwater trawl catches are to obtain information on species composition and size frequency to allow estimation of the biomass of the different species acoustically. Subsidiary objectives relate to other projects within DFFE.
+The primary objectives of sampling midwater trawl catches are to obtain information on species composition and size frequency to allow estimation of the biomass of the different species acoustically.
+Subsidiary objectives relate to other projects within DFFE.
 [**No fish or any other organisms are to be taken for fries and/or bait from the deck or from the trawl without the expressed permission of the fish team leader.**]{.ul}
 
 **Fish team leaders must ensure adherence BY ALL FISH TEAM MEMBERS to the sampling protocol given below.**
@@ -405,92 +421,91 @@ The following tasks are to be carried out.
 
 2.  **Length distributions (Caudal length to the nearest 0.5cm) and sample mass (kg to 3 decimal places) of a random sample of AT LEAST 100 INDIVIDUALS of epipelagic (anchovy *Engraulis encrasicolus*, West Coast round herring *Etrumeus whiteheadi*, and sardine *Sardinops sagax*), and (total length to the nearest 0.5 cm) of horse mackerel *Trachurus capensis*, mackerel *Scomber japonicus*, mesopelagic (Hector's lanternfish *Lampanyctodes hectoris* and lightfish *Maurolicus walvisensis*) fish species from every trawl must be taken (all fish must be measured in trawls where \<100 fish of a particular species are captured)**.
 
-  IN THE CASE OF BIMODAL LENGTH DISTRIBUTIONS, A MINIMUM OF 200 INDIVIDUALS OF THESE SPECIES ARE TO BE MEASURED. Each fish in the sample should be assigned a unique number that is then recorded with the caudal length (CL; to the nearest mm) on the data sheet / electronic system provided.
-  
-  Retain anchovy, sardine, and round herring for later collection of biological data, otoliths and samples for other analyses.
-  
-  [THE ENTIRE CATCH MUST BE RETAINED ONBOARD TO ENSURE THAT ADEQUATE NUMBERS OF FISH OF THE MINOR SPECIES ARE AVAILABLE FOR LENGTH FREQUENCY ESTIMATION IN MULTISPECIES CATCHES!!!]{.ul}
+IN THE CASE OF BIMODAL LENGTH DISTRIBUTIONS, A MINIMUM OF 200 INDIVIDUALS OF THESE SPECIES ARE TO BE MEASURED. Each fish in the sample should be assigned a unique number that is then recorded with the caudal length (CL; to the nearest mm) on the data sheet / electronic system provided.
+
+Retain anchovy, sardine, and round herring for later collection of biological data, otoliths and samples for other analyses.
+
+[THE ENTIRE CATCH MUST BE RETAINED ONBOARD TO ENSURE THAT ADEQUATE NUMBERS OF FISH OF THE MINOR SPECIES ARE AVAILABLE FOR LENGTH FREQUENCY ESTIMATION IN MULTISPECIES CATCHES!!!]{.ul}
 
 3.  **Full biological analysis** of fifty (50) individuals of anchovy, sardine and West Coast round herring selected from the length frequency samples.
 
-  Care should be taken that this sub-sample covers the size range observed in the length frequency distribution.
-  
-  The wet body weight (to the nearest 0.1g) of each fish is to be measured, then the visceral cavity of each fish must be opened and their sex, gonad maturity stage and fat stage assigned following visual assessment of their gonads and mesenteric fat levels [ANNEX III](#ANNEX_III) and [ANNEX IV](#ANNEX_IV) and recorded for each fish on the data sheet / electronic system provided (corresponding to the unique number, and caudal length assigned to each fish in point 2 above).
-  
-  **LENGTH FREQUENCY DETERMINATIONS AND FULL BIOLOGICALS MUST BE DONE FOR EVERY SINGLE TRAWL.**
+Care should be taken that this sub-sample covers the size range observed in the length frequency distribution.
 
-4.  **For all three epipelagic species, the otoliths** of the first 20 fish from which biological data were collected should be extracted, **cleaned in fresh water**, dried with a tissue and stored dry in a vial. 
+The wet body weight (to the nearest 0.1g) of each fish is to be measured, then the visceral cavity of each fish must be opened and their sex, gonad maturity stage and fat stage assigned following visual assessment of their gonads and mesenteric fat levels [ANNEX III](#ANNEX_III) and [ANNEX IV](#ANNEX_IV) and recorded for each fish on the data sheet / electronic system provided (corresponding to the unique number, and caudal length assigned to each fish in point 2 above).
+
+**LENGTH FREQUENCY DETERMINATIONS AND FULL BIOLOGICALS MUST BE DONE FOR EVERY SINGLE TRAWL.**
+
+4.  **For all three epipelagic species, the otoliths** of the first 20 fish from which biological data were collected should be extracted, **cleaned in fresh water**, dried with a tissue and stored dry in a vial.
 
 The vial should contain a numbered label that corresponds to the unique fish number recorded on the data sheet electronic system.
 
 Vials can then be placed into a sealed plastic bag with a label containing the trawl information (species, date, station and grid numbers) and marked "***SPECIES*** **AGEING**".
 
 5.  **Collection of sardine for analysis of infection by a "tetracotyle" type digenean parasite**. Samples of 50 sardine, covering the observed size range, are to be collected per trawl (where possible; if there are insufficient fish a sample of 20 will suffice) and are to be placed in zip-lock bags containing a label (written using a 2B pencil) with the date, grid and station numbers, and marked "***SARDINE*** **PARASITES**" and then immediately blast frozen.
-    
-  A record of the date, grid and station numbers, number of fish and their size range, is to be kept by the fish team leader.
 
-6.  **Collection of West Coast round herring for monitoring micro-plastic pollution in the SA marine pelagos**.
-    Samples of 50 round herring, covering the observed size range, are to be retained from two trawls per stratum (i.e. 100 fish per stratum are to be collected) and stored in zip-lock bags containing a label (written using a 2B pencil) with the date, grid and station numbers, and marked "**ROUND HERRING MICROPLASTICS**", then immediately blast frozen.
-    
-  A record of the date, grid and station numbers, and number of fish per species, is to be kept by the fish team leader.
+A record of the date, grid and station numbers, number of fish and their size range, is to be kept by the fish team leader.
+
+6.  **Collection of West Coast round herring for monitoring micro-plastic pollution in the SA marine pelagos**. Samples of 50 round herring, covering the observed size range, are to be retained from two trawls per stratum (i.e. 100 fish per stratum are to be collected) and stored in zip-lock bags containing a label (written using a 2B pencil) with the date, grid and station numbers, and marked "**ROUND HERRING MICROPLASTICS**", then immediately blast frozen.
+
+A record of the date, grid and station numbers, and number of fish per species, is to be kept by the fish team leader.
 
 7.  **Collection of sardine, anchovy and round herring for assessment of their anthropogenic pollutant (herbicides, pharmaceuticals, etc) levels**.
-  
-  Samples of 3 fish (of similar size) per species are to be taken from each of 10 trawls spread approximately equally across the survey area between the Orange River mouth and Port Alfred, with 5 trawls sampled to the west of Cape Agulhas and 5 trawls to the east of Cape Agulhas (so 15 individual fish collected WoCA and 15 individuals EoCA per species).
-  
-  Ideally, fish of each species should be collected from the same trawls, but in case this cannot be achieved "back-up" samples of each species should be collected so as to ensure full coverage of the surveyed area (final samples for analysis can be selected after the survey).
-  
-  Each fish is to be placed in its own zip-lock plastic bag, and the three individuals collected from each trawl are then to be placed together in a larger zip-lock plastic bag containing a label (written using a 2B pencil) with the date, grid and station numbers, and marked "***SPECIES*** **NAME ANTHROP. POLLUTANTS**", then immediately blast frozen.
-  
-  A record of the date, grid and station numbers, and number of fish per species, is to be kept by the fish team leader.
+
+Samples of 3 fish (of similar size) per species are to be taken from each of 10 trawls spread approximately equally across the survey area between the Orange River mouth and Port Alfred, with 5 trawls sampled to the west of Cape Agulhas and 5 trawls to the east of Cape Agulhas (so 15 individual fish collected WoCA and 15 individuals EoCA per species).
+
+Ideally, fish of each species should be collected from the same trawls, but in case this cannot be achieved "back-up" samples of each species should be collected so as to ensure full coverage of the surveyed area (final samples for analysis can be selected after the survey).
+
+Each fish is to be placed in its own zip-lock plastic bag, and the three individuals collected from each trawl are then to be placed together in a larger zip-lock plastic bag containing a label (written using a 2B pencil) with the date, grid and station numbers, and marked "***SPECIES*** **NAME ANTHROP. POLLUTANTS**", then immediately blast frozen.
+
+A record of the date, grid and station numbers, and number of fish per species, is to be kept by the fish team leader.
 
 8.  **Collection of chub mackerel (*Scomber* sp.) for collection of meristic and morphometric information for stock/species identification**.
-  
-  Ten to 25 individual chub mackerel are to be collected from trawls where this species is caught in sufficient numbers, with several samples to be collected from the west (west of Cape Agulhas), south (Cape Agulhas to Mossel Bay) and the southeast (Mossel Bay to Port Alfred) coasts to enable wide spatial coverage.
-  
-  Samples are to be placed in zip-lock bags containing a label (written using a 2B pencil) with the date, grid and station numbers, and marked externally "**CHUB MACKEREL**" with a koki pen, and then immediately blast frozen.
-  
-  A record of the date, grid and station numbers, numbers of fish and their approximate size range for samples of all species is to be kept by each fish team leader.
+
+Ten to 25 individual chub mackerel are to be collected from trawls where this species is caught in sufficient numbers, with several samples to be collected from the west (west of Cape Agulhas), south (Cape Agulhas to Mossel Bay) and the southeast (Mossel Bay to Port Alfred) coasts to enable wide spatial coverage.
+
+Samples are to be placed in zip-lock bags containing a label (written using a 2B pencil) with the date, grid and station numbers, and marked externally "**CHUB MACKEREL**" with a koki pen, and then immediately blast frozen.
+
+A record of the date, grid and station numbers, numbers of fish and their approximate size range for samples of all species is to be kept by each fish team leader.
 
 9.  **Collection of Hector's lanternfish and lightfish for basic biological studies**.
-  
-  Samples of 25-50 individuals of these species are to be collected from each trawl in which they are caught, placed in zip-lock bags (separated by species) containing a label (written using a 2B pencil) with the date, grid and station numbers, and marked externally "**LANTERNFISH/LIGHTFISH**" with a koki pen, and then immediately blast frozen.
-    
-  A record of the date, grid and station numbers, numbers of fish and their approximate size range for samples of all species is to be kept by each fish team leader.
 
-10. **Collection of uncommon mesopelagic fish species for identification and basic biological studies. ALL mesopelagic fishes other than Hector's lanternfish or lightfish are to be retained; particularly bogue lanternfish *Symbolophorus boops*.** 
+Samples of 25-50 individuals of these species are to be collected from each trawl in which they are caught, placed in zip-lock bags (separated by species) containing a label (written using a 2B pencil) with the date, grid and station numbers, and marked externally "**LANTERNFISH/LIGHTFISH**" with a koki pen, and then immediately blast frozen.
 
-  Mesopelagic fishes are to be placed in zip-lock bags (separated by genus/species/type if feasible) containing a label (written using a 2B pencil) with the date, grid and station numbers, and marked externally "UNIDENTIFIED/OTHER MESOPELAGICS" with a koki pen, and then immediately blast frozen.
-  
-  A record of the date, grid and station numbers, numbers of fish and their approximate size range for samples of all species is to be kept by each fish team leader.
-  
-  Specimens that could not be identified at sea will be identified after the survey and the information sent to the Nansen for inclusion in the survey records.
+A record of the date, grid and station numbers, numbers of fish and their approximate size range for samples of all species is to be kept by each fish team leader.
+
+10. **Collection of uncommon mesopelagic fish species for identification and basic biological studies. ALL mesopelagic fishes other than Hector's lanternfish or lightfish are to be retained; particularly bogue lanternfish *Symbolophorus boops*.**
+
+Mesopelagic fishes are to be placed in zip-lock bags (separated by genus/species/type if feasible) containing a label (written using a 2B pencil) with the date, grid and station numbers, and marked externally "UNIDENTIFIED/OTHER MESOPELAGICS" with a koki pen, and then immediately blast frozen.
+
+A record of the date, grid and station numbers, numbers of fish and their approximate size range for samples of all species is to be kept by each fish team leader.
+
+Specimens that could not be identified at sea will be identified after the survey and the information sent to the Nansen for inclusion in the survey records.
 
 11. **Collection of pelagic gobies (*Sufflogobius bibarbatus*) for general biological studies**.
-  
-  A sample of 50 (or all gobies caught in the trawl if this number is \<50) individual pelagic gobies covering the observed size range are to be collected from all trawls in which they occur.
-  
-  Samples are to be placed in zip-lock bags containing a label (written using a 2B pencil) with the date, grid and station numbers, and marked externally "**GOBIES**" with a koki pen, and then immediately blast frozen.
-  
-  A record of the date, grid and station numbers, numbers of fish and their approximate size range for samples is to be kept by each fish team leader.
+
+A sample of 50 (or all gobies caught in the trawl if this number is \<50) individual pelagic gobies covering the observed size range are to be collected from all trawls in which they occur.
+
+Samples are to be placed in zip-lock bags containing a label (written using a 2B pencil) with the date, grid and station numbers, and marked externally "**GOBIES**" with a koki pen, and then immediately blast frozen.
+
+A record of the date, grid and station numbers, numbers of fish and their approximate size range for samples is to be kept by each fish team leader.
 
 12. Specimens of large jellyfish that may be caught in the trawl, and which appear to be in a good condition should be fixed in 4% formalin, **AFTER** a piece of tissue from the oral arms has been removed and fixed in 96% ethanol with the jar labelled (internally using a **2B** pencil and externally using a marker -- note that ethanol will remove external markings so care should be taken to keep labels legible) with the species, date, grid and station number and "**JELLYFISH -- M GIBBONS**".
-  
-  The ethanol is to be replaced **TWICE WITHIN 36-48 HOURS AFTER COLLECTION**; the first replacement should occur 6-12 hours after the sample was collected (used ethanol should be discarded) and the second replacement should occur 24 hours later It is important to ensure that the volume of alcohol should be large (4-5 times as much) in comparison with the volume of jellyfish material in the sample jar.
-  
-  All jars containing jellyfish for genetic analysis are to be kept together in a sample box and all such samples should be clearly labelled as previously.
 
-  Species composition, length frequency and biological data (CL, weight, sex, gonad stage and fat stage) are to be entered into the on-board electronic data collection system during processing.
+The ethanol is to be replaced **TWICE WITHIN 36-48 HOURS AFTER COLLECTION**; the first replacement should occur 6-12 hours after the sample was collected (used ethanol should be discarded) and the second replacement should occur 24 hours later It is important to ensure that the volume of alcohol should be large (4-5 times as much) in comparison with the volume of jellyfish material in the sample jar.
+
+All jars containing jellyfish for genetic analysis are to be kept together in a sample box and all such samples should be clearly labelled as previously.
+
+Species composition, length frequency and biological data (CL, weight, sex, gonad stage and fat stage) are to be entered into the on-board electronic data collection system during processing.
 These data are then to be exported (in CSV format) to the ACCESS AMTS database after the completion of each trawl for subsequent analyses.
 
-  All retained samples are to be labelled in the usual way with the Station number, Grid number, Date, Species and sample purpose.
+All retained samples are to be labelled in the usual way with the Station number, Grid number, Date, Species and sample purpose.
 Printouts of each trawl must be provided to the acoustic team timeously.
 
-  The fish team leader of each watch is responsible for validation of the AMTS data: **SUCH VALIDATION MUST BE DONE AFTER EACH TRAWL.**
+The fish team leader of each watch is responsible for validation of the AMTS data: **SUCH VALIDATION MUST BE DONE AFTER EACH TRAWL.**
 
-  The trawling/acoustic watch keeper and the fish sampling team leader on watch should work interactively at all stages to ensure the optimum allocation of sampling effort.
+The trawling/acoustic watch keeper and the fish sampling team leader on watch should work interactively at all stages to ensure the optimum allocation of sampling effort.
 
-  In particular, more frequent trawling is required in areas of high fish density, and the fish sampling team leader may adapt the sampling strategy and/or take larger samples in these areas to increase the precision of, for example, age composition estimates.
+In particular, more frequent trawling is required in areas of high fish density, and the fish sampling team leader may adapt the sampling strategy and/or take larger samples in these areas to increase the precision of, for example, age composition estimates.
 
 ### *Other trawl-related sampling*
 
@@ -500,13 +515,15 @@ Not relevant for the survey.
 
 #### *Cartilaginous fish* {.unnumbered}
 
-  Individual length and weight, sex and maturity status shall be measured of all cartilaginous fish caught.
+Individual length and weight, sex and maturity status shall be measured of all cartilaginous fish caught.
 
-  Vulnerable species that are alive shall be released as soon as possible after the catch is on deck. If the individuals are too large to weight individually only length is to be measured.
+Vulnerable species that are alive shall be released as soon as possible after the catch is on deck.
+If the individuals are too large to weight individually only length is to be measured.
 
-  The protocol that will be followed for cartilaginous will be the same as for demersal / pelagic resources described above.
+The protocol that will be followed for cartilaginous will be the same as for demersal / pelagic resources described above.
 
-  Specimens for taxonomic courses will be collected also following the protocol described above. Species that cannot be identified should be preserved in formalin or frozen (and labelled according to the procedure above) and sent to taxonomic experts for identification after the survey
+Specimens for taxonomic courses will be collected also following the protocol described above.
+Species that cannot be identified should be preserved in formalin or frozen (and labelled according to the procedure above) and sent to taxonomic experts for identification after the survey
 
 #### *Samples for food safety studies and nutrition* {.unnumbered}
 
@@ -526,21 +543,16 @@ Not relevant for the survey.
 
 ### *Pelagic fish biomass estimated based on acoustics (EK80)*
 
-  The biomass indices of priority pelagic fish (see below) will be estimated by the acoustic estimate method (<https://nansen-surveys.imr.no/doku.php?id=biomass_calculations>) using the [StoX (stoxproject.github.io)](https://stoxproject.github.io/StoX/) software.
+The biomass indices of priority pelagic fish (see below) will be estimated by the acoustic estimate method (<https://nansen-surveys.imr.no/doku.php?id=biomass_calculations>) using the [StoX (stoxproject.github.io)](https://stoxproject.github.io/StoX/) software.
 
-  Biomass indices will be estimated as total biomass and by length groups (for the species with sufficient length data).
+Biomass indices will be estimated as total biomass and by length groups (for the species with sufficient length data).
 
-  Prior to the survey the EAF Nansen Programme organised a pelagic biomass estimation course (9-13 May 2022) and the survey participants that will have taken part in the course will be given the chance to apply their newly acquired skills in biomass estimation using StoX.
+Prior to the survey the EAF Nansen Programme organised a pelagic biomass estimation course (9-13 May 2022) and the survey participants that will have taken part in the course will be given the chance to apply their newly acquired skills in biomass estimation using StoX.
 
-
-***THIS SECTION NEEDS UPDATING***
-########################
-Priority pelagic species for biomass estimation by acoustics and targeted trawl sampling: *Sardinella aurita* and *Sardinella maderensis* combined as *Sardinella* spp., *Trachurus* spp., Pelagic Group I, and Pelagic Group II.
+***THIS SECTION NEEDS UPDATING*** ######################## Priority pelagic species for biomass estimation by acoustics and targeted trawl sampling: *Sardinella aurita* and *Sardinella maderensis* combined as *Sardinella* spp., *Trachurus* spp., Pelagic Group I, and Pelagic Group II.
 
 Acoustic data post-processing in LSSS is done daily while on survey.
-Various acoustic categories will be used to split and assign acoustic backscatter: other, plankton, Sardinella spp., Pelagic Group I and Pelagic Group II (see Annex ?? for detailed fish species list)
-#######################
-Allocation of acoustic densities to species groups will be done according to Table \@ref(tab:acousticcattab).
+Various acoustic categories will be used to split and assign acoustic backscatter: other, plankton, Sardinella spp., Pelagic Group I and Pelagic Group II (see Annex ?? for detailed fish species list) ######################\# Allocation of acoustic densities to species groups will be done according to Table \@ref(tab:acousticcattab).
 
 ```{r acousticcattab, echo=FALSE, tidy=TRUE, label="acousticcattab"}
 ft_acousticcattab <- flextable(input_dataframes$acousticcattab) %>% theme_booktabs(bold_header = TRUE) %>% bg(bg='transparent', part = "header") %>% ftExtra::colformat_md()
@@ -564,21 +576,21 @@ set_table_properties(ft_acousticcattab,layout = "autofit")
 
 # **DATA COLLECTED AND STANDARD PROCEDURE FOR HANDING OVER SAMPLES TO PARTNERS**
 
-  In line with the Nansen Data Policy, the Cruise Leader is to ensure that each national institution represented in the survey receives a copy of the draft report and the basic data (e.g. catch data) pertaining to the particular survey and for **their national waters** before leaving the vessel.
+In line with the Nansen Data Policy, the Cruise Leader is to ensure that each national institution represented in the survey receives a copy of the draft report and the basic data (e.g. catch data) pertaining to the particular survey and for **their national waters** before leaving the vessel.
 
-  An overview of the equipment that is going to be used for the collection of the various data can be found in Table \@ref(tab:equipmenttab) ([ANNEX VI](#ANNEX_VI)).
+An overview of the equipment that is going to be used for the collection of the various data can be found in Table \@ref(tab:equipmenttab) ([ANNEX VI](#ANNEX_VI)).
 
-  The different types of data expected to be recorded, their storage and delivery can be found in Table \@ref(tab:datahandovertab) ([ANNEX VII](#ANNEX_VII)).
+The different types of data expected to be recorded, their storage and delivery can be found in Table \@ref(tab:datahandovertab) ([ANNEX VII](#ANNEX_VII)).
 
-  Finally, the samples to be collected, their preservation and planned follow-up work is detailed in Table \@ref(tab:collectedsamplestab) ([ANNEX VIII](#ANNEX_VIII)).
+Finally, the samples to be collected, their preservation and planned follow-up work is detailed in Table \@ref(tab:collectedsamplestab) ([ANNEX VIII](#ANNEX_VIII)).
 
-  The Cruise Leader is expected to document what data and samples have been shared and with whom.
+The Cruise Leader is expected to document what data and samples have been shared and with whom.
 
-  The cruise participants are expected to sign and conform to the Data policy of the EAF-Nansen Programme.
+The cruise participants are expected to sign and conform to the Data policy of the EAF-Nansen Programme.
 
-  Persons responsible for samples need to inform about the status of analysis, and report about this at the post-survey meeting, as well as send a copy of the analysis/results to IMR ([nansen_data\@hi.no](mailto:nansen_data@hi.no)).
+Persons responsible for samples need to inform about the status of analysis, and report about this at the post-survey meeting, as well as send a copy of the analysis/results to IMR ([nansen_data\@hi.no](mailto:nansen_data@hi.no)).
 
-  IMR, as a data custodian for the EAF-Nansen Programme, is required to have an overview of the samples/analysis at any point in time to;
+IMR, as a data custodian for the EAF-Nansen Programme, is required to have an overview of the samples/analysis at any point in time to;
 
 1.  Ensure that data life-cycle management is carried out in the expected way
 
@@ -656,11 +668,9 @@ set_table_properties(ft_plannedparticipantstab,layout = "autofit")
 
 ## **ANNEX III. Fish lab workflow** {#ANNEX_III .unnumbered}
 
-```{r catchsamplingworkflow, echo=FALSE, fig.cap=paste(input_dataframes$fig_captions[input_dataframes$fig_captions$`fig name`=="catchsamplingworkflow","caption"]), fig.align='center', fig.width=6.5, fig.height=6,  label='catchsamplingworkflow'}
+```{r catchsamplingworkflow, echo=FALSE, fig.cap=paste(input_dataframes$fig_captions[input_dataframes$fig_captions$`fig name`=="catchsamplingworkflow","caption"]), fig.align='center', fig.width=6.5, fig.height=3.5,  label='catchsamplingworkflow'}
 knitr::include_graphics("./_images/catchsamplingworkflow.png")
 ```
-
-
 
 ```{r matstagetab, echo=FALSE, tidy=TRUE, label="matstagetab"}
 ft_matstagetab <- flextable(input_dataframes$matstagetab) %>% theme_booktabs(bold_header = TRUE) %>% bg(bg='transparent', part = "header") 
@@ -676,8 +686,6 @@ set_table_properties(ft_matstagetab,layout = "autofit")
                   
 ```
 
-
-
 ```{r fatstageanchtab, echo=FALSE, tidy=TRUE, label="fatstageanchtab"}
 ft_fatstageanchtab <- flextable(input_dataframes$fatstageanchtab) %>% theme_booktabs(bold_header = TRUE) %>% bg(bg='transparent', part = "header") 
 #%>% ftExtra::colformat_md()
@@ -691,8 +699,6 @@ ft_fatstageanchtab <- set_caption(ft_fatstageanchtab, caption = paste(input_data
 set_table_properties(ft_fatstageanchtab,layout = "autofit")
 
 ```
-
-
 
 ```{r anchovyfat, echo=FALSE, fig.cap=paste(input_dataframes$fig_captions[input_dataframes$fig_captions$`fig name`=="anchovyfat","caption"]), fig.align='center', fig.width=4, fig.height=6,  label='anchovymat'}
 knitr::include_graphics("./_images/anchovyfat.png")
@@ -711,8 +717,6 @@ ft_fatstagesarhtab <- set_caption(ft_fatstagesarhtab, caption = paste(input_data
 set_table_properties(ft_fatstagesarhtab,layout = "autofit")
 
 ```
-
-
 
 ```{r sardinefat, echo=FALSE, fig.cap=paste(input_dataframes$fig_captions[input_dataframes$fig_captions$`fig name`=="sardinefat","caption"]), fig.align='center', fig.width=4, fig.height=6,  label='sardinemat'}
 knitr::include_graphics("./_images/sardinefat.png")
@@ -750,7 +754,6 @@ ft_equipmenttab <- set_caption(ft_equipmenttab, caption = paste(input_dataframes
 set_table_properties(ft_equipmenttab,layout = "autofit")
 
 ```
-
 
 \newpage
 
@@ -802,8 +805,6 @@ set_table_properties(ft_collectedsamplestab,layout = "autofit")
 
 ## ANNEX IX. Acoustics transects
 
-
-
 ```{r transectpostab, echo=FALSE, tidy=TRUE, label="transectpostab"}
 ft_transectpostab <- flextable(input_dataframes$transectpostab) %>% theme_booktabs(bold_header = TRUE) %>% bg(bg='transparent', part = "header") 
 #%>% ftExtra::colformat_md()
@@ -817,8 +818,6 @@ ft_transectpostab <- set_caption(ft_transectpostab, caption = paste(input_datafr
 set_table_properties(ft_transectpostab,layout = "autofit")
 
 ```
-
-
 
 ```{r transectranktab, echo=FALSE, tidy=TRUE, label="transectranktab"}
 ft_transectranktab <- flextable(input_dataframes$transectranktab) %>% theme_booktabs(bold_header = TRUE) %>% bg(bg='transparent', part = "header") %>% ftExtra::colformat_md()
@@ -836,7 +835,6 @@ set_table_properties(ft_transectranktab,layout = "autofit")
 \newpage
 
 ## ANNEX X. Collection of genetic samples - protocol
-
 
 -   Collect muscle (or fin tip) samples for genetic analysis of adult orange roughy;
 
