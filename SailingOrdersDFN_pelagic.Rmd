@@ -80,6 +80,7 @@ The survey will start in Walvis Bay, Namibia and end in Cape Town, South-Africa 
 
 ```{r surveyplantab, echo=FALSE, tidy=TRUE, label="surveyplantab"}
 ft_surveyplan <- flextable(input_dataframes$surveyplantab) %>% theme_booktabs(bold_header = TRUE) %>% bg(bg='transparent', part = "header") %>% ftExtra::colformat_md()
+ft_surveyplan <- line_spacing(ft_surveyplan, space = 1.5, part = "all")
 # Add caption
 autonum <- run_autonum(seq_id = "tab", bkm = "surveyplantab", pre_label = "Table ", start_at=1)
 ft_surveyplan <- set_caption(ft_surveyplan, caption = paste(input_dataframes$tab_captions[input_dataframes$tab_captions$`tab name`=="surveyplantab","caption"]), style = "Table Caption", autonum=autonum)
@@ -150,6 +151,7 @@ An overview of the Science Plan themes for which this survey is most relevant an
 
 ```{r sciencethemestab, echo=FALSE, tidy=TRUE, label="sciencethemestab"}
 ft_sciencethemestab <- flextable(input_dataframes$sciencethemestab) %>% theme_booktabs(bold_header = TRUE) %>% bg(bg='transparent', part = "header") %>% ftExtra::colformat_md()
+ft_sciencethemestab <- line_spacing(ft_sciencethemestab, space = 1.5, part = "all")
 # Add caption
 autonum <- run_autonum(seq_id = "tab", bkm = "sciencethemestab", pre_label = "Table ")
 ft_sciencethemestab <- set_caption(ft_sciencethemestab, caption = paste(input_dataframes$tab_captions[input_dataframes$tab_captions$`tab name`=="sciencethemestab","caption"]), style = "Table Caption"
@@ -381,6 +383,7 @@ In addition, further biological sampling will be done for pre-agreed priority sp
 
 ```{r biosamplingtab, echo=FALSE, tidy=TRUE, label="biosamplingtab"}
 ft_biosamplingtab <- flextable(input_dataframes$biosamplingtab) %>% theme_booktabs(bold_header = TRUE) %>% bg(bg='transparent', part = "header") %>% ftExtra::colformat_md()
+# ft_biosamplingtab <- line_spacing(ft_biosamplingtab, space = 1.5, part = "all")
 # Add caption
 
 ft_biosamplingtab <- flextable::align(ft_biosamplingtab, align = "center", j = -c(1), part = "all")
@@ -561,6 +564,7 @@ ft_acousticcattab <- flextable::height(ft_acousticcattab,  height = .5, unit = "
 ft_acousticcattab <- flextable::hrule(ft_acousticcattab, rule = "exact")
 ft_acousticcattab <- flextable::valign(ft_acousticcattab, valign = "top", part = "body")
 ft_acousticcattab <- flextable::fontsize(ft_acousticcattab, size = 7.5, part = "body")
+# ft_acousticcattab <- line_spacing(ft_acousticcattab, space = 1.5, part = "all")
 
 # Add caption
 autonum <- run_autonum(seq_id = "tab", bkm = "acousticcattab", pre_label = "Table ")
@@ -628,6 +632,7 @@ reqparttab <- input_dataframes$reqparttab %>%
   unnest(cols = c(data))
 
 ft_reqparttab <- flextable(reqparttab) %>% theme_booktabs(bold_header = TRUE) %>% bg(bg='transparent', part = "header") %>% ftExtra::colformat_md()
+# ft_reqparttab <- line_spacing(ft_reqparttab, space = 1.5, part = "all")
 # Add caption
 autonum <- run_autonum(seq_id = "tab", bkm = "reqparttab", pre_label = "Table ")
 ft_reqparttab <- set_caption(ft_reqparttab, caption =  paste(input_dataframes$tab_captions[input_dataframes$tab_captions$`tab name`=="reqparttab","caption"]), style = "Table Caption"
@@ -652,6 +657,7 @@ ft_plannedparticipantstab <- flextable::height(ft_plannedparticipantstab,  heigh
 ft_plannedparticipantstab <- flextable::hrule(ft_plannedparticipantstab, rule = "exact")
 ft_plannedparticipantstab <- flextable::valign(ft_plannedparticipantstab, valign = "top", part = "body")
 ft_plannedparticipantstab <- flextable::fontsize(ft_plannedparticipantstab, size = 8, part = "body", j = -c(1:2))
+# ft_plannedparticipantstab <- line_spacing(ft_plannedparticipantstab, space = 1.5, part = "all")
 
 # Add caption
 autonum <- run_autonum(seq_id = "tab", bkm = "plannedparticipantstab", pre_label = "Table ")
@@ -675,6 +681,7 @@ knitr::include_graphics("./_images/catchsamplingworkflow.png")
 ```{r matstagetab, echo=FALSE, tidy=TRUE, label="matstagetab"}
 ft_matstagetab <- flextable(input_dataframes$matstagetab) %>% theme_booktabs(bold_header = TRUE) %>% bg(bg='transparent', part = "header") 
 #%>% ftExtra::colformat_md()
+ft_matstagetab <- line_spacing(ft_matstagetab, space = 1.5, part = "all")
 # Add caption
 autonum <- run_autonum(seq_id = "tab", bkm = "matstagetab", pre_label = "Table ")
 ft_matstagetab <- set_caption(ft_matstagetab, caption = paste(input_dataframes$tab_captions[input_dataframes$tab_captions$`tab name`=="matstagetab","caption"]), style = "Table Caption"
@@ -689,6 +696,7 @@ set_table_properties(ft_matstagetab,layout = "autofit")
 ```{r fatstageanchtab, echo=FALSE, tidy=TRUE, label="fatstageanchtab"}
 ft_fatstageanchtab <- flextable(input_dataframes$fatstageanchtab) %>% theme_booktabs(bold_header = TRUE) %>% bg(bg='transparent', part = "header") 
 #%>% ftExtra::colformat_md()
+# ft_fatstageanchtab <- line_spacing(ft_fatstageanchtab, space = 1.5, part = "all")
 # Add caption
 autonum <- run_autonum(seq_id = "tab", bkm = "fatstageanchtab", pre_label = "Table ")
 ft_fatstageanchtab <- set_caption(ft_fatstageanchtab, caption = paste(input_dataframes$tab_captions[input_dataframes$tab_captions$`tab name`=="fatstageanchtab","caption"]), style = "Table Caption"
@@ -707,6 +715,7 @@ knitr::include_graphics("./_images/anchovyfat.png")
 ```{r fatstagesarhtab, echo=FALSE, tidy=TRUE, label="fatstagesarhtab"}
 ft_fatstagesarhtab <- flextable(input_dataframes$fatstagesarhtab) %>% theme_booktabs(bold_header = TRUE) %>% bg(bg='transparent', part = "header") 
 #%>% ftExtra::colformat_md()
+# ft_fatstagesarhtab <- line_spacing(ft_fatstagesarhtab, space = 1.5, part = "all")
 # Add caption
 autonum <- run_autonum(seq_id = "tab", bkm = "fatstagesarhtab", pre_label = "Table ")
 ft_fatstagesarhtab <- set_caption(ft_fatstagesarhtab, caption = paste(input_dataframes$tab_captions[input_dataframes$tab_captions$`tab name`=="fatstagesarhtab","caption"]), style = "Table Caption"
@@ -743,6 +752,7 @@ ft_equipmenttab <- flextable::hrule(ft_equipmenttab, rule = "exact")
 ft_equipmenttab <- flextable::valign(ft_equipmenttab, valign = "top", part = "body")
 ft_equipmenttab <- flextable::align(ft_equipmenttab, align = "center", part = "body")
 ft_equipmenttab <- flextable::fontsize(ft_equipmenttab, size = 8, part = "body")
+ft_equipmenttab <- line_spacing(ft_equipmenttab, space = 1.5, part = "all")
 
 # Add caption
 autonum <- run_autonum(seq_id = "tab", bkm = "equipmenttab", pre_label = "Table ")
@@ -762,6 +772,7 @@ set_table_properties(ft_equipmenttab,layout = "autofit")
 ```{r datahandovertab, echo=FALSE, tidy=TRUE, label="datahandovertab"}
 ft_datahandovertab <- flextable(input_dataframes$datahandovertab) %>% theme_booktabs(bold_header = TRUE) %>% bg(bg='transparent', part = "header") 
 #%>% ftExtra::colformat_md()
+ft_datahandovertab <- line_spacing(ft_datahandovertab, space = 1.5, part = "all")
 # Add caption
 autonum <- run_autonum(seq_id = "tab", bkm = "datahandovertab", pre_label = "Table ")
 ft_datahandovertab <- set_caption(ft_datahandovertab, caption = paste(input_dataframes$tab_captions[input_dataframes$tab_captions$`tab name`=="datahandovertab","caption"]), style = "Table Caption"
@@ -783,9 +794,10 @@ set_table_properties(ft_datahandovertab,layout = "autofit")
 ft_collectedsamplestab <- flextable(input_dataframes$collectedsamplestab) %>% theme_booktabs(bold_header = TRUE) %>% bg(bg='transparent', part = "header") 
 #%>% ftExtra::colformat_md()
 
-ft_collectedsamplestab <- flextable::height(ft_collectedsamplestab,  height = 1.25, unit = "cm")
+ft_collectedsamplestab <- flextable::height(ft_collectedsamplestab,  height = 1.50, unit = "cm")
 ft_collectedsamplestab <- flextable::hrule(ft_collectedsamplestab, rule = "exact")
 ft_collectedsamplestab <- flextable::valign(ft_collectedsamplestab, valign = "top", part = "body")
+ft_collectedsamplestab <- line_spacing(ft_collectedsamplestab, space = 1.5, part = "all")
 
 
 # Add caption
@@ -808,6 +820,7 @@ set_table_properties(ft_collectedsamplestab,layout = "autofit")
 ```{r transectpostab, echo=FALSE, tidy=TRUE, label="transectpostab"}
 ft_transectpostab <- flextable(input_dataframes$transectpostab) %>% theme_booktabs(bold_header = TRUE) %>% bg(bg='transparent', part = "header") 
 #%>% ftExtra::colformat_md()
+ft_transectpostab <- line_spacing(ft_transectpostab, space = 1.5, part = "all")
 # Add caption
 autonum <- run_autonum(seq_id = "tab", bkm = "transectpostab", pre_label = "Table ")
 ft_transectpostab <- set_caption(ft_transectpostab, caption = paste(input_dataframes$tab_captions[input_dataframes$tab_captions$`tab name`=="transectpostab","caption"]), style = "Table Caption"
@@ -821,6 +834,7 @@ set_table_properties(ft_transectpostab,layout = "autofit")
 
 ```{r transectranktab, echo=FALSE, tidy=TRUE, label="transectranktab"}
 ft_transectranktab <- flextable(input_dataframes$transectranktab) %>% theme_booktabs(bold_header = TRUE) %>% bg(bg='transparent', part = "header") %>% ftExtra::colformat_md()
+ft_transectranktab <- line_spacing(ft_transectranktab, space = 1.5, part = "all")
 # Add caption
 autonum <- run_autonum(seq_id = "tab", bkm = "transectranktab", pre_label = "Table ")
 ft_transectranktab <- set_caption(ft_transectranktab, caption = paste(input_dataframes$tab_captions[input_dataframes$tab_captions$`tab name`=="transectranktab","caption"]), style = "Table Caption"
