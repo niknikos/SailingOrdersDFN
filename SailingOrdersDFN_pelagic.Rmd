@@ -11,8 +11,8 @@ output:
         top: 0.5
         right: 0.75
         left: 0.75
-        header: 0.3
-        footer: 0.3
+        header: 0.15
+        footer: 0.15
         gutter: 0.3
 editor_options: 
   markdown: 
@@ -678,6 +678,8 @@ set_table_properties(ft_plannedparticipantstab,layout = "autofit")
 knitr::include_graphics("./_images/catchsamplingworkflow.png")
 ```
 
+<br>
+
 ```{r matstagetab, echo=FALSE, tidy=TRUE, label="matstagetab"}
 ft_matstagetab <- flextable(input_dataframes$matstagetab) %>% theme_booktabs(bold_header = TRUE) %>% bg(bg='transparent', part = "header") 
 #%>% ftExtra::colformat_md()
@@ -692,6 +694,8 @@ ft_matstagetab <- set_caption(ft_matstagetab, caption = paste(input_dataframes$t
 set_table_properties(ft_matstagetab,layout = "autofit")
                   
 ```
+
+<br>
 
 ```{r fatstageanchtab, echo=FALSE, tidy=TRUE, label="fatstageanchtab"}
 ft_fatstageanchtab <- flextable(input_dataframes$fatstageanchtab) %>% theme_booktabs(bold_header = TRUE) %>% bg(bg='transparent', part = "header") 
@@ -708,9 +712,13 @@ set_table_properties(ft_fatstageanchtab,layout = "autofit")
 
 ```
 
+<br>
+
 ```{r anchovyfat, echo=FALSE, fig.cap=paste(input_dataframes$fig_captions[input_dataframes$fig_captions$`fig name`=="anchovyfat","caption"]), fig.align='center', fig.width=4, fig.height=6,  label='anchovymat'}
 knitr::include_graphics("./_images/anchovyfat.png")
 ```
+
+<br>
 
 ```{r fatstagesarhtab, echo=FALSE, tidy=TRUE, label="fatstagesarhtab"}
 ft_fatstagesarhtab <- flextable(input_dataframes$fatstagesarhtab) %>% theme_booktabs(bold_header = TRUE) %>% bg(bg='transparent', part = "header") 
@@ -726,6 +734,8 @@ ft_fatstagesarhtab <- set_caption(ft_fatstagesarhtab, caption = paste(input_data
 set_table_properties(ft_fatstagesarhtab,layout = "autofit")
 
 ```
+
+<br>
 
 ```{r sardinefat, echo=FALSE, fig.cap=paste(input_dataframes$fig_captions[input_dataframes$fig_captions$`fig name`=="sardinefat","caption"]), fig.align='center', fig.width=4, fig.height=6,  label='sardinemat'}
 knitr::include_graphics("./_images/sardinefat.png")
@@ -750,7 +760,7 @@ ft_equipmenttab <- flextable(input_dataframes$equipmenttab) %>% theme_booktabs(b
 ft_equipmenttab <- flextable::height(ft_equipmenttab,  height = .6, unit = "cm")
 ft_equipmenttab <- flextable::hrule(ft_equipmenttab, rule = "exact")
 ft_equipmenttab <- flextable::valign(ft_equipmenttab, valign = "top", part = "body")
-ft_equipmenttab <- flextable::align(ft_equipmenttab, align = "center", part = "body")
+ft_equipmenttab <- flextable::align(ft_equipmenttab, align = "left", part = "all")
 ft_equipmenttab <- flextable::fontsize(ft_equipmenttab, size = 8, part = "body")
 ft_equipmenttab <- line_spacing(ft_equipmenttab, space = 1.5, part = "all")
 
@@ -831,6 +841,8 @@ ft_transectpostab <- set_caption(ft_transectpostab, caption = paste(input_datafr
 set_table_properties(ft_transectpostab,layout = "autofit")
 
 ```
+
+<br>
 
 ```{r transectranktab, echo=FALSE, tidy=TRUE, label="transectranktab"}
 ft_transectranktab <- flextable(input_dataframes$transectranktab) %>% theme_booktabs(bold_header = TRUE) %>% bg(bg='transparent', part = "header") %>% ftExtra::colformat_md()
