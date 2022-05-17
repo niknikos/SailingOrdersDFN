@@ -649,14 +649,14 @@ set_table_properties(ft_reqparttab,layout = "autofit")
 ## **ANNEX II. Planned participants** {#ANNEX_II .unnumbered}
 
 ```{r plannedparticipantstab, echo=FALSE, tidy=TRUE, label="plannedparticipantstab"}
-plannedparticipantstab <- input_dataframes$plannedparticipantstab
+plannedparticipantstab <- input_dataframes$plannedparticipantstab %>% mutate(No=seq.int(nrow(input_dataframes$plannedparticipantstab))) %>% relocate(No)
 
 ft_plannedparticipantstab <- flextable(plannedparticipantstab) %>% theme_booktabs(bold_header = TRUE) %>% bg(bg='transparent', part = "header") %>% ftExtra::colformat_md()
 
 ft_plannedparticipantstab <- flextable::height(ft_plannedparticipantstab,  height = .7, unit = "cm")
 ft_plannedparticipantstab <- flextable::hrule(ft_plannedparticipantstab, rule = "exact")
 ft_plannedparticipantstab <- flextable::valign(ft_plannedparticipantstab, valign = "top", part = "body")
-ft_plannedparticipantstab <- flextable::fontsize(ft_plannedparticipantstab, size = 8, part = "body", j = -c(1:2))
+ft_plannedparticipantstab <- flextable::fontsize(ft_plannedparticipantstab, size = 8, part = "body", j = -c(1:3))
 # ft_plannedparticipantstab <- line_spacing(ft_plannedparticipantstab, space = 1.5, part = "all")
 
 # Add caption
