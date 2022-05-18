@@ -133,7 +133,7 @@ Typically, the surveys with the R/V *Dr Fridtjof Nansen* include participations 
 Regarding qualifications, a mix of experienced scientists /technicians and less experienced ones, will receive on-the-job training in sampling procedures.
 An overview of the main types of expertise and number of participants required for Leg 4.1 is provided in [ANNEX I](#ANNEX_I) and the list of the planned survey participants for Leg 4.1 is shown in [ANNEX II](#ANNEX_II).
 
-It should be noted that a maximum number of 19 local participants can be allowed, in addition to the scientific crew from Norway and FAO experts.
+It should be noted that a maximum number of 19 local participants can be allowed, in addition to the scientific crew from Norway and the DFN Core Team.
 
 \newpage
 
@@ -143,7 +143,7 @@ The overall framework and rationale for the surveys carried out by the R/V *Dr F
 Within this framework, the scope and objectives of the surveys in 2022 have been identified with partners, based on national and regional priorities.
 In addition, data recorded, and samples collected during the survey will be analysed through collaborations within the various Science Plan Themes.
 
-```{r scienceplan, echo=FALSE, fig.cap=paste(input_dataframes$fig_captions[input_dataframes$fig_captions$`fig name`=="scienceplan","caption"]), fig.align='center', fig.width=6.5, fig.height=4.25,   label='scienceplan'}
+```{r scienceplan, echo=FALSE, fig.cap=paste(input_dataframes$fig_captions[input_dataframes$fig_captions$`fig name`=="scienceplan","caption"]), fig.align='center', fig.width=6.5, fig.height=4.25, label='scienceplan'}
 knitr::include_graphics("./_images/scienceplan.png")
 ```
 
@@ -210,25 +210,27 @@ The specific objectives of the survey are listed below; the emphasis will be bas
 
     -   Collection of pelagic gobies for basic biology studies.
 
-    -   Collection of jellyfish (Chrysaora and Aequorea) tissue for genetic analysis
 
 -   Other trawl-related sampling:
 
     -   Map occurrence, abundance and biological parameters (length, weight, sex, and maturity staging for males) of priority cartilaginous fish.
 
-    -   Jellyfish?
+        -   Collection of jellyfish (Chrysaora and Aequorea) tissue for genetic analysis 
+        
 
 -   Ichthyoplankton sampling:
 
-    -   Collection of ichhyoplankton samples (with custom-CUFES and only underway) during Leg 2 of the survey and from Line 61 to Line 80 only for mapping of sardine and round herring (and perhaps anchovy) egg distributions.
+    -   Collection of ichthyoplankton samples (with custom-CUFES and only underway) during Leg 2 of the survey and from Line 61 to Line 80 only for mapping of sardine and round herring (and perhaps anchovy) egg distributions.
+    
 
 -   Other objectives:
 
     -   On-the-job training in the various laboratories
 
     -   Communication through social media
+    
 
-**Note that there will be NO environmental sampling.**
+**Note that there will be NO fixed-station oceanographic sampling during the survey.**
 
 \newpage
 
