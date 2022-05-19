@@ -17,6 +17,7 @@ output:
 editor_options: 
   markdown: 
     wrap: sentence
+  chunk_output_type: console
 ---
 
 ```{r setup, include=FALSE}
@@ -76,7 +77,7 @@ set_flextable_defaults(big.mark = " ",
 
 # **SURVEY PLAN FOR** `r input_dataframes$surveyplantab$Survey`
 
-The survey will start in Walvis Bay, Namibia and end in Cape Town, South-Africa (Table \@ref(tab:surveyplantab)).
+The survey will start in Walvis Bay, Namibia and end in Cape Town, South Africa (Table \@ref(tab:surveyplantab)).
 
 ```{r surveyplantab, echo=FALSE, tidy=TRUE, label="surveyplantab"}
 ft_surveyplan <- flextable(input_dataframes$surveyplantab) %>% theme_booktabs(bold_header = TRUE) %>% bg(bg='transparent', part = "header") %>% ftExtra::colformat_md()
@@ -91,12 +92,12 @@ set_table_properties(ft_surveyplan,layout = "autofit")
 
 ## **Survey objectives**
 
-The overall objectives of this regional survey effort in the BCC (South-Africa, Namibia and Angola) area were discussed in connection with the EAF-Nansen Programme Annual Forum in Benin in 2019.
+The overall objectives of this regional survey effort in the BCC (South Africa, Namibia and Angola) area were discussed in connection with the EAF-Nansen Programme Annual Forum in Benin in 2019.
 These plans were not further developed because of the Covid-19 pandemic.
 As the surveys with the DFN vessel were resumed in 2021, a zoom meeting was held on 27 July 2021 to reschedule the proposed surveys and revise survey objectives as it may be desirable (Filomena Vaz Velho, Virgilio Estevao, Beau Tjizou, Paul Kainge, Janet Coetzee, Carl van der Lingen, Deon Durholtz, Gabriella Bianchi participated in the meeting).
 
 The general feedback indicated that the overall objectives as earlier agreed were still relevant.
-**Leg 4 consists of 3 surveys** that aim at covering the pelagic fish resources on the shelf and the upper slope outside South-Africa, Namibia and Angola.
+**Leg 4 consists of 3 surveys** that aim at covering the pelagic fish resources on the shelf and the upper slope outside South Africa, Namibia and Angola.
 While fishery resources represent the key priority, other aspects are also addressed to improve knowledge on composition and diversity of pelagic communities and habitats, understanding the environmental conditions within which they are found, including the presence of marine debris.
 Leg 4.1 is thus part of a larger effort, even though the focus will be on the biomass, population structure, distribution and behavioural patterns of the commercially important epipelagic fish species, as well as of mesopelagic fish species.
 
@@ -117,7 +118,7 @@ Sampling protocols have been standardized, to the extent possible, to allow comp
 Leg 4.1 will start on 11 June in Walvis Bay.
 The vessel will start the first acoustic transect off Orange River and work its way southwards, towards Port Alfred.
 There will be a port call in Cape Town on 26 June 2022.
-The vessel will return to Cape Town at latest on 12 July 2022.
+The vessel will return to Cape Town latest 12 July 2022.
 
 The Leg 4 area to be surveyed by the R/V *Dr Fridtjof Nansen* in 2022 includes the continental shelf and upper slope off south and southwest Africa.
 The area to be surveyed by the R/V *Dr Fridtjof Nansen* in Leg 4.1, along with the planned acoustic transects, is shown in Figure \@ref(fig:surveyareamap).
@@ -130,7 +131,7 @@ knitr::include_graphics("./_images/surveyareamap.png")
 ## **Proposed participation in different legs and experience required**
 
 Typically, the surveys with the R/V *Dr Fridtjof Nansen* include participations from different countries and institutions.
-Regarding qualifications, a mix of experienced scientists /technicians and less experienced ones, will receive on-the-job training in sampling procedures.
+Regarding qualifications, a mix of experienced and less experienced scientists /technicians, will receive on-the-job training in sampling procedures.
 An overview of the main types of expertise and number of participants required for Leg 4.1 is provided in [ANNEX I](#ANNEX_I) and the list of the planned survey participants for Leg 4.1 is shown in [ANNEX II](#ANNEX_II).
 
 It should be noted that a maximum number of 19 local participants can be allowed, in addition to the scientific crew from Norway and the DFN Core Team.
@@ -163,13 +164,6 @@ set_table_properties(ft_sciencethemestab,layout = "autofit")
 
 ```
 
-################\#
-
-[**For CL's and RC's attention:**]{.ul} In the table above projects as follow-up from the sampling conducted in this survey should be identified, as well as students/researchers that would like to work with these samples and data.
-Text in hashtags to be removed before the compilation of the final version of the SOs.
-**Changes should be made directly in the input_dataframes.xlsx.**
-
-################\#
 
 ## **Specific objectives and scientific questions for the survey**
 
@@ -218,10 +212,12 @@ The specific objectives of the survey are listed below; the emphasis will be bas
 
 -   Ichthyoplankton sampling:
 
-    -   Collection of ichthyoplankton samples (with custom-CUFES and only underway) during Leg 2 of the survey and from Line 61 to Line 80 only for mapping of sardine and round herring (and perhaps anchovy) egg distributions.
+    -   Collection of ichthyoplankton samples (with custom-CUFES and only underway) during Leg 2 of the survey and from Line 61 to Line 80 only for mapping of sardine and round herring (and, if present anchovy) egg distributions.
 
 -   Other objectives:
 
+    -   Standard collection of underway data with the thermosalinograph, meteorological station and the Acoustic Dopler Current Profiler
+    
     -   On-the-job training in the various laboratories
 
     -   Communication through social media
@@ -236,11 +232,11 @@ The specific objectives of the survey are listed below; the emphasis will be bas
 
 Transects will be surveyed southwards in ascending order of transect number (Fig. \@ref(fig:surveyareamap)).
 
-The ship will sample to at least Cape Agulhas (Transect 50) before returning to Cape Town to exchange scientists.
+The ship will sample until at least Cape Agulhas (Transect 50) before returning to Cape Town for exchange of scientists.
 
 As soon as possible, the ship will then return to Cape Agulhas and continue eastward as far as Port Alfred, returning to Cape Town at the end of the survey on 12th July 2022.
 
-The Cruise leader/Co-Cruise leader may, and is expected to, truncate, extend or omit lines where necessary (but in accordance with the transect ranking, Table 2) to maximise survey efficiency according to the fish distribution found, or to accommodate time constraints.
+The Cruise leader/Co-Cruise leader may, and is expected to, truncate, extend or omit lines where necessary (but in accordance with the transect ranking, Table 2) to maximize survey efficiency according to the fish distribution found, or to accommodate time constraints.
 
 As anchovy recruits, in particular, are likely to be concentrated close inshore, it is imperative that the inshore position of each transect, and the inshore transits between transects, be placed as close inshore as safety permits.
 
@@ -253,23 +249,27 @@ This ensures continuous acoustic data coverage along the intended transect line.
 
 Acoustic data at all available frequencies from the Simrad EK80 echo sounder operating in **CW (narrow band)** mode is to be collected continuously while the ship is steaming along and between transects.
 
-Acoustic data is to be logged to a depth of 250m when the water depth is less than 250m and to a depth of 500m when the depth exceeds 250m.
-This requires that the acoustic operator is at all times aware of the water depth and switches the maximum depth logged by the EK80 on time.
+Acoustic data is to be logged to a depth of 250 m when the water depth is less than 250 m and to a depth of 500 m when the depth exceeds 250 m.
+This requires that the acoustic operator at all times remains aware of the water depth and adjusts the maximum depth logged by the EK80 on time.
 
-Copies of the .Raw data files are to be stored on a removable hard drive for processing with Echoview.
+Copies of the .Raw data files and LSSS workfiles are to be stored on a removable hard drive for processing with Echoview.
 
 Weather and sea permitting, a constant survey speed of 10 knots will normally be maintained.
 However, at times the vessel may have to be slowed (at the request of the acoustic watch-keeper) to reduce acoustic noise.
 
 The pulse duration of all transducers is to be standardized at 1ms throughout the survey at a ping rate of 1ping s^-1^.
 
-The integrated echo intensities at 38 kHz, averaged over the water column, are to be converted to fish density on board using both echoview and the LSSS and anchovy, sardine, redeye, horse mackerel, lanternfish and lightfish abundance estimated as the survey progresses.
+The acoustic backscattering coefficient at 38 kHz integrated across the water column for the target species are to be estimated on board using both Echoview and the LSSS. Target species include sardine (“Pilchard”), anchovy, round herring (“Redeye”), horse mackerel, lanternfish and lightfish abundance estimates. Scrutinization exercises, i.e., splitting total backscatter into target/mix groups and non-targets such as plankton will be carried out twice daily. 
 
 The Captain/Navigating officer on watch must inform the acoustic watch keeper when the vessel starts/ends each transect or when the vessel crosses a boundary line between strata (see Fig. \@ref(fig:surveyareamap)) so that the ship's log and the time can be recorded for later use in data processing.
 
-EK80 and SU90 must run synchronized with each other (EK80 is the "master") and are the only active sonars used on this survey.
+\#################
+This part is to be clarified and adjusted accordingly prior to the survey and included/excluded from the final SO, as appropriate, i.e. include .
+**EK80 and SU90 must run synchronized with each other (EK80 is the "master") and are the only active sonars used on this survey. **
 
-ADCP's and bottom mapping sonars should be kept OFF while sailing on acoustic transect (can be used off-transect, such as during trawling).
+**ADCP's and bottom mapping sonars should be kept OFF while sailing on acoustic transect (can be used off-transect, such as during trawling).**
+
+\#################
 
 [**Sonar**]{.ul}
 
@@ -283,7 +283,7 @@ If time allows, scrutinizing of sonar data will be done daily.
 [**Midwater trawling**]{.ul}
 
 Frequent *ad hoc* target identification tows will be made at the request of the cruise leader/co-cruise leader, or the acoustic watch-keeper, using either the bottom trawl (Gisund Super) with floats, the small pelagic (Åkra trawl) or the large pelagic (MultPelt) trawl.
-If available, and if technical expertise is available to operate the DeepVision system, it should be installed in the MultPelt trawl and data logged for each trawl.
+If available, and if technical expertise is available to operate it, the DeepVision system will be installed and operated in the MultPelt trawl, with video data being logged for each trawl.
 
 Species composition, length frequencies and biological sampling has to be done for every trawl sample.
 The number of trawl samples will depend on the density and distribution of acoustic targets observed and the need for species identification.
@@ -304,15 +304,15 @@ Wind direction, wind speed, air pressure, relative humidity, air temperature and
 
 ### *Thermosalinograph*
 
-***Should this instrument collect data?***
+A SBE 21 SeaCAT Thermosalinograph (TSG) will run continuously during the survey, obtaining samples at 4 m depth to measure seawater salinity and temperature every 10 seconds. The 4 m engine cooling water intake is also equipped with a Turner Designs C3 Submersible Fluorometer with added turbidity detection capability.
 
 ### *Underway pCO~2~*
 
-***Should this instrument collect data?***
+Not relevant for the survey.
 
 ### *Current speed and direction measurements - ADCP*
 
-Not relevant for the survey.
+Ocean current data is collected with a vessel-mounted Teledyne RDI Ocean Surveyor Acoustic Doppler Profiler operating at 150 kHz with a depth range of 400 m. The ADCP runs in narrow band mode and averages data in 8 m vertical bins. Heading, pitch, roll and positional data are acquired by a Kongsberg Marine SEAPATH unit. Teledyne’s VmDAS software is used to collect the raw current data, whereas the data is processed using software created at IMR.
 
 ## **Hydrographic sampling in the water column**
 
@@ -343,8 +343,8 @@ Not relevant for the survey.
 Ichthyoplankton sampling will be conducted using a custom Continuous Underway Fish Egg Sampler (custom-CUFES) and only from Line 61 onwards to the end of the survey (Line 80).
 Ichthyoplankton samples are to be collected along EVERY survey transect and along **ALL** inshore and offshore transits.
 
-Ichthyoplankton sampling intervals will be of 30 minutes duration (equivalent to approximately 5 nautical miles of survey transect, and 15 000 litres assuming a flow rate of 500 l.min^-1^).
-The flow-rate is to be estimated once each interval by recording the time taken to fill a 25 litres plastic bucket).
+Ichthyoplankton sampling intervals will be of 30 minutes duration (equivalent to approximately 5 nautical miles of survey transect, and 15 000 liters assuming a flow rate of 500 l.min^-1^).
+The flow-rate is to be estimated once each interval by recording the time taken to fill a 25 liters plastic bucket).
 
 The ichthyoplankton sample should be examined under a dissection microscope immediately after collection (and before preservation), and on-board estimates of sardine and round herring eggs and comments (e.g. lots of copepods, no copepods, etc.) should be recorded in the ichthyoplankton sampling logbook for each sample together with pertinent information (date, sample number, sample grid, begin and end times, and estimated flow rate).
 
@@ -368,13 +368,13 @@ Not relevant for the survey.
 
 ## **Microplastics**
 
-***Not relevant for the survey??? Then why is Peter K and BEG listed in the Themes***
+Not relevant for the survey.
 
 ## **Biological sampling of fisheries resources**
 
-According to the size of the catch, either the whole catch is sorted and measured or subsamples are taken.
+According to the size of the catch, either the whole catch is sorted and measured or subsamples are collected and total catch estimated from sample ratio.
 
-At all trawl hauls, the catch is sorted according to species, and number and weight measurements will be taken for all ***fish???*** species.vFor priority species length and weight are recorded using an electronic fish meter connected to a standard data acquisition system used onboard the vessel (Fish2Data and Biotic Editor) connected on the server of the vessel.
+At all trawl hauls, the catch is sorted according to species, and number and weight measurements will be taken for all species. For priority species length and weight are recorded using an electronic fish meter connected to a standard data acquisition system used on board the vessel (Fish2Data and Biotic Editor) connected on the server of the vessel.
 In addition, further biological sampling will be done for pre-agreed priority species (Table \@ref(tab:biosamplingtab)).
 
 <!---BLOCK_LANDSCAPE_START--->
@@ -406,7 +406,7 @@ The Fish2Data software will be pre-configured with the sampling protocol and wil
 
 ### Demersal species
 
-***Not relevant for the survey. So what is the plan with demersal fish caught in the shallow with the demersal trawl with floats???***
+***Not relevant for the survey.***
 
 ### Pelagic species
 
@@ -502,7 +502,7 @@ These data are then to be exported (in CSV format) to the ACCESS AMTS database a
 All retained samples are to be labelled in the usual way with the Station number, Grid number, Date, Species and sample purpose.
 Printouts of each trawl must be provided to the acoustic team timeously.
 
-The fish team leader of each watch is responsible for validation of the AMTS data: **SUCH VALIDATION MUST BE DONE AFTER EACH TRAWL.**
+The fish team leader of each watch is responsible for validation of the data entered to the on-board electronic data collection system. Exported data for the AMTS database are the responsibility of South African survey participants in the fish lab: **SUCH VALIDATION MUST BE DONE AFTER EACH TRAWL**. 
 
 The trawling/acoustic watch keeper and the fish sampling team leader on watch should work interactively at all stages to ensure the optimum allocation of sampling effort.
 
@@ -519,7 +519,7 @@ Not relevant for the survey.
 Individual length and weight, sex and maturity status shall be measured of all cartilaginous fish caught.
 
 Vulnerable species that are alive shall be released as soon as possible after the catch is on deck.
-If the individuals are too large to weight individually only length is to be measured.
+If the individuals are too large to weigh individually only length is to be measured.
 
 The protocol that will be followed for cartilaginous will be the same as for demersal / pelagic resources described above.
 
@@ -550,19 +550,16 @@ Biomass indices will be estimated as total biomass and by length groups (for the
 
 Prior to the survey the EAF Nansen Programme organised a pelagic biomass estimation course (9-13 May 2022) and the survey participants that will have taken part in the course will be given the chance to apply their newly acquired skills in biomass estimation using StoX.
 
-***THIS SECTION NEEDS UPDATING*** ######################## Priority pelagic species for biomass estimation by acoustics and targeted trawl sampling: *Sardinella aurita* and *Sardinella maderensis* combined as *Sardinella* spp., *Trachurus* spp., Pelagic Group I, and Pelagic Group II.
-
-Acoustic data post-processing in LSSS is done daily while on survey.
-Various acoustic categories will be used to split and assign acoustic backscatter: other, plankton, Sardinella spp., Pelagic Group I and Pelagic Group II (see Annex ?? for detailed fish species list) ######################\# Allocation of acoustic densities to species groups will be done according to Table \@ref(tab:acousticcattab).
+Acoustic data post-processing in LSSS is to be done daily during the survey. Allocation of acoustic densities to species groups will be done according to Table \@ref(tab:acousticcattab).
 
 ```{r acousticcattab, echo=FALSE, tidy=TRUE, label="acousticcattab"}
 ft_acousticcattab <- flextable(input_dataframes$acousticcattab) %>% theme_booktabs(bold_header = TRUE) %>% bg(bg='transparent', part = "header") %>% ftExtra::colformat_md()
 
-ft_acousticcattab <- flextable::height(ft_acousticcattab,  height = .5, unit = "cm")
+ft_acousticcattab <- flextable::height(ft_acousticcattab,  height = .45, unit = "cm")
 ft_acousticcattab <- flextable::hrule(ft_acousticcattab, rule = "exact")
 ft_acousticcattab <- flextable::valign(ft_acousticcattab, valign = "top", part = "body")
 ft_acousticcattab <- flextable::fontsize(ft_acousticcattab, size = 7.5, part = "body")
-ft_acousticcattab <- line_spacing(ft_acousticcattab, space = 1.0, part = "all")
+ft_acousticcattab <- line_spacing(ft_acousticcattab, space = 0.75, part = "all")
 
 # Add caption
 autonum <- run_autonum(seq_id = "tab", bkm = "acousticcattab", pre_label = "Table ")
@@ -868,30 +865,30 @@ set_table_properties(ft_transectranktab,layout = "autofit")
 
 ```
 
-\newpage
+<!-- \newpage -->
 
-## ANNEX X. Collection of genetic samples - protocol
+<!-- ## ANNEX X. Collection of genetic samples - protocol -->
 
--   Collect muscle (or fin tip) samples for genetic analysis of adult orange roughy;
+<!-- -   Collect muscle (or fin tip) samples for genetic analysis of adult orange roughy; -->
 
--   Collect 30-50 samples per trawl.
-    Samples should not come all from the same trawl, but should be spread through degree of latitude;
+<!-- -   Collect 30-50 samples per trawl. -->
+<!--     Samples should not come all from the same trawl, but should be spread through degree of latitude; -->
 
--   With sterilized scissors remove a small piece of muscle (or fin) from the fish.
-    Refer to figure \@ref(fig:geneticsamplingprot) for rough amount;
+<!-- -   With sterilized scissors remove a small piece of muscle (or fin) from the fish. -->
+<!--     Refer to figure \@ref(fig:geneticsamplingprot) for rough amount; -->
 
--   Clean the scalpel/scissors between individuals either by passing it through a flame or through a paper towel soaked with 96% ethanol;
+<!-- -   Clean the scalpel/scissors between individuals either by passing it through a flame or through a paper towel soaked with 96% ethanol; -->
 
--   Place tissue in a pre-filled (with 96% or 100% ethanol) 2 mm vial labelled with a unique tag;
+<!-- -   Place tissue in a pre-filled (with 96% or 100% ethanol) 2 mm vial labelled with a unique tag; -->
 
--   Ethanol should cover the entire sample;
+<!-- -   Ethanol should cover the entire sample; -->
 
--   Attempts should be made to sample fish of a similar size from all selected trawls but where this is not possible the largest fish should be retained;
+<!-- -   Attempts should be made to sample fish of a similar size from all selected trawls but where this is not possible the largest fish should be retained; -->
 
--   If possible, record biological information (size, weight, sex, reproductive stage) for each sample;
+<!-- -   If possible, record biological information (size, weight, sex, reproductive stage) for each sample; -->
 
--   Samples should be kept at 4^o^C until use, and if long-term storage is needed, ethanol should be checked periodically and refilled to ensure that the sample will not dry out.
+<!-- -   Samples should be kept at 4^o^C until use, and if long-term storage is needed, ethanol should be checked periodically and refilled to ensure that the sample will not dry out. -->
 
-```{r geneticsamplingprot, echo=FALSE, fig.cap=paste(input_dataframes$fig_captions[input_dataframes$fig_captions$`fig name`=="geneticsamplingprot","caption"]), fig.align='center', fig.width=3, fig.height=2.75,  label='geneticsamplingprot'}
-knitr::include_graphics("./_images/geneticsamplingprot.png")
-```
+<!-- ```{r geneticsamplingprot, echo=FALSE, fig.cap=paste(input_dataframes$fig_captions[input_dataframes$fig_captions$`fig name`=="geneticsamplingprot","caption"]), fig.align='center', fig.width=3, fig.height=2.75,  label='geneticsamplingprot'} -->
+<!-- knitr::include_graphics("./_images/geneticsamplingprot.png") -->
+<!-- ``` -->
