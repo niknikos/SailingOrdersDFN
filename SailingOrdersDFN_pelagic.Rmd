@@ -164,7 +164,6 @@ set_table_properties(ft_sciencethemestab,layout = "autofit")
 
 ```
 
-
 ## **Specific objectives and scientific questions for the survey**
 
 The specific objectives of the survey are listed below; the emphasis will be based on local needs and scientific importance.
@@ -217,7 +216,7 @@ The specific objectives of the survey are listed below; the emphasis will be bas
 -   Other objectives:
 
     -   Standard collection of underway data with the thermosalinograph, meteorological station and the Acoustic Dopler Current Profiler
-    
+
     -   On-the-job training in the various laboratories
 
     -   Communication through social media
@@ -259,17 +258,18 @@ However, at times the vessel may have to be slowed (at the request of the acoust
 
 The pulse duration of all transducers is to be standardized at 1ms throughout the survey at a ping rate of 1ping s^-1^.
 
-The acoustic backscattering coefficient at 38 kHz integrated across the water column for the target species are to be estimated on board using both Echoview and the LSSS. Target species include sardine (“Pilchard”), anchovy, round herring (“Redeye”), horse mackerel, lanternfish and lightfish abundance estimates. Scrutinization exercises, i.e., splitting total backscatter into target/mix groups and non-targets such as plankton will be carried out twice daily. 
+The acoustic backscattering coefficient at 38 kHz integrated across the water column for the target species is to be estimated on board using both Echoview and the LSSS.
+Target species include sardine ("Pilchard"), anchovy, round herring ("Redeye"), horse mackerel, lanternfish and lightfish with aim to produce abundance estimates.
+Scrutinization exercises, i.e., splitting total backscatter into target/mix groups and non-targets such as plankton will be carried out twice daily.
 
 The Captain/Navigating officer on watch must inform the acoustic watch keeper when the vessel starts/ends each transect or when the vessel crosses a boundary line between strata (see Fig. \@ref(fig:surveyareamap)) so that the ship's log and the time can be recorded for later use in data processing.
 
-\#################
-This part is to be clarified and adjusted accordingly prior to the survey and included/excluded from the final SO, as appropriate, i.e. include .
-**EK80 and SU90 must run synchronized with each other (EK80 is the "master") and are the only active sonars used on this survey. **
+################\# This part is to be clarified and adjusted accordingly prior to the survey and included/excluded from the final SO, as appropriate, i.e. include .
+**EK80 and SU90 must run synchronized with each other (EK80 is the "master") and are the only active sonars used on this survey.**
 
 **ADCP's and bottom mapping sonars should be kept OFF while sailing on acoustic transect (can be used off-transect, such as during trawling).**
 
-\#################
+################\#
 
 [**Sonar**]{.ul}
 
@@ -304,7 +304,8 @@ Wind direction, wind speed, air pressure, relative humidity, air temperature and
 
 ### *Thermosalinograph*
 
-A SBE 21 SeaCAT Thermosalinograph (TSG) will run continuously during the survey, obtaining samples at 4 m depth to measure seawater salinity and temperature every 10 seconds. The 4 m engine cooling water intake is also equipped with a Turner Designs C3 Submersible Fluorometer with added turbidity detection capability.
+A SBE 21 SeaCAT Thermosalinograph (TSG) will run continuously during the survey, obtaining samples at 4 m depth to measure seawater salinity and temperature every 10 seconds.
+The 4 m engine cooling water intake is also equipped with a Turner Designs C3 Submersible Fluorometer with added turbidity detection capability.
 
 ### *Underway pCO~2~*
 
@@ -312,7 +313,10 @@ Not relevant for the survey.
 
 ### *Current speed and direction measurements - ADCP*
 
-Ocean current data is collected with a vessel-mounted Teledyne RDI Ocean Surveyor Acoustic Doppler Profiler operating at 150 kHz with a depth range of 400 m. The ADCP runs in narrow band mode and averages data in 8 m vertical bins. Heading, pitch, roll and positional data are acquired by a Kongsberg Marine SEAPATH unit. Teledyne’s VmDAS software is used to collect the raw current data, whereas the data is processed using software created at IMR.
+Ocean current data is collected with a vessel-mounted Teledyne RDI Ocean Surveyor Acoustic Doppler Profiler operating at 150 kHz with a depth range of 400 m.
+The ADCP runs in narrow band mode and averages data in 8 m vertical bins.
+Heading, pitch, roll and positional data are acquired by a Kongsberg Marine SEAPATH unit.
+Teledyne's VmDAS software is used to collect the raw current data, whereas the data is processed using software created at IMR.
 
 ## **Hydrographic sampling in the water column**
 
@@ -374,7 +378,8 @@ Not relevant for the survey.
 
 According to the size of the catch, either the whole catch is sorted and measured or subsamples are collected and total catch estimated from sample ratio.
 
-At all trawl hauls, the catch is sorted according to species, and number and weight measurements will be taken for all species. For priority species length and weight are recorded using an electronic fish meter connected to a standard data acquisition system used on board the vessel (Fish2Data and Biotic Editor) connected on the server of the vessel.
+At all trawl hauls, the catch is sorted according to species, and number and weight measurements will be taken for all species.
+For priority species length and weight are recorded using an electronic fish meter connected to a standard data acquisition system used on board the vessel (Fish2Data and Biotic Editor) connected on the server of the vessel.
 In addition, further biological sampling will be done for pre-agreed priority species (Table \@ref(tab:biosamplingtab)).
 
 <!---BLOCK_LANDSCAPE_START--->
@@ -502,7 +507,8 @@ These data are then to be exported (in CSV format) to the ACCESS AMTS database a
 All retained samples are to be labelled in the usual way with the Station number, Grid number, Date, Species and sample purpose.
 Printouts of each trawl must be provided to the acoustic team timeously.
 
-The fish team leader of each watch is responsible for validation of the data entered to the on-board electronic data collection system. Exported data for the AMTS database are the responsibility of South African survey participants in the fish lab: **SUCH VALIDATION MUST BE DONE AFTER EACH TRAWL**. 
+The fish team leader of each watch is responsible for validation of the data entered to the on-board electronic data collection system.
+Exported data for the AMTS database are the responsibility of South African survey participants in the fish lab: **SUCH VALIDATION MUST BE DONE AFTER EACH TRAWL**.
 
 The trawling/acoustic watch keeper and the fish sampling team leader on watch should work interactively at all stages to ensure the optimum allocation of sampling effort.
 
@@ -548,9 +554,10 @@ The biomass indices of priority pelagic fish (see below) will be estimated by th
 
 Biomass indices will be estimated as total biomass and by length groups (for the species with sufficient length data).
 
-Prior to the survey the EAF Nansen Programme organised a pelagic biomass estimation course (9-13 May 2022) and the survey participants that will have taken part in the course will be given the chance to apply their newly acquired skills in biomass estimation using StoX.
+<!-- Prior to the survey the EAF Nansen Programme organised a pelagic biomass estimation course (9-13 May 2022) and the survey participants that will have taken part in the course will be given the chance to apply their newly acquired skills in biomass estimation using StoX. -->
 
-Acoustic data post-processing in LSSS is to be done daily during the survey. Allocation of acoustic densities to species groups will be done according to Table \@ref(tab:acousticcattab).
+Acoustic data post-processing in LSSS is to be done daily during the survey.
+Allocation of acoustic densities to species groups will be done according to Table \@ref(tab:acousticcattab).
 
 ```{r acousticcattab, echo=FALSE, tidy=TRUE, label="acousticcattab"}
 ft_acousticcattab <- flextable(input_dataframes$acousticcattab) %>% theme_booktabs(bold_header = TRUE) %>% bg(bg='transparent', part = "header") %>% ftExtra::colformat_md()
@@ -872,10 +879,12 @@ set_table_properties(ft_transectranktab,layout = "autofit")
 <!-- -   Collect muscle (or fin tip) samples for genetic analysis of adult orange roughy; -->
 
 <!-- -   Collect 30-50 samples per trawl. -->
+
 <!--     Samples should not come all from the same trawl, but should be spread through degree of latitude; -->
 
 <!-- -   With sterilized scissors remove a small piece of muscle (or fin) from the fish. -->
-<!--     Refer to figure \@ref(fig:geneticsamplingprot) for rough amount; -->
+
+<!--     Refer to figure @ref(fig:geneticsamplingprot) for rough amount; -->
 
 <!-- -   Clean the scalpel/scissors between individuals either by passing it through a flame or through a paper towel soaked with 96% ethanol; -->
 
@@ -890,5 +899,7 @@ set_table_properties(ft_transectranktab,layout = "autofit")
 <!-- -   Samples should be kept at 4^o^C until use, and if long-term storage is needed, ethanol should be checked periodically and refilled to ensure that the sample will not dry out. -->
 
 <!-- ```{r geneticsamplingprot, echo=FALSE, fig.cap=paste(input_dataframes$fig_captions[input_dataframes$fig_captions$`fig name`=="geneticsamplingprot","caption"]), fig.align='center', fig.width=3, fig.height=2.75,  label='geneticsamplingprot'} -->
+
 <!-- knitr::include_graphics("./_images/geneticsamplingprot.png") -->
+
 <!-- ``` -->
