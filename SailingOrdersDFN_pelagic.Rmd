@@ -256,7 +256,7 @@ Copies of the .Raw data files and LSSS workfiles are to be stored on a removable
 Weather and sea permitting, a constant survey speed of 10 knots will normally be maintained.
 However, at times the vessel may have to be slowed (at the request of the acoustic watch-keeper) to reduce acoustic noise.
 
-The pulse duration of all transducers is to be standardized at 1ms throughout the survey at a ping rate of 1ping s^-1^.
+The pulse duration of all transducers is to be standardized at 1ms throughout the survey at a ping rate of 1 ping s^-1^.
 
 The acoustic backscattering coefficient at 38 kHz integrated across the water column for the target species is to be estimated on board using both Echoview and the LSSS.
 Target species include sardine ("Pilchard"), anchovy, round herring ("Redeye"), horse mackerel, lanternfish and lightfish with aim to produce abundance estimates.
@@ -264,12 +264,9 @@ Scrutinization exercises, i.e., splitting total backscatter into target/mix grou
 
 The Captain/Navigating officer on watch must inform the acoustic watch keeper when the vessel starts/ends each transect or when the vessel crosses a boundary line between strata (see Fig. \@ref(fig:surveyareamap)) so that the ship's log and the time can be recorded for later use in data processing.
 
-################\# This part is to be clarified and adjusted accordingly prior to the survey and included/excluded from the final SO, as appropriate, i.e. include .
 **EK80 and SU90 must run synchronized with each other (EK80 is the "master") and are the only active sonars used on this survey.**
 
 **ADCP's and bottom mapping sonars should be kept OFF while sailing on acoustic transect (can be used off-transect, such as during trawling).**
-
-################\#
 
 [**Sonar**]{.ul}
 
