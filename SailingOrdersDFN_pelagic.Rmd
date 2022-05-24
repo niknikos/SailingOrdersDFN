@@ -81,7 +81,6 @@ set_flextable_defaults(big.mark = " ",
 
 The survey will start in Walvis Bay, Namibia and end in Cape Town, South Africa (Table \@ref(tab:surveyplantab)).
 
-
 ```{r surveyplantab, echo=FALSE, tidy=TRUE, label="surveyplantab"}
 ft_surveyplan <- flextable(input_dataframes$surveyplantab) %>% theme_booktabs(bold_header = TRUE) %>% bg(bg='transparent', part = "header") %>% ftExtra::colformat_md()
 ft_surveyplan <- line_spacing(ft_surveyplan, space = 1.0, part = "all")
@@ -93,8 +92,6 @@ ft_surveyplan <- set_caption(ft_surveyplan, caption = paste(input_dataframes$tab
 # # set table width to span page width
 set_table_properties(ft_surveyplan,layout = "autofit")
 ```
-
-
 
 ## **Survey objectives**
 
@@ -109,8 +106,6 @@ While fishery resources represent the key priority, other aspects are also addre
 Leg 4.1 is thus part of a larger effort, even though the focus will be on the biomass, population structure, distribution and behavioral patterns of the commercially important epipelagic fish species, as well as of mesopelagic fish species.
 
 The collected data will be used to prepare a survey report, and various scientific reports/papers as part of the EAF-Nansen Science Plan, as well as provide input to the regional fisheries resource assessment work (Benguela Current Convention (BCC): <https://www.benguelacc.org/>).
-
-
 
 ## **Survey area**
 
@@ -136,8 +131,6 @@ Based on past knowledge about the resources, the coverage will be largely limite
 knitr::include_graphics("./_images/surveyareamap.png")
 ```
 
-
-
 ## **Proposed participation in different legs and experience required**
 
 Typically, the surveys with the R/V *Dr. Fridtjof Nansen* include participants from different countries and institutions.
@@ -146,10 +139,7 @@ An overview of the main types of expertise and number of participants required f
 
 It should be noted that a maximum number of 19 local participants can be allowed, in addition to the scientific crew from Norway and the DFN Core Team.
 
-
-
 # **SCIENTIFIC RATIONALE**
-
 
 The overall framework and rationale for the surveys carried out by the R/V *Dr. Fridtjof Nansen* are provided by the EAF-Nansen Programme Science Plan which covers three main pillars (Figure \@ref(fig:scienceplan)).
 Within this framework, the scope and objectives of the surveys in 2022 have been identified with partners, based on national and regional priorities.
@@ -159,9 +149,7 @@ In addition, data recorded, and samples collected during the survey will be anal
 knitr::include_graphics("./_images/scienceplan.png")
 ```
 
-
 An overview of the Science Plan themes for which this survey is most relevant and associated projects is provided in Table \@ref(tab:sciencethemestab).
-
 
 ```{r sciencethemestab, echo=FALSE, tidy=TRUE, label="sciencethemestab"}
 ft_sciencethemestab <- flextable(input_dataframes$sciencethemestab) %>% theme_booktabs(bold_header = TRUE) %>% bg(bg='transparent', part = "header") %>% ftExtra::colformat_md()
@@ -177,20 +165,11 @@ set_table_properties(ft_sciencethemestab,layout = "autofit")
 
 ```
 
-
-
-
-
-
-
-
 ## **Specific objectives and scientific questions for the survey**
-
-
 
 The specific objectives of the Leg 4.1 survey are listed below; emphasis will be placed on local needs and scientific importance.
 
--   Acoustic sampling:
+-   **Acoustic sampling**:
 
     -   Estimation of the biomass and population size structure of anchovy, sardine, round herring, horse mackerel and meso-pelagic fish off South Africa by means of echo-integration and midwater trawling.
 
@@ -199,7 +178,7 @@ The specific objectives of the Leg 4.1 survey are listed below; emphasis will be
 
     -   Mapping spatial distribution of commercially harvested pelagic and mesopelagic fish.
 
--   Fish biological sampling:
+-   **Fish biological sampling**:
 
     -   Species composition and diversity of the pelagic and mesopelagic communities (all species caught in the pelagic trawl)
 
@@ -226,17 +205,19 @@ The specific objectives of the Leg 4.1 survey are listed below; emphasis will be
 
     -   Collection of pelagic gobies for basic biology studies.
 
--   Other trawl-related sampling:
+-   **Other trawl-related sampling**:
 
     -   Map occurrence, abundance and biological parameters (length, weight, sex, and maturity staging for males) of priority cartilaginous fish.
 
-    -   Collection of jellyfish (Chrysaora and Aequorea) tissue for genetic analysis
+    -   Collection of jellyfish (*Chrysaora* spp. and *Aequorea* spp.) tissue for genetic analysis
 
--   Ichthyoplankton sampling:
+    -   Size and weight measurements of *Chrysaora fulgida*
+
+-   **Ichthyoplankton sampling**:
 
     -   Collection of ichthyoplankton samples (with custom-CUFES and only underway) during part B of the survey and from Line 61 to Line 80 only for mapping of sardine and round herring (and, if present anchovy) egg distributions.
 
--   Other objectives:
+-   **Other objectives**:
 
     -   Standard collection of underway data with the thermosalinograph, meteorological station and the Acoustic Dopler Current Profiler
 
@@ -246,12 +227,9 @@ The specific objectives of the Leg 4.1 survey are listed below; emphasis will be
 
 **Note that there will be NO fixed-station oceanographic sampling during the survey.**
 
-
-
 # **SAMPLING METHODS**
 
 ## **Survey design**
-
 
 Transects will be surveyed southwards in ascending order of transect number (Fig. \@ref(fig:surveyareamap)).
 
@@ -317,8 +295,6 @@ After completion of the trawl, the ship is to return to the point at which the s
 
 If there **are strong echoes on the echogram, and a subsequent trawl fails to collect a decent sample (at least 40 fish of the dominant species), the acoustic operator will need to request another trawl straight away to try and get a representative sample.**
 
-
-
 ## **Meteorological and hydrographic sampling in surface water**
 
 ### *Weather Station*
@@ -341,8 +317,6 @@ The ADCP runs in narrow band mode and averages data in 8 m vertical bins.
 Heading, pitch, roll and positional data are acquired by a Kongsberg Marine SEAPATH unit.
 Teledyne's VmDAS software is used to collect the raw current data, whereas the data is processed using software created at IMR.
 
-
-
 ## **Hydrographic sampling in the water column**
 
 No hydrographic sampling in the water column is foreseen to take place during the survey.
@@ -359,19 +333,13 @@ No hydrographic sampling in the water column is foreseen to take place during th
 
 <!-- Not relevant for the survey. -->
 
-
-
 <!-- ## **Primary productivity** -->
 
 <!-- Not relevant for the survey. -->
 
-
-
 <!-- ## **Zooplankton** -->
 
 <!-- Not relevant for the survey. -->
-
-
 
 ## **Ichthyoplankton**
 
@@ -390,8 +358,6 @@ Fish team members should alternate with regard to ichthyoplankton sampling dutie
 
 Ichthyoplankton samples are to be preserved in 5% formalin in plastic sample jars with the sample information written on a label placed inside the jar and on the lid of the jar.
 
-
-
 ## **Benthos and benthic habitats**
 
 ### *Bottom topography*
@@ -403,13 +369,9 @@ The information is also registered in the "Survey Logger" (Toktlogger) system, t
 
 Not relevant for the survey.
 
-
-
 <!-- ## **Microplastics** -->
 
 <!-- Not relevant for the survey. -->
-
-
 
 ## **Biological sampling of fisheries resources**
 
@@ -419,7 +381,7 @@ At all trawl hauls, the catch is sorted according to species, and number and wei
 For the defined priority species length and weight are recorded using an electronic fish meter connected to a standard data acquisition system used on board the vessel (Fish2Data and Biotic Editor) that is connected to the server of the vessel.
 Biological sampling will be completed for defined priority species (Table \@ref(tab:biosamplingtab)).
 
-The fish lab workflow overview and guidelines on the detailed sampling protocols in the fish lab are described in [ANNEX III](#ANNEX_III) and [ANNEX IV](#ANNEX_IV). As a preparation for the work in the fish lab, an onboard training course on the use of the electronic fish meter, Fish2Data and Biotic Editor software will be provided at the beginning of the survey.
+The fish lab workflow overview and the specific scales to be used on the survey are described in [ANNEX III](#ANNEX_III) and [ANNEX IV](#ANNEX_IV). As a preparation for the work in the fish lab, an onboard training course on the use of the electronic fish meter, Fish2Data and Biotic Editor software will be provided at the beginning of the survey.
 
 The Fish2Data software will be pre-configured with the sampling protocol and will be accessible through the iPads facilitating the biological measurements.
 
@@ -473,7 +435,7 @@ Retain anchovy, sardine, and round herring for later collection of biological da
 
 Care should be taken that this sub-sample covers the size range observed in the length frequency distribution.
 
-The wet body weight (to the nearest 0.1 g) of each fish is to be measured, then the visceral cavity of each fish must be opened and their sex, gonad maturity stage and fat stage assigned following visual assessment of their gonads and mesenteric fat levels [ANNEX III](#ANNEX_III) and [ANNEX IV](#ANNEX_IV) and recorded for each fish on the data sheet / electronic system provided (corresponding to the unique number, and caudal length assigned to each fish in point 2 above).
+The wet body weight (to the nearest 0.1 g) of each fish is to be measured, then the visceral cavity of each fish must be opened and their sex, gonad maturity stage and fat stage assigned following visual assessment of their gonads and mesenteric fat levels ([ANNEX IV](#ANNEX_IV)) and recorded for each fish on the data sheet / electronic system provided (corresponding to the unique number, and caudal length assigned to each fish in point 2 above).
 
 **LENGTH FREQUENCY DETERMINATIONS AND FULL BIOLOGICALS MUST BE DONE FOR EVERY SINGLE TRAWL.**
 
@@ -604,7 +566,8 @@ Biomass indices will be estimated as total biomass per species per stratum and a
 
 Biomass indices will be estimated as total biomass and by length groups (for the species with sufficient length data).
 
-Acoustic data post-processing in LSSS and Echoview is to be done daily during the survey. Allocation of acoustic densities to species groups will be done according to Table \@ref(tab:acousticcattab) for the relevant to the survey acoustic groups only.
+Acoustic data post-processing in LSSS and Echoview is to be done daily during the survey.
+Allocation of acoustic densities to species groups will be done according to Table \@ref(tab:acousticcattab) for the relevant to the survey acoustic groups only.
 
 ```{r acousticcattab, echo=FALSE, tidy=TRUE, label="acousticcattab"}
 ft_acousticcattab <- flextable(input_dataframes$acousticcattab) %>% theme_booktabs(bold_header = TRUE) %>% bg(bg='transparent', part = "header") %>% ftExtra::colformat_md()
@@ -631,11 +594,11 @@ set_table_properties(ft_acousticcattab,layout = "autofit")
 
 In line with the Nansen Data Policy, the Cruise Leader is to ensure that each national institution represented in the survey receives a copy of the draft report and the basic data (e.g. catch data) pertaining to the particular survey and for **their national waters** before leaving the vessel.
 
-An overview of the equipment that is going to be used for the collection of the various data can be found in Table \@ref(tab:equipmenttab) ([ANNEX VI](#ANNEX_VI)).
+An overview of the equipment that is going to be used for the collection of the various data can be found in Table \@ref(tab:equipmenttab) ([ANNEX V](#ANNEX_V)).
 
-The different types of data expected to be recorded, their storage and delivery can be found in Table \@ref(tab:datahandovertab) ([ANNEX VII](#ANNEX_VII)).
+The different types of data expected to be recorded, their storage and delivery can be found in Table \@ref(tab:datahandovertab) ([ANNEX VI](#ANNEX_VI)).
 
-Finally, the samples to be collected, their preservation and planned follow-up work is detailed in Table \@ref(tab:collectedsamplestab) ([ANNEX VIII](#ANNEX_VIII)).
+Finally, the samples to be collected, their preservation and planned follow-up work is detailed in Table \@ref(tab:collectedsamplestab) ([ANNEX VII](#ANNEX_VII)).
 
 The Cruise Leader is expected to document what data and samples have been shared and with whom.
 
@@ -728,6 +691,10 @@ set_table_properties(ft_plannedparticipantstab,layout = "autofit")
 knitr::include_graphics("./_images/catchsamplingworkflow.png")
 ```
 
+\newpage
+
+## **ANNEX IV. Non-standard scales** {#ANNEX_IV .unnumbered}
+
 <br>
 
 ```{r matstagetab, echo=FALSE, tidy=TRUE, label="matstagetab"}
@@ -793,15 +760,7 @@ knitr::include_graphics("./_images/sardinefat.png")
 
 \newpage
 
-## **ANNEX IV. Either to be removed or filled in properly** {#ANNEX_IV .unnumbered}
-
-\newpage
-
-## **ANNEX V. Survey-specific additional sampling** {#ANNEX_V .unnumbered}
-
-\newpage
-
-## **ANNEX VI. Overview of component sampled and equipment used during the survey** {#ANNEX_VI .unnumbered}
+## **ANNEX V. Overview of component sampled and equipment used during the survey** {#ANNEX_VI .unnumbered}
 
 ```{r equipmenttab, echo=FALSE, tidy=TRUE, label="equipmenttab"}
 ft_equipmenttab <- flextable(input_dataframes$equipmenttab) %>% theme_booktabs(bold_header = TRUE) %>% bg(bg='transparent', part = "header") 
@@ -827,7 +786,7 @@ set_table_properties(ft_equipmenttab,layout = "autofit")
 
 \newpage
 
-## **ANNEX VII. Data to be collected and handover plan** {#ANNEX_VII .unnumbered}
+## **ANNEX VI. Data to be collected and handover plan** {#ANNEX_VII .unnumbered}
 
 ```{r datahandovertab, echo=FALSE, tidy=TRUE, label="datahandovertab"}
 datahandovertab <- input_dataframes$datahandovertab %>% 
@@ -852,7 +811,7 @@ set_table_properties(ft_datahandovertab,layout = "autofit")
 
 <!---BLOCK_LANDSCAPE_START--->
 
-## **ANNEX VIII. Samples to be collected, preservation and follow-up work** {#ANNEX_VIII .unnumbered}
+## **ANNEX VII. Samples to be collected, preservation and follow-up work** {#ANNEX_VIII .unnumbered}
 
 ```{r collectedsamplestab, echo=FALSE, tidy=TRUE, label="collectedsamplestab"}
 collectedsamplestab <- input_dataframes$collectedsamplestab %>% 
@@ -884,7 +843,7 @@ set_table_properties(ft_collectedsamplestab,layout = "autofit")
 
 \newpage
 
-## ANNEX IX. Acoustics transects
+## ANNEX VIII. Acoustics transects
 
 ```{r transectpostab, echo=FALSE, tidy=TRUE, label="transectpostab"}
 ft_transectpostab <- flextable(input_dataframes$transectpostab) %>% theme_booktabs(bold_header = TRUE) %>% bg(bg='transparent', part = "header") 
