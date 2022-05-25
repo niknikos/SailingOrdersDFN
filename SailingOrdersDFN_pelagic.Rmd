@@ -171,10 +171,10 @@ The specific objectives of the Leg 4.1 survey are listed below; emphasis will be
 
 -   **Acoustic sampling**:
 
-    -   Estimation of the biomass and population size structure of anchovy, sardine, round herring, horse mackerel and meso-pelagic fish off South Africa by means of echo-integration and midwater trawling.
-
     -   Provision of acoustic backscatter estimates (as a proxy for biomass) for the following acoustics groups: sardine ("Pilchard"), anchovy, round herring ("Redeye"), horse mackerel, lanternfish, lightfish and jellyfish.
         Other scatterers will be allocated to "Mackerel", "Pelagic Group I" (cluepeoids), "Pelagic Group II" (carangids, scombrids), "Demersal fish", "Mesopelagic fish", "Plankton" or "Other", as appropriate.
+    
+    -   Estimation of the biomass and population size structure of anchovy, sardine, round herring, horse mackerel and meso-pelagic fish off South Africa by means of echo-integration and midwater trawling.
 
     -   Mapping spatial distribution of commercially harvested pelagic and mesopelagic fish.
 
@@ -250,8 +250,7 @@ This ensures continuous acoustic data coverage along the intended transect line.
 
 Acoustic data at all available frequencies (18, 38, 70, 120, 200 and 33 kHz) from the Simrad EK80 echo sounder operating in **CW (narrow band)** mode is to be collected continuously while the ship is steaming along and between transects.
 
-Acoustic data is to be logged to 500 m depth and adjusted according to bottom depth in shallow waters.
-This requires that the acoustic operators at all times remain aware of the water depth and adjust the maximum depth logged by the EK80 as appropriate.
+Acoustic data is to be logged to 500 m depth, with range adjusted according to bottom depth in shallow waters. This requires that the acoustic operators remain vigilant of the water depth and adjust the maximum depth logged by the EK80 as appropriate.
 
 Copies of the .Raw data files and LSSS workfiles are to be stored on a removable hard drive for processing with Echoview.
 
@@ -264,20 +263,15 @@ The acoustic backscattering coefficient at 38 kHz integrated across the water co
 Target species include sardine ("Pilchard"), anchovy, round herring ("Redeye"), horse mackerel, lanternfish and lightfish with the aim to produce abundance estimates for these species.
 Scrutinization exercises, i.e., splitting total backscatter into target/mix groups and non-targets such as plankton will be carried out twice daily.
 
-The Captain/Navigating officer on watch must inform the acoustic watch keeper when the vessel starts/ends each transect or when the vessel crosses a boundary line between strata (see Fig. \@ref(fig:surveyareamap)) so that the ship's log and the time can be recorded for later use in data processing.
+The Captain/navigating officer on watch must inform the acoustic watch keeper when the vessel  crosses a boundary line between strata (see Fig. \@ref(fig:surveyareamap)) so that the ship's log and the time can be recorded for later use in data processing. Start/end of acoustic transects are registered by the officer on watch in the Survey Logger system. 
 
-**EK80 and SU90 must run synchronized with each other (EK80 is the "master"). The SU90 is the only active sonar to be used on this survey.**
+The **Simrad SU90 sonar** will be operated continuously along and between transects to record acoustic data continuously during the survey. This is the only active sonar to be used on this survey. 
 
-**ADCPs will be operated continuously along the survey. However, great care must be taken to ensure that the ping order/ multiplexing is set up such that there can be no interference from the SU90 and ADCPs on the recorded EK80 data.**
+The sonar must be set to a frequency of 26 kHz, in FM Normal mode and operated using “Trawl 2” (old “Bow up/180 deg”) operation mode with the bearing of the vertical beams 90 deg, perpendicular to the vessel direction with a range of 450m and with the horizontal beams set to 450m with a tilt angle of 3 deg. Default filter values must be used except for the Noise filter which must be turned off. These settings including range and tilt must be kept the same during the whole survey except during trawling operations where the sonar can at times be used actively to focus in on targets. If time allows, scrutinizing of sonar data will be done daily. 
 
-[**Sonar**]{.ul}
+The two **ADCPs** will also be operated continuously along the survey.  
 
-The Simrad SU90 sonar will be used to record acoustic data continuously during the survey.
-
-The sonar must be set to a frequency of 26 kHz, in FM Normal mode and operated using "Trawl 2" (old "Bow up/180 deg") operation mode with the bearing of the vertical beams 90 deg, perpendicular to the vessel direction with a range of 450m and with the horizontal beams set to 450m with a tilt angle of 3 deg.
-Default filter values must be used except for the Noise filter which must be turned off.
-These settings including range and tilt must be kept the same during the whole survey except during trawling operations where the sonar can at times be used actively to focus in on targets.
-If time allows, scrutinizing of sonar data will be done daily.
+**The EK80 echosounder, SU90 multibeam sonar and ADCPs must run synchronized with each other via k-sync to ensure no interference from the SU90 and ADCPs on the recorded EK80 data.** 
 
 [**Midwater trawling**]{.ul}
 
@@ -845,7 +839,7 @@ set_table_properties(ft_collectedsamplestab,layout = "autofit")
 
 ## ANNEX VIII. Acoustics transects
 
-```{r transectpostab, echo=FALSE, tidy=TRUE, label="transectpostab"}
+```{r transectpostab, eval=FALSE, include=FALSE, label="transectpostab", tidy=TRUE}
 ft_transectpostab <- flextable(input_dataframes$transectpostab) %>% theme_booktabs(bold_header = TRUE) %>% bg(bg='transparent', part = "header") 
 #%>% ftExtra::colformat_md()
 ft_transectpostab <- line_spacing(ft_transectpostab, space = 1.0, part = "all")
