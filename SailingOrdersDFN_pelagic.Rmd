@@ -207,7 +207,7 @@ The specific objectives of the Leg 4.1 survey are listed below; emphasis will be
 
 -   **Other trawl-related sampling**:
 
-    -   Map occurrence, abundance and biological parameters (length, weight, sex, and maturity staging for males) of priority cartilaginous fish.
+    -   Map occurrence, abundance and biological parameters (length, weight, sex, and maturity staging for males) of cartilaginous fish.
 
     -   Collection of jellyfish (*Chrysaora* spp. and *Aequorea* spp.) tissue for genetic analysis
 
