@@ -209,9 +209,9 @@ The specific objectives of the Leg 4.1 survey are listed below; emphasis will be
 
     -   Map occurrence, abundance and biological parameters (length, weight, sex, and maturity staging for males) of cartilaginous fish.
 
-    -   Collection of jellyfish (*Chrysaora* spp. and *Aequorea* spp.) tissue for genetic analysis
-
-    -   Size and weight measurements of *Chrysaora fulgida*
+    -   Collection of jellyfish (*Chrysaora* spp. and *Aequorea* spp.) tissue for taxonomic purposes.
+    
+    -   Size and weight measurements of *Chrysaora fulgida*.
 
 -   **Ichthyoplankton sampling**:
 
@@ -219,11 +219,11 @@ The specific objectives of the Leg 4.1 survey are listed below; emphasis will be
 
 -   **Other objectives**:
 
-    -   Standard collection of underway data with the thermosalinograph, meteorological station and the Acoustic Dopler Current Profiler
+    -   Standard collection of underway data with the thermosalinograph, meteorological station and the Acoustic Dopler Current Profiler.
 
-    -   On-the-job training in the various laboratories
+    -   On-the-job training in the various laboratories.
 
-    -   Communication through social media
+    -   Communication through social media.
 
 **Note that there will be NO fixed-station oceanographic sampling during the survey.**
 
