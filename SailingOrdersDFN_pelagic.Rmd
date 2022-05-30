@@ -514,7 +514,7 @@ A record of the date, grid and station numbers, numbers of fish and their approx
     A sample of 30 *T. capensis* individuals to be collected per latitude degree in the **29-36^o^S region**.
     The following biological sampling is to be carried out:
 
-    -    Each fish will be individually measured for length and weight and information will be registered into the Fish2Data system.
+    -   Each fish will be individually measured for length and weight and information will be registered into the Fish2Data system.
 
     -   A fin-clip sample for genetic analysis is to be taken from the pectoral fin following the procedure for [genetic analysis](https://nansen-surveys.imr.no/lib/exe/fetch.php?media=nansen-surveys:fishlab_biological_samp_genetics.pdf) described in the Nansen wiki.
 
