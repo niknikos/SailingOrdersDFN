@@ -95,7 +95,7 @@ Based on the above, the following is proposed (in a prioritized order):
 
 3.  Obtain measurements of environmental variables of the water column (salinity, temperature, dissolved oxygen, fluorescence, dissolved nutrients, pH, total alkalinity, chlorophyll *a*) through CTD casts and water samples.
 
-4.  Obtain current measurementss with Acoustic Doppler Current Profiller (ADCP).
+4.  Obtain current measurements with Acoustic Doppler Current Profiler (ADCP).
 
 5.  Carry out mesozooplankton and ichthyoplankton sampling.
 

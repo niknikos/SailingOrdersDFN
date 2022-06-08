@@ -248,28 +248,32 @@ It is noted that the ultimate decision on the position of transects and the need
 When the acoustic transect line is interrupted (such as break-off for trawling) the transect must be resumed from the point of interruption, preferably with a small overlap to the interrupted transect.
 This ensures continuous acoustic data coverage along the intended transect line.
 
-[**Acoustics**]{.ul}
+[**Acoustics**]{.underline}
 
-Acoustic data at all available frequencies (18, 38, 70, 120, 200 and 333 kHz) from the Simrad EK80 echo sounder operating in **CW (narrow band)** mode is to be collected continuously while the ship is steaming along and between transects.
+[*EK80*]{.underline}
+
+Acoustic backscatter data at all available frequencies (18, 38, 70, 120, 200 and 333 kHz) from the Simrad EK80 echo sounder operating in **CW (narrow band)** mode is to be collected continuously while the ship is steaming along and between transects.
 
 Acoustic data is to be logged to 500 m depth, with range adjusted according to bottom depth in shallow waters.
 This requires that the acoustic operators remain vigilant of the water depth and adjust the maximum depth logged by the EK80 as appropriate.
 
-Copies of the .Raw data files and LSSS workfiles are to be stored on a removable hard drive for processing with Echoview.
+Copies of the Simrad EK80 \*.raw data files and LSSS workfiles are to be stored on a removable hard drive for processing with Echoview.
 
 Weather and sea permitting, a constant survey speed of 10 knots will normally be maintained.
 However, at times the vessel may have to be slowed (at the request of the acoustic watch-keeper) to reduce acoustic noise.
 
-The pulse duration of all transducers is to be standardized at 1ms throughout the survey at maximum ping rate.
+The pulse duration of all EK80 echosounders is to be standardized at 1ms throughout the survey at maximum ping rate.
 
-The acoustic backscattering coefficient at 38 kHz integrated across the water column for the target species is to be estimated on board using both Echoview and the LSSS.
-Target species include sardine ("Pilchard"), anchovy, round herring ("Redeye"), horse mackerel, lanternfish and lightfish with the aim to produce abundance estimates for these species.
+The acoustic nautical areas scattering coefficient (NASC) at 38 kHz integrated across the water column for the target species is to be estimated on board using both Echoview and the LSSS.
+Target species include sardine ("Pilchard"), anchovy, round herring ("Redeye"), horse mackerel, lanternfish and lightfish with the aim to produce abundance estimates for these species ().
 Scrutinization exercises, i.e., splitting total backscatter into target/mix groups and non-targets such as plankton will be carried out twice daily.
 
 The Captain/navigating officer on watch must inform the acoustic watch keeper when the vessel crosses a boundary line between strata (see Fig. \@ref(fig:surveyareamap)) so that the ship's log and the time can be recorded for later use in data processing.
 Start/end of acoustic transects are registered by the officer on watch in the Survey Logger system.
 
-The **Simrad SU90 sonar** will be operated continuously along and between transects to record acoustic data continuously during the survey.
+[*SU90*]{.underline}
+
+The **Simrad SU90 fisheries sonar** will be operated continuously along and between transects to record acoustic data continuously during the survey.
 This is the only active sonar to be used on this survey.
 
 The sonar must be set to a frequency of 26 kHz, in FM Normal mode and operated using "Trawl 2" (old "Bow up/180 deg") operation mode with the bearing of the vertical beams 90 deg, perpendicular to the vessel direction with a range of 450m and with the horizontal beams set to 450m with a tilt angle of 3 deg.
@@ -281,7 +285,7 @@ The two **ADCPs** will also be operated continuously along the survey.
 
 **The EK80 echosounder, SU90 multibeam sonar and ADCPs must run synchronized with each other via k-sync to ensure no interference from the SU90 and ADCPs on the recorded EK80 data.**
 
-[**Midwater trawling**]{.ul}
+[**Midwater trawling**]{.underline}
 
 Frequent *ad hoc* target identification tows will be made at the request of the cruise leader/co-cruise leader, or the acoustic watch-keeper, using either the bottom trawl (Gisund Super) with floats, the small pelagic (Åkra trawl) or the large pelagic (MultPelt) trawl.
 The DeepVision system will be installed and operated in the MultPelt trawl, with video data being logged for each trawl.
@@ -417,7 +421,7 @@ set_table_properties(ft_biosamplingtab,layout = "autofit")
 
 The primary objectives of sampling midwater trawl catches are to obtain information on species composition and size frequency to allow acoustic estimation of the biomass of the different species.
 Subsidiary objectives relate to other projects within DFFE.
-[**No fish or any other organisms are to be taken for fries and/or bait from the deck or from the trawl without the expressed permission of the fish team leader.**]{.ul}
+[**No fish or any other organisms are to be taken for fries and/or bait from the deck or from the trawl without the expressed permission of the fish team leader.**]{.underline}
 
 **Fish team leaders must ensure adherence BY ALL FISH TEAM MEMBERS to the sampling protocol given below.**
 
@@ -431,7 +435,7 @@ IN THE CASE OF BIMODAL LENGTH DISTRIBUTIONS, A MINIMUM OF 200 INDIVIDUALS OF THE
 
 Retain anchovy, sardine, and round herring for later collection of biological data, otoliths and samples for subsequent analyses.
 
-[THE ENTIRE CATCH MUST BE RETAINED ONBOARD UNTIL ALL SAMPLING IS COMPLETED TO ENSURE THAT ADEQUATE NUMBERS OF FISH OF THE MINOR SPECIES ARE AVAILABLE FOR LENGTH FREQUENCY ESTIMATION IN MULTISPECIES CATCHES!!!]{.ul}
+[THE ENTIRE CATCH MUST BE RETAINED ONBOARD UNTIL ALL SAMPLING IS COMPLETED TO ENSURE THAT ADEQUATE NUMBERS OF FISH OF THE MINOR SPECIES ARE AVAILABLE FOR LENGTH FREQUENCY ESTIMATION IN MULTISPECIES CATCHES!!!]{.underline}
 
 3.  **Full biological analysis** of fifty (50) individuals of anchovy, sardine and West Coast round herring selected from the length frequency samples.
 
@@ -497,11 +501,11 @@ A record of the date, grid and station numbers, numbers of fish and their approx
 
 13. **Jellyfish sampling for TS-studies and species identification**.
 
-    a.  [TS-studies]{.ul}
+    a.  [TS-studies]{.underline}
 
     Umbrella diameter (to the nearest 1 cm) and sample mass (kg to 3 decimal places) of a random sample of at least 50 individuals of *Chrysaora fulgida* and central disk diameter (to the nearest 0.5 cm) and sample mass (kg to 3 decimal places) of a random sample of at least 50 individuals of *Aequorea aequorea*.
 
-    b.  [Species identification]{.ul}
+    b.  [Species identification]{.underline}
 
     Specimens of large jellyfish that may be caught in the trawl that are in good condition should be fixed in 4% formalin, **AFTER** a piece of tissue from the oral arms has been removed and fixed in 96% ethanol with the jar labelled (internally using a **2B** pencil and externally using a marker -- note that ethanol will remove external markings so care should be taken to keep labels legible) with the species, date, grid and station number and "**JELLYFISH -- M GIBBONS**".
 
@@ -624,11 +628,11 @@ The cruise participants are expected to sign and conform to the Data policy of t
 
 Persons responsible for samples need to inform about the status of analysis, and report about this at the post-survey meeting, as well as send a copy of the analysis/results to IMR ([nansen_data\@hi.no](mailto:nansen_data@hi.no)).
 
-IMR, as a data custodian for the EAF-Nansen Programme, is required to have an overview of the samples/analysis at any point in time to;
+IMR, as a data custodian for the EAF-Nansen Programme, is required to have an overview of the samples/analysis at any point in time to:
 
 1.  Ensure that data life-cycle management is carried out in the expected way
 
-2.  Be used for capacity building purposes (e.g. workshops, training courses, etc.)
+2.  Be used for capacity building purposes (e.g., workshops, training courses, etc.)
 
 3.  Advance collaboration and publishing through the EAF-Nansen Science Plan
 
