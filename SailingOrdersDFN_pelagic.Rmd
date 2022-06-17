@@ -111,7 +111,9 @@ The overall objectives identified when planning the pelagic surveys for the curr
 The survey area for Leg 5 covers the northwest African continental shelf area, split into three surveys: The Gambia and Senegal (Leg 5.1), Mauritania (Leg 5.2) and Morocco (Leg 5.3).
 
 The area to be surveyed by the R/V *Dr. Fridtjof Nansen* in Leg 5, along with the planned acoustic transects, is shown in Figure \@ref(fig:surveyareamap).
-Based on past knowledge about the resources, the coverage will be largely limited inside of the 500m isobath. Because the vessel requires at least 20m bottom depth, transects do not cover shallower areas. This excludes large areas in southern Senegal and The Gambia that contain suitable habitat for pelagic species such as Sardinellas.
+Based on past knowledge about the resources, the coverage will be largely limited inside of the 500m isobath.
+Because the vessel requires at least 20m bottom depth, transects do not cover shallower areas.
+This excludes large areas in southern Senegal and The Gambia that contain suitable habitat for pelagic species such as Sardinellas.
 
 The survey area for Leg 5 covers the northwest African continental shelf area: Leg 5.1 will cover the pelagic fish resources of The Gambia and Senegal.
 Leg 5.2 will cover Mauritania and the region from Cape Blanc to Cape Bojador.
@@ -119,7 +121,6 @@ Leg 5.3 will cover the region from Cape Bojador to Tangier.
 
 The area to be surveyed by the R/V *Dr. Fridtjof Nansen* in Leg 5, along with the planned acoustic transects, is shown in Figure \@ref(fig:surveyareamap).
 The vessel can safely operate in depths \>20 m, thus acoustic transects will not cover shallower areas.
-
 
 ```{r surveyareamap, echo=FALSE, fig.cap=paste(input_dataframes$fig_captions[input_dataframes$fig_captions$`fig name`=="surveyareamap","caption"]), fig.align='center', fig.width=6.5, fig.height=4,  label='surveyareamap'}
 knitr::include_graphics("./_images/surveyareamap.png")
@@ -188,8 +189,9 @@ The specific objectives of the Leg 5 surveys are listed below; emphasis will be 
 
     -   Collection of jellyfish for taxonomic purposes.
 
--   **Ichthyoplankton sampling**:
+-   **Plankton sampling**:
 
+    -   Collection of zooplankton samples.
     -   Collection of ichthyoplankton samples.
 
 -   **Other objectives**:
@@ -200,15 +202,14 @@ The specific objectives of the Leg 5 surveys are listed below; emphasis will be 
 
     -   Communication through social media.
 
-**Note that there will be NO fixed-station oceanographic sampling during the survey.**
-
 # **SAMPLING METHODS**
 
 ## **Survey design**
 
 Transects will be surveyed northwards in ascending order of transect number (Fig. \@ref(fig:surveyareamap)).
 
-The ship will sample the entire shelf from Senegal's border to Guinnea-Bissau in the south to the border with Mauritania on Leg 5.1 including The Gambia, all of Mauritania and from Cap Blanc to Cap Boujadour on Leg 5.2, and from Cap Boujadour to Tanger on Leg 5.3. Crew changes will take place in Dakar on October 18 and November 15, and the vessel will return to Las Palmas after completing Leg 5 on December 19.
+The ship will sample the entire shelf from Senegal's border to Guinnea-Bissau in the south to the border with Mauritania on Leg 5.1 including The Gambia, all of Mauritania and from Cap Blanc to Cap Boujadour on Leg 5.2, and from Cap Boujadour to Tanger on Leg 5.3.
+Crew changes will take place in Dakar on October 18 and November 15, and the vessel will return to Las Palmas after completing Leg 5 on December 19.
 
 The Cruise leader/Co-Cruise leader may truncate, extend or omit lines as necessary in accordance with the transect ranking (Table 2) to maximize survey efficiency according to the fish distribution found, or to alleviate time constraints.
 
@@ -219,7 +220,8 @@ It is noted that the ultimate decision on the position of transects and the need
 When the acoustic transect line is interrupted (such as break-off for trawling) the transect must be resumed from the point of interruption, preferably with a small overlap to the interrupted transect.
 This ensures continuous acoustic data coverage along the intended transect line.
 
-Parallel transect with R/V from Senegal, Mauritania and Morocco, respectively, will be conducted on each of the surveys. Calibration of echosounders will take place in Senegal at the beginning of Leg 5.
+Parallel transect with R/V from Senegal, Mauritania and Morocco, respectively, will be conducted on each of the surveys.
+Calibration of echosounders will take place in Senegal at the beginning of Leg 5.
 
 [**Acoustics**]{.underline}
 
@@ -236,7 +238,8 @@ However, at times the vessel may have to be slowed (at the request of the acoust
 The pulse duration of all transducers is to be standardized at 1ms throughout the survey at maximum ping rate.
 
 The acoustic backscattering coefficient at 38 kHz integrated across the water column for the target species is to be estimated on board using both Echoview and the LSSS.
-Target species include sardinella (S. aurita and maderensis), horse mackerel, sardine ("Pilchard"), anchovy, mackerel (S. colias), as well as the species groups of clupeids ("PEL1") and other pelagic species (PEL2). Abundance estimates for all the target species/groups will bep produced.
+Target species include sardinella (S. aurita and maderensis), horse mackerel, sardine ("Pilchard"), anchovy, mackerel (S. colias), as well as the species groups of clupeids ("PEL1") and other pelagic species (PEL2).
+Abundance estimates for all the target species/groups will bep produced.
 Scrutinization of acoustic data, i.e., splitting total backscatter into target/mix groups and non-targets such as plankton will be carried out twice daily.
 
 Start/end of acoustic transects are registered by the officer on watch in the Survey Logger system.
@@ -409,7 +412,7 @@ A record of the date, grid and station numbers, number of fish and their size ra
 
 6.  **Collection of sardine, anchovy and horse mackerel for assessment of their anthropogenic pollutant (herbicides, pharmaceuticals, etc) levels**.
 
-Samples of 3 fish (of similar size) per species are to be taken from trawls with relevant catches (>100 individuals).
+Samples of 3 fish (of similar size) per species are to be taken from trawls with relevant catches (\>100 individuals).
 
 Ideally, fish of each species should be collected from the same trawls, but in case this cannot be achieved "back-up" samples of each species should be collected so as to ensure full coverage of the surveyed area (final samples for analysis can be selected after the survey).
 
@@ -417,7 +420,7 @@ Each fish is to be placed in its own zip-lock plastic bag, and the three individ
 
 A record of the date, grid and station numbers, and number of fish per species, is to be kept by the fish team leader.
 
-7. **Jellyfish sampling for TS-studies and species identification**.
+7.  **Jellyfish sampling for TS-studies and species identification**.
 
     a.  [TS-studies]{.underline}
 
@@ -435,7 +438,7 @@ A record of the date, grid and station numbers, and number of fish per species, 
 
 #### *Demersal fish and shellfish* {.unnumbered}
 
-All demersal species caught in bottom trawls areas were bottom depth requires the use of bottom trawling (<50m) are to be registered according to standard sampling protocol.
+All demersal species caught in bottom trawls areas were bottom depth requires the use of bottom trawling (\<50m) are to be registered according to standard sampling protocol.
 
 #### *Fish and macroinvertebrates samples for regional taxonomy course and post-survey taxonomic studies* {.unnumbered}
 
@@ -471,14 +474,13 @@ See section 3.9.2 point 7.
 
 ### *Pelagic fish biomass estimated based on acoustics (EK80)*
 
-The biomass indices of priority pelagic fish will be estimated by the acoustic estimate method (<https://nansen-surveys.imr.no/doku.php?id=biomass_calculations>) using the [StoX (stoxproject.github.io)](https://stoxproject.github.io/StoX/) software. 
+The biomass indices of priority pelagic fish will be estimated by the acoustic estimate method (<https://nansen-surveys.imr.no/doku.php?id=biomass_calculations>) using the [StoX (stoxproject.github.io)](https://stoxproject.github.io/StoX/) software.
 
 This requires as input, the integrated acoustic backscatter (S~A~/NASC) per 10 NM or shorter ESDU for each of the species listed, the species composition from the trawls, the length frequency per species and the length frequency sample mass per species, the transect length and the survey area (per stratum).
 
 Biomass indices will be estimated as total biomass per species per stratum and as numbers at length per stratum (for the species with sufficient length data) and for the total survey area.
 
 Allocation of acoustic densities to species groups will be done according to Table \@ref(tab:acousticcattab) for the relevant to the survey acoustic groups only.
-
 
 ```{r acousticcattab, echo=FALSE, tidy=TRUE, label="acousticcattab"}
 ft_acousticcattab <- flextable(input_dataframes$acousticcattab) %>% theme_booktabs(bold_header = TRUE) %>% bg(bg='transparent', part = "header") %>% ftExtra::colformat_md()
