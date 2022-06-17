@@ -81,7 +81,7 @@ set_flextable_defaults(big.mark = " ",
 
 <br>
 
-The survey will start and end in Dakar, Senegal (Table \@ref(tab:surveyplantab)).
+The survey will start with Legs 5.1 and 5.2 both starting and ending in Dakar, Senegal, while Leg 5.3 will start and end in Las Palmas, Spain (Table \@ref(tab:surveyplantab)).
 
 ```{r surveyplantab, echo=FALSE, tidy=TRUE, label="surveyplantab"}
 ft_surveyplan <- flextable(input_dataframes$surveyplantab) %>% theme_booktabs(bold_header = TRUE) %>% bg(bg='transparent', part = "header") %>% ftExtra::colformat_md()
@@ -97,12 +97,14 @@ set_table_properties(ft_surveyplan,layout = "autofit")
 
 ## **Survey objectives**
 
-The overall objectives of this regional survey effort in the NWA (Gambia, Senegal, Mauritania, Morroco) area are to assess the abundance and distribution of the transboundary pelagic resources. 
+The main objective of this regional survey effort in the NWA (Senegal, The Gambia, Mauritania and Morocco) area, is to assess the abundance and distribution of the transboundary pelagic resources.
 
-A transboundary pelagic survey off Northwest Africa took place in 2019. The survey in 2022 will have the same scope and objectives as in 2019, covering the pelagic resources of Senegal, The Gambia, Mauritania and Morocco. The survey will take place from 6 October 2022 to 16 December 2022 in three sub-legs, starting off from Dakar and ending in Las Palmas. As such, the survey timing coincides with the time when most of the pelagic surveys with the R/V Dr. Fridtjof Nansen have been conducted in this region and will therefore add to the time series of pelagic fish biomass estimates.
+The last transboundary pelagic survey off Northwest Africa took place in 2019.
+The survey in 2022 will have the same scope and objectives as in 2019, covering the pelagic resources of Senegal, The Gambia, Mauritania and Morocco.
+The survey will take place from 6 October 2022 to 16 December 2022 in three sub-legs, starting off from Dakar and ending in Las Palmas.
+As such, the survey timing coincides with the time when most of the pelagic surveys with the R/V *Dr. Fridtjof Nansen* have been conducted in this region and will therefore add to the time series of pelagic fish biomass estimates.
 
 The overall objectives identified when planning the pelagic surveys for the current phase of the Programme were to sample the pelagic realm in relation to hydrography (chemical and physical oceanographic conditions), lower trophic levels (phyto-, zoo- and ichthyoplankton and jellyfish), main pelagic stocks (abundance, distribution, biology, food safety/nutrition) and pollution (marine debris, floating seaweed aggregations).
-
 
 ## **Survey area**
 
@@ -110,6 +112,14 @@ The survey area for Leg 5 covers the northwest African continental shelf area, s
 
 The area to be surveyed by the R/V *Dr. Fridtjof Nansen* in Leg 5, along with the planned acoustic transects, is shown in Figure \@ref(fig:surveyareamap).
 Based on past knowledge about the resources, the coverage will be largely limited inside of the 500m isobath. Because the vessel requires at least 20m bottom depth, transects do not cover shallower areas. This excludes large areas in southern Senegal and The Gambia that contain suitable habitat for pelagic species such as Sardinellas.
+
+The survey area for Leg 5 covers the northwest African continental shelf area: Leg 5.1 will cover the pelagic fish resources of The Gambia and Senegal.
+Leg 5.2 will cover Mauritania and the region from Cape Blanc to Cape Bojador.
+Leg 5.3 will cover the region from Cape Bojador to Tangier.
+
+The area to be surveyed by the R/V *Dr. Fridtjof Nansen* in Leg 5, along with the planned acoustic transects, is shown in Figure \@ref(fig:surveyareamap).
+The vessel can safely operate in depths \>20 m, thus acoustic transects will not cover shallower areas.
+
 
 ```{r surveyareamap, echo=FALSE, fig.cap=paste(input_dataframes$fig_captions[input_dataframes$fig_captions$`fig name`=="surveyareamap","caption"]), fig.align='center', fig.width=6.5, fig.height=4,  label='surveyareamap'}
 knitr::include_graphics("./_images/surveyareamap.png")
@@ -119,7 +129,10 @@ knitr::include_graphics("./_images/surveyareamap.png")
 
 Typically, the surveys with the R/V *Dr. Fridtjof Nansen* include participants from different countries and institutions.
 Regarding qualifications, a mix of experienced and less experienced scientists /technicians will receive on-the-job training in sampling procedures.
+<<<<<<< HEAD
 An overview of the main types of expertise and number of participants required for the surveys on Leg 5 is provided in [ANNEX I](#ANNEX_I) and the list of the planned survey participants is shown in [ANNEX II](#ANNEX_II).
+
+An overview of the main types of expertise and number of participants required for Leg 5 is provided in [ANNEX I](#ANNEX_I) and the list of the planned survey participants is shown in [ANNEX II](#ANNEX_II).
 
 It should be noted that a maximum number of 19 local participants can be allowed, in addition to the scientific crew from Norway and the DFN Core Team.
 
@@ -158,37 +171,28 @@ The specific objectives of the Leg 5 surveys are listed below; emphasis will be 
     -   Provision of acoustic backscatter estimates (as a proxy for biomass) for the following acoustics groups: sardinella, horse mackerel, sardine ("Pilchard"), and anchovy.
         Other scatterers will be allocated to "Mackerel", "Pelagic Group I" (cluepeoids), "Pelagic Group II" (carangids, scombrids), "Demersal fish", "Mesopelagic fish", "Plankton" or "Other", as appropriate.
 
-    -   Estimation of the biomass and population size structure of sardinella, horse mackerel, sardine, anchovy, and mackerel (*S.colias*) off Senegal and The Gambia by means of echo-integration and trawling. In addition, total biomass of Pelagic Group I and II will be estimated.
+    -   Estimation of the biomass and population size structure of sardinella, horse mackerel, sardine, anchovy, and mackerel (*S.colias*) by means of echo-integration and trawling.
+        In addition, total biomass estimates of Pelagic Group I and II will be provided.
 
-    -   Mapping spatial distribution of commercially harvested pelagic fish.
+    -   Mapping the spatial distribution of commercially harvested pelagic fish.
 
 -   **Fish biological sampling**:
 
-    -   Species composition and diversity of the pelagic and demersal communities (all species caught in the pelagic and demersal trawls)
+    -   Composition of the catch (**all taxa** caught in the trawl)
 
-    -   Total catch weight and numbers of all fish species caught in each trawl haul.
+    -   Total catch weight and numbers of all **taxa** caught in each trawl haul, with subsampling where appropriate.
 
-    -   Length-weight relationships for priority fish and jellyfish species caught in the trawl.
-        A representative catch subsample at each trawl station is taken and a minimum of 100 individuals (or 50 jellyfish) are measured, more as needed to achieve representative length distributions.
-
-    -   Collection of biological data (wet body weight, sex, gonad maturity stage and fat stage) for sardinella, horse mackerel, sardine and anchovy.
-
-    -   Collection of otoliths from sardinella for age determination studies.
-
-    -   Collection of sardine (juveniles and adults) for an analysis of infection by "tetracotyle" type digenean parasite.
-
-    -   Collection of horse mackerel samples for genetics, otoliths and parasites for stock identification purposes.
+    -   Collection of biological samples and parameters for priority fish species (see section "**Biological sampling of fisheries resources"**).
 
 -   **Other trawl-related sampling**:
 
     -   Map occurrence, abundance and biological parameters (length, weight, sex, and maturity staging for males) of cartilaginous fish.
 
-    -   Collection of jellyfish (*Chrysaora* spp. and *Aequorea* spp.) tissue for taxonomic purposes.
-
+    -   Collection of jellyfish for taxonomic purposes.
 
 -   **Ichthyoplankton sampling**:
 
-    -   Collection of ichthyoplankton samples (with custom-CUFES and only underway) during part B of the survey and from Line 61 to Line 80 only for mapping of sardine and round herring (and, if present anchovy) egg distributions.
+    -   Collection of ichthyoplankton samples.
 
 -   **Other objectives**:
 
@@ -219,7 +223,7 @@ This ensures continuous acoustic data coverage along the intended transect line.
 
 Parallel transect with R/V from Senegal, Mauritania and Morocco, respectively, will be conducted on each of the surveys. Calibration of echosounders will take place in Senegal at the beginning of Leg 5.
 
-[**Acoustics**]{.ul}
+[**Acoustics**]{.underline}
 
 Acoustic data at all available frequencies (18, 38, 70, 120, 200 and 333 kHz) from the Simrad EK80 echo sounder operating in **CW (narrow band)** mode is to be collected continuously while the ship is steaming along and between transects.
 
@@ -251,7 +255,7 @@ The two **ADCPs** will also be operated continuously along the survey.
 
 **The EK80 echosounder, SU90 multibeam sonar and ADCPs must run synchronized with each other via k-sync to ensure no interference from the SU90 and ADCPs on the recorded EK80 data.**
 
-[**Midwater trawling**]{.ul}
+[**Midwater trawling**]{.underline}
 
 Frequent *ad hoc* target identification tows will be made at the request of the cruise leader/co-cruise leader, or the acoustic watch-keeper, using either the bottom trawl (Gisund Super) with floats, the small pelagic (Åkra trawl) or the large pelagic (MultPelt) trawl.
 
@@ -371,7 +375,7 @@ set_table_properties(ft_biosamplingtab,layout = "autofit")
 
 The primary objectives of sampling midwater trawl catches are to obtain information on species composition and size frequency to allow acoustic estimation of the biomass of the different species.
 
-[**No fish or any other organisms are to be taken from the deck or from the trawl without the expressed permission of the fish team leader.**]{.ul}
+[**No fish or any other organisms are to be taken from the deck or from the trawl without the expressed permission of the fish team leader.**]
 
 **Fish team leaders must ensure adherence BY ALL FISH TEAM MEMBERS to the sampling protocol given below.**
 
@@ -385,7 +389,7 @@ IN THE CASE OF BIMODAL LENGTH DISTRIBUTIONS, A MINIMUM OF 200 INDIVIDUALS OF THE
 
 Retain anchovy, sardine, and horse mackerel for later collection of biological data, otoliths and samples for subsequent analyses.
 
-[THE ENTIRE CATCH MUST BE RETAINED ONBOARD UNTIL ALL SAMPLING IS COMPLETED TO ENSURE THAT ADEQUATE NUMBERS OF FISH OF THE MINOR SPECIES ARE AVAILABLE FOR LENGTH FREQUENCY ESTIMATION IN MULTISPECIES CATCHES!!!]{.ul}
+[THE ENTIRE CATCH MUST BE RETAINED ONBOARD UNTIL ALL SAMPLING IS COMPLETED TO ENSURE THAT ADEQUATE NUMBERS OF FISH OF THE MINOR SPECIES ARE AVAILABLE FOR LENGTH FREQUENCY ESTIMATION IN MULTISPECIES CATCHES!!!]{.underline}
 
 3.  **Full biological analysis** of fifty (50) individuals of anchovy, sardine and horse mackerel selected from the length frequency samples.
 
@@ -417,11 +421,11 @@ A record of the date, grid and station numbers, and number of fish per species, 
 
 7. **Jellyfish sampling for TS-studies and species identification**.
 
-    a.  [TS-studies]{.ul}
+    a.  [TS-studies]{.underline}
 
     Umbrella diameter (to the nearest 1 cm) and sample mass (kg to 3 decimal places) of a random sample of at least 50 individuals of *Chrysaora fulgida* and central disk diameter (to the nearest 0.5 cm) and sample mass (kg to 3 decimal places) of a random sample of at least 50 individuals of *Aequorea aequorea*.
 
-    b.  [Species identification]{.ul}
+    b.  [Species identification]{.underline}
 
     Specimens of large jellyfish that may be caught in the trawl that are in good condition should be fixed in 4% formalin, **AFTER** a piece of tissue from the oral arms has been removed and fixed in 96% ethanol with the jar labelled (internally using a **2B** pencil and externally using a marker -- note that ethanol will remove external markings so care should be taken to keep labels legible) with the species, date, grid and station number and "**JELLYFISH -- M GIBBONS**".
 
