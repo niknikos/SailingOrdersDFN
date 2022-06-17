@@ -130,8 +130,6 @@ knitr::include_graphics("./_images/surveyareamap.png")
 Typically, the surveys with the R/V *Dr. Fridtjof Nansen* include participants from different countries and institutions.
 Regarding qualifications, a mix of experienced and less experienced scientists /technicians will receive on-the-job training in sampling procedures.
 
-An overview of the main types of expertise and number of participants required for the surveys on Leg 5 is provided in [ANNEX I](#ANNEX_I) and the list of the planned survey participants is shown in [ANNEX II](#ANNEX_II).
-
 An overview of the main types of expertise and number of participants required for Leg 5 is provided in [ANNEX I](#ANNEX_I) and the list of the planned survey participants is shown in [ANNEX II](#ANNEX_II).
 
 It should be noted that a maximum number of 19 local participants can be allowed, in addition to the scientific crew from Norway and the DFN Core Team.
