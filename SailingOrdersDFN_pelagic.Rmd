@@ -189,9 +189,6 @@ The specific objectives of the Leg 5.1 survey are listed below; emphasis will be
     -   Collection of jellyfish (*Chrysaora* spp. and *Aequorea* spp.) tissue for taxonomic purposes.
 
 
--   **Ichthyoplankton sampling**:
-
-    -   Collection of ichthyoplankton samples (with custom-CUFES and only underway) during part B of the survey and from Line 61 to Line 80 only for mapping of sardine and round herring (and, if present anchovy) egg distributions.
 
 -   **Other objectives**:
 
@@ -415,7 +412,7 @@ The wet body weight (to the nearest 0.1 g) of each fish is to be measured, then 
 
 **LENGTH FREQUENCY DETERMINATIONS AND FULL BIOLOGICALS MUST BE DONE FOR EVERY SINGLE TRAWL.**
 
-4.  **For all three epipelagic species, the otoliths** of the first 20 fish from which biological data were collected should be extracted, **cleaned in fresh water**, dried with a tissue and stored dry in a vial.
+4.  **For all epipelagic species, the otoliths** of the first 20 fish from which biological data were collected should be extracted, **cleaned in fresh water**, dried with a tissue and stored dry in a vial.
 
 The vial should contain a numbered label that corresponds to the unique fish number recorded on the data sheet electronic system.
 
@@ -425,11 +422,7 @@ Vials can then be placed into a sealed plastic bag with a label containing the t
 
 A record of the date, grid and station numbers, number of fish and their size range, is to be kept by the fish team leader.
 
-6.  **Collection of West Coast round herring for monitoring micro-plastic pollution in the SA marine pelagos**. Samples of 50 round herring, covering the observed size range, are to be retained from two trawls per stratum (i.e. 100 fish per stratum are to be collected) and stored in zip-lock bags containing a label (written using a 2B pencil) with the date, grid and station numbers, and marked "**ROUND HERRING MICROPLASTICS**", then immediately blast frozen.
-
-A record of the date, grid and station numbers, and number of fish per species, is to be kept by the fish team leader.
-
-7.  **Collection of sardine, anchovy and round herring for assessment of their anthropogenic pollutant (herbicides, pharmaceuticals, etc) levels**.
+7.  **Collection of sardinella, sardine and anchovy for assessment of their anthropogenic pollutant (herbicides, pharmaceuticals, etc) levels**.
 
 Samples of 3 fish (of similar size) per species are to be taken from each of 10 trawls spread approximately equally across the survey area between the Orange River mouth and Port Alfred, with 5 trawls sampled to the west of Cape Agulhas and 5 trawls to the east of Cape Agulhas (so 15 individual fish collected WoCA and 15 individuals EoCA per species).
 
@@ -439,35 +432,6 @@ Each fish is to be placed in its own zip-lock plastic bag, and the three individ
 
 A record of the date, grid and station numbers, and number of fish per species, is to be kept by the fish team leader.
 
-8.  **Collection of chub mackerel (*Scomber* sp.) for collection of meristic and morphometric information for stock/species identification**.
-
-Ten to 25 individual chub mackerel are to be collected from trawls where this species is caught in sufficient numbers, with several samples to be collected from the west (west of Cape Agulhas), south (Cape Agulhas to Mossel Bay) and the southeast (Mossel Bay to Port Alfred) coasts to enable wide spatial coverage.
-
-Samples are to be placed in zip-lock bags containing a label (written using a 2B pencil) with the date, grid and station numbers, and marked externally "**CHUB MACKEREL**" with a koki pen, and then immediately blast frozen.
-
-A record of the date, grid and station numbers, numbers of fish and their approximate size range for samples of all species is to be kept by each fish team leader.
-
-9.  **Collection of Hector's lanternfish and lightfish for basic biological studies**.
-
-Samples of 25-50 individuals of these species are to be collected from each trawl in which they are caught, placed in zip-lock bags (separated by species) containing a label (written using a 2B pencil) with the date, grid and station numbers, and marked externally "**LANTERNFISH/LIGHTFISH**" with a koki pen, and then immediately blast frozen.
-
-A record of the date, grid and station numbers, numbers of fish and their approximate size range for samples of all species is to be kept by each fish team leader.
-
-10. **Collection of uncommon mesopelagic fish species for identification and basic biological studies. ALL mesopelagic fishes other than Hector's lanternfish or lightfish are to be retained; particularly bogue lanternfish *Symbolophorus boops*.**
-
-Mesopelagic fishes are to be placed in zip-lock bags (separated by genus/species/type if feasible) containing a label (written using a 2B pencil) with the date, grid and station numbers, and marked externally "UNIDENTIFIED/OTHER MESOPELAGICS" with a koki pen, and then immediately blast frozen.
-
-A record of the date, grid and station numbers, numbers of fish and their approximate size range for samples of all species is to be kept by each fish team leader.
-
-Specimens that could not be identified at sea will be identified after the survey and the information sent to the Nansen for inclusion in the survey records.
-
-11. **Collection of pelagic gobies (*Sufflogobius bibarbatus*) for general biological studies**.
-
-A sample of 50 (or all gobies caught in the trawl if this number is \<50) individual pelagic gobies covering the observed size range are to be collected from all trawls in which they occur.
-
-Samples are to be placed in zip-lock bags containing a label (written using a 2B pencil) with the date, grid and station numbers, and marked externally "**GOBIES**" with a koki pen, and then immediately blast frozen.
-
-A record of the date, grid and station numbers, numbers of fish and their approximate size range for samples is to be kept by each fish team leader.
 
 13. **Jellyfish sampling for TS-studies and species identification**.
 
@@ -723,9 +687,6 @@ set_table_properties(ft_fatstageanchtab,layout = "autofit")
 
 <br>
 
-```{r anchovyfat, echo=FALSE, fig.cap=paste(input_dataframes$fig_captions[input_dataframes$fig_captions$`fig name`=="anchovyfat","caption"]), fig.align='center', fig.width=4, fig.height=6,  label='anchovymat'}
-knitr::include_graphics("./_images/anchovyfat.png")
-```
 
 \newpage
 
@@ -745,10 +706,6 @@ set_table_properties(ft_fatstagesarhtab,layout = "autofit")
 ```
 
 <br>
-
-```{r sardinefat, echo=FALSE, fig.cap=paste(input_dataframes$fig_captions[input_dataframes$fig_captions$`fig name`=="sardinefat","caption"]), fig.align='center', fig.width=4, fig.height=6,  label='sardinemat'}
-knitr::include_graphics("./_images/sardinefat.png")
-```
 
 \newpage
 
