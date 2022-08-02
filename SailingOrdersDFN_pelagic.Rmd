@@ -128,7 +128,7 @@ Leg 5.3 will cover the region from Cape Bojador to Tangier.
 The area to be surveyed by the R/V *Dr. Fridtjof Nansen* in Leg 5, along with the planned acoustic transects, is shown in Figure \@ref(fig:surveyareamap).
 The vessel can safely operate in depths \>20 m, thus acoustic transects will not cover shallower areas.
 
-```{r surveyareamap, echo=FALSE, fig.cap=paste(input_dataframes$fig_captions[input_dataframes$fig_captions$`fig name`=="surveyareamap","caption"]), fig.align='center', fig.width=6.5, fig.height=4,  label='surveyareamap'}
+```{r surveyareamap, echo=FALSE, fig.cap=paste(input_dataframes$fig_captions[input_dataframes$fig_captions$`fig name`=="surveyareamap","caption"]), fig.align='center', fig.width=5, fig.height=8,  label='surveyareamap'}
 knitr::include_graphics("./_images/surveyareamap.png")
 ```
 
@@ -223,6 +223,8 @@ Coverage will be harmonized to the area surveyed during past surveys.
 
 The proposed cruise track will allow systematic coverage and acquisition of acoustic backscatter records, hydrographic conditions, and abundance and distribution of plankton.
 
+If time restrictions do not allow for complete coverage of the planned acoustic transects, (remaining) transects will be reduced to the sections between 20 and 200 m isobaths. Because target species mostly aggregate in shallower areas, this will ensure good coverage of the relevant distribution areas.
+
 The ship will sample the entire shelf from Senegal's border to Guinnea-Bissau in the south to the border with Mauritania on Leg 5.1 including The Gambia.
 Subsequently, Mauritania (St. Louis to Cape Blanc) and the region up to Cape Bojador will be surveyed on Leg 5.2.
 Finally, Leg 5.3 will cover the region from Cape Bojador to Tangier, after which the vessel will sail to Las Palmas, Spain.
@@ -276,7 +278,7 @@ If not possible, the most recent valid EK80 calibration results and settings (at
 
 EK80 echosounders will operate with both **drop keels in extended positions** to minimize signal loss due to air bubbles running along the hull and keel.
 
-Acoustic backscatter data (EK80) is to be logged down to 700 m depth, with recording range adjustments according to the bottom depth in shallower waters.
+Acoustic backscatter data (EK80) is to be logged down to 500 m depth, with recording range adjustments according to the bottom depth in shallower waters.
 The effective echosounder operational range is frequency dependent.
 The recording ranges at higher nominal acoustic frequencies can be set separately to reduce the size of the acoustic data files (e.g., 150 m for 333 kHz, 300 m for 200 kHz, 600 m for 120 kHz, 1200 m for 70 kHz, and 2000 m for 38 and 18 kHz).
 Appropriate cut-off limits will be set for each frequency at the beginning of the survey, ensuring all valid data are retained.
@@ -418,7 +420,7 @@ Samples will be fixed in 2% formaldehyde solution.
 
 ## **Zooplankton**
 
-Zooplankton samples are to be collected at three "superstation" stations positioned at the isobaths 30 m, 100 m, 500 or 1000 m).
+Zooplankton samples are to be collected at three "superstation" stations positioned at the isobaths 30 m, 100 m, and 500 m).
 The standard sampling depths for zooplankton will be 30 m, 100 m and 500 m, but if the distance between the 500 m and 1000 m isobath is less than 2 NM we will take zooplankton samples at the 1000 m station instead of at 500 m.
 Additional zooplankton sampling will be done at the stations of the five national monitoring lines.
 All samples will be collected by vertical hauls of a WP2 net (56 cm diameter, mesh size 180 µm) at a speed of 0.5 m sec^-1^.
@@ -442,7 +444,7 @@ Once the Bongo net is on board, the samples will be transferred in the lab and w
 
 • The sample of the right net (H) will be preserved directly in 95% ethanol.
 
-• The sample of the left net (V) will be preserved directly in 4% borax buffered formaldehyde solution solution (especially made for ichthyoplankton).
+• The sample of the left net (V) will be preserved directly in 4% borax buffered formaldehyde solution (especially made for ichthyoplankton).
 If time allows this sample will be examined under the microscope and all fish larvae (and eggs if possible) will be sorted out.
 Plankton examination should be done thoroughly and in small amounts.
 When sorting has finished, the bulk sample will be used for the estimation of the Zooplankton Displacement Volume (details in the Nansen Plankton Guidelines).
@@ -456,10 +458,8 @@ In addition, larval fish collected by the Manta trawl (see also 3.8), these will
 
 ## Bottom depth
 
-Bottom depth read is obtained continuously from the EK80 echosounder (down to 700 m depth, 38kHz) and registered into the Olex bottom mapping system used by the vessel.
+Bottom depth read is obtained continuously from the EK80 echosounder (down to 500 m depth, 38kHz) and registered into the Olex bottom mapping system used by the vessel.
 The information is also registered in the "Survey Logger" (Toktlogger) system, through the appropriate NMEA message.
-
-When sampling station bottom depth exceeds 700m (and it needs bottom depth read input to "Survey Logger"), a temporary manual adjustment to EK80 settings will be made to obtain local bottom depth read (implies adjustment to a slower ping rate than the standard 1 Hz).
 
 ## Microplastics
 
@@ -542,25 +542,9 @@ Retain anchovy, sardine, and horse mackerel for later collection of biological d
 
 Care should be taken that this sub-sample covers the size range observed in the length frequency distribution.
 
-The wet body weight (to the nearest 0.1 g) of each fish is to be measured, then the visceral cavity of each fish must be opened and their sex, gonad maturity stage and fat stage assigned following visual assessment of their gonads and mesenteric fat levels ([ANNEX IV](#ANNEX_IV)) and recorded for each fish on the data sheet / electronic system provided (corresponding to the unique number, and caudal length assigned to each fish in point 2 above).
-
 **LENGTH FREQUENCY DETERMINATIONS AND FULL BIOLOGICALS MUST BE DONE FOR EVERY SINGLE TRAWL.**
 
-4.  **For all pelagic target species, the otoliths** of the first 20 fish from which biological data were collected should be extracted, **cleaned in fresh water**, dried with a tissue and stored dry in a vial.
-
-The vial should contain a numbered label that corresponds to the unique fish number recorded on the data sheet electronic system.
-
-Vials can then be placed into a sealed plastic bag with a label containing the trawl information (species, date, station and grid numbers) and marked "***SPECIES*** **AGEING**".
-+++
-+++
-+++
-
-
 ### *Other trawl-related sampling*
-
-#### *Demersal fish and shellfish* {.unnumbered}
-
-All demersal species caught in bottom trawls areas were bottom depth requires the use of bottom trawling (\<50 m) are to be registered according to standard sampling protocol.
 
 #### *Fish and macroinvertebrates samples for regional taxonomy course and post-survey taxonomic studies* {.unnumbered}
 
@@ -588,7 +572,6 @@ Species that cannot be identified should be preserved in formalin or frozen (and
 Marine debris will be registered and classified at each station according to the categories listed in the sampling protocol for marine litter (<https://nansen-surveys.imr.no/doku.php?id=biological_sampling_procedures>).
 All pieces of litter should be weighed and counted, and when possible, photos should be taken of the individual pieces for a reference catalogue.
 Data should be recorded in designated Excel sheet and photos should be clearly labelled and saved in a folder in the work catalogue marked 'Marine Debris'.
-One person from each shift will be responsible for recording this data.
 
 <!-- #### *Epibenthos* {.unnumbered} -->
 
@@ -602,7 +585,7 @@ One person from each shift will be responsible for recording this data.
 
 The biomass indices of priority pelagic fish will be estimated by the acoustic estimate method (<https://nansen-surveys.imr.no/doku.php?id=biomass_calculations>) using the [StoX (stoxproject.github.io)](https://stoxproject.github.io/StoX/) software.
 
-This requires as input, the integrated acoustic backscatter (S~A~/NASC) per 10 NM or shorter ESDU for each of the species listed, the species composition from the trawls, the length frequency per species and the length frequency sample mass per species, the transect length and the survey area (per stratum).
+This requires as input, the integrated acoustic backscatter (S~A~/NASC) per 10 NM or shorter ESDU for each of the species listed, the species composition from the trawls, the length frequency per species and the length frequency sample mass per species, the transect length and the survey area (per stratum). The survey area will be stratified by region and depth (20-100 m, 100-200 m, 200-300 m, 300-500m).
 
 Biomass indices will be estimated as total biomass per species per stratum and as numbers at length per stratum (for the species with sufficient length data) and for the total survey area.
 
