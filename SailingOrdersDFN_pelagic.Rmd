@@ -223,7 +223,7 @@ Coverage will be harmonized to the area surveyed during past surveys.
 
 The proposed cruise track will allow systematic coverage and acquisition of acoustic backscatter records, hydrographic conditions, and abundance and distribution of plankton.
 
-If time restrictions do not allow for complete coverage of the planned acoustic transects, (remaining) transects will be reduced to the sections between 20 and 200 m isobaths. Because target species mostly aggregate in shallower areas, this will ensure good coverage of the relevant distribution areas.
+If time restrictions do not allow for complete coverage of the planned acoustic transects, (remaining) transects will be reduced to the sections between 20 and 200 m isobaths, except when a target species is detected at the 200 m isobath. In the latter case, the coverage should be continued until no further occurence can be registered. Because target species mostly aggregate in shallower areas, this will ensure sufficient coverage of the relevant distribution areas. 
 
 The ship will sample the entire shelf from Senegal's border to Guinnea-Bissau in the south to the border with Mauritania on Leg 5.1 including The Gambia.
 Subsequently, Mauritania (St. Louis to Cape Blanc) and the region up to Cape Bojador will be surveyed on Leg 5.2.
@@ -242,7 +242,7 @@ A super-station is defined as a station containing a set of sampling devices dep
 
 An overview of equipment and sampling depths of the superstations conducted at the environmental transects is shown in (Figure \@ref(fig:envtransects)).
 
-CTD deployments will be carried out at super-stations along the environmental transects involving historical monitoring transect as well as at every pelagic trawl station up to a depth of 300 m (Figure \@ref(fig:surveyareamap)).
+CTD deployments will be carried out at super-stations along the environmental transects involving historical monitoring transect as well as at every pelagic trawl station (except when a trawl station is repeated) up to a depth of 300 m.
 
 ```{r envtransects, echo=FALSE, fig.cap=paste(input_dataframes$fig_captions[input_dataframes$fig_captions$`fig name`=="envtransects","caption"]), fig.align='center', fig.width=6, fig.height=5, label='envtransects'}
 knitr::include_graphics("./_images/envtransects.png")
@@ -254,7 +254,7 @@ Acoustic transects will be surveyed northwards in ascending order of transect nu
 
 The Cruise leader/Co-Cruise leader may truncate, extend or omit lines as necessary to alleviate time constraints due to adverse weather or other reasons (e.g. obstacles at sea).
 
-As most of the pelagic species are likely to be concentrated close inshore, it is imperative that the inshore position of each transect, and the inshore transits between transects, be placed as close inshore as safety permits.
+As most of the pelagic species are likely to be concentrated close inshore, it is imperative that the inshore position of each transect, and the inshore transits between transects, be placed as close inshore as safety permits. If safety issues arise at the inshore end of a transect (e.g. artisanal fishers or unknown bathymetry) the transit should swing to deeper waters and return inshore to the start of the next transect.
 
 It is noted that the ultimate decision on the position of transects and the need to deviate from transects for safety reasons lie with the Captain of the vessel.
 
