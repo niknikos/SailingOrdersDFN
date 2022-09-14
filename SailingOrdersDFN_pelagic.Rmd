@@ -99,7 +99,7 @@ set_table_properties(ft_surveyplan,layout = "autofit")
 
 The last transboundary pelagic survey off Northwest Africa took place in 2019.
 The survey in 2022 will have the same scope and objectives as in 2019, covering the pelagic resources of Senegal, The Gambia, Mauritania and Morocco.
-The survey will take place from 6 October 2022 to 16 December 2022 in three sub-legs, starting off from Dakar and ending in Las Palmas.
+The regional coverage of pelagic resources will take place from 6 October 2022 to 16 December 2022 in three parts, starting off from Dakar and ending in Las Palmas.
 As such, the survey timing coincides with the time when most of the pelagic surveys with the R/V *Dr. Fridtjof Nansen* have been conducted in this region and will therefore add to the time series of pelagic fish biomass estimates.
 
 The general objectives of Leg 5 surveys are:
@@ -195,6 +195,8 @@ The specific objectives of the Leg 5 surveys are listed below (note that some of
 
     -   Total catch weight and numbers of all fish species caught in the midwater trawl hauls.
 
+    -   Individual length-weight measurements for maximum 30 fish of non-priority species per latitude degree (time permitting). 
+
 -   Other trawl-related sampling:
 
     -   Mapping the occurrence, abundance and biological parameters (length, weight, sex, and maturity staging for males) of cartilaginous fish.
@@ -223,18 +225,40 @@ Coverage will be harmonized to the area surveyed during past surveys.
 
 The proposed cruise track will allow systematic coverage and acquisition of acoustic backscatter records, hydrographic conditions, and abundance and distribution of plankton.
 
-If time restrictions do not allow for complete coverage of the planned acoustic transects, (remaining) transects will be reduced to the sections between 20 and 200 m isobaths, except when a target species is detected at the 200 m isobath. In the latter case, the coverage should be continued until no further occurence can be registered. Because target species mostly aggregate in shallower areas, this will ensure sufficient coverage of the relevant distribution areas. 
+Acoustic transects will be surveyed northwards in ascending order of transect number for each Leg (Fig. \@ref(fig:surveyareamap)).
 
-The ship will sample the entire shelf from Senegal's border to Guinnea-Bissau in the south to the border with Mauritania on Leg 5.1 including The Gambia.
+The Cruise leader/Co-Cruise leader may truncate, extend or omit lines as necessary to alleviate time constraints due to adverse weather or other reasons (e.g. obstacles at sea).
+
+As most of the pelagic species are likely to be concentrated close inshore, it is imperative that the inshore position of each transect, and the inshore transits between transects, be placed as close inshore as safety permits.
+If safety issues arise at the inshore end of a transect (e.g., artisanal fishers or unknown bathymetry) the transit should swing to deeper waters and return inshore to the start of the next transect.
+
+It is noted that the ultimate decision on the position of transects and the need to deviate from transects for safety reasons lie with the Captain of the vessel.
+
+When the acoustic transect line is interrupted (such as break-off for trawling) the transect must be resumed from the point of interruption, preferably with a small overlap to the interrupted transect.
+This ensures continuous acoustic data coverage along the intended transect line.
+
+Calibration of echosounders will take place in Senegal at the beginning of Leg 5.
+
+If the survey conditions are being compromised due to any unforeseen events or bad weather the survey effort will be adjusted according to the following ranking:
+
+1.  The length of every second transect will be shortened from the original planned 20-500 m depth range, to covering the depths from 20-200 m.
+    If a target species is detected at the 200 m isobath, the coverage should be continued until no further occurrence is registered.
+    As target species mostly aggregate in shallower areas, this will ensure sufficient coverage of the relevant distribution areas.
+
+2.  The length of all transects will be shortened from the originally planned 20-500 m depth range, to covering the depths of 20-200 m.
+    If a target species is detected at the 200 m isobath, the coverage should be continued until no further occurrence is registered.
+
+3.  The distance between transects will be increased from 10 NM to 15 NM.
+
+The ship will sample the entire shelf from Senegal's border to Guinea-Bissau in the south to the border with Mauritania on Leg 5.1 including The Gambia.
 Subsequently, Mauritania (St. Louis to Cape Blanc) and the region up to Cape Bojador will be surveyed on Leg 5.2.
 Finally, Leg 5.3 will cover the region from Cape Bojador to Tangier, after which the vessel will sail to Las Palmas, Spain.
-Crew changes will take place in Dakar on October 18 and November 15, and the vessel will return to Las Palmas after completing Leg 5, on December 19.
 
-**Superstations**
+### **Superstations**
 
 Specific environmental transects with super-stations will be carried out according to a regular grid (every 1° or 60NM).
 
-Typically, these transects covers the depth region from 20 to 500 m or even 1000 m.
+Typically, these transects cover the depth region from 20 to 500 m or even 1000 m.
 
 When these environmental transects are extended, specifically from 20 m to 2000 m bottom depth isobath (CTD to 1000 m, other instruments down to 200 m), they will then be referred to as "Master sections".
 
@@ -248,74 +272,11 @@ CTD deployments will be carried out at super-stations along the environmental tr
 knitr::include_graphics("./_images/envtransects.png")
 ```
 
-[**Acoustics**]{.underline}
-
-Acoustic transects will be surveyed northwards in ascending order of transect number for each Leg (Fig. \@ref(fig:surveyareamap)).
-
-The Cruise leader/Co-Cruise leader may truncate, extend or omit lines as necessary to alleviate time constraints due to adverse weather or other reasons (e.g. obstacles at sea).
-
-As most of the pelagic species are likely to be concentrated close inshore, it is imperative that the inshore position of each transect, and the inshore transits between transects, be placed as close inshore as safety permits. If safety issues arise at the inshore end of a transect (e.g. artisanal fishers or unknown bathymetry) the transit should swing to deeper waters and return inshore to the start of the next transect.
-
-It is noted that the ultimate decision on the position of transects and the need to deviate from transects for safety reasons lie with the Captain of the vessel.
-
-When the acoustic transect line is interrupted (such as break-off for trawling) the transect must be resumed from the point of interruption, preferably with a small overlap to the interrupted transect.
-This ensures continuous acoustic data coverage along the intended transect line.
-
-Parallel transect with R/V from Senegal, Mauritania and Morocco, respectively, will be conducted on each of the surveys, pending to availability of partner countries' vessels.
-Calibration of echosounders will take place in Senegal at the beginning of Leg 5.
-
-**The Simrad EK80 echosounder, EM710, SU90 and the ADCP must run synchronized with each other via the k-sync system to ensure no interference on the recorded EK80 data.**  
-
-EK80, EM710, SU90 and the 150 kHz ADCP will be the only actively transmitting acoustic instruments to be used continuously in this survey.
-Occasional use of other sonars and echosounders may occur (unexpected), and if so, they must run synchronized via k-sync with all the other acoustic equipment while on the acoustic transects.
-
-**EK80**
-
-Acoustic backscatter data at all available frequencies (18, 38, 70, 120, 200, and 333 kHz) from the Simrad EK80 echo sounder operating with **narrowband (continuous wave, 'CW') pulses of 1.024 ms duration and "Fast taper"** transmission is to be collected continuously while the ship is steaming along and between transects.
-The chief instrument operator must ensure that only calibrated EK80 settings are used for the acoustic data collection.
-EK80 calibration will be done at the beginning of Leg 5.1.
-If not possible, the most recent valid EK80 calibration results and settings (at the date of writing this is Cape Verde, 2021 Dec., 2021407) will be used for the acoustic backscatter data collection.
-
-EK80 echosounders will operate with both **drop keels in extended positions** to minimize signal loss due to air bubbles running along the hull and keel.
-
-Acoustic backscatter data (EK80) is to be logged down to 500 m depth, with recording range adjustments according to the bottom depth in shallower waters.
-The effective echosounder operational range is frequency dependent.
-The recording ranges at higher nominal acoustic frequencies can be set separately to reduce the size of the acoustic data files (e.g., 150 m for 333 kHz, 300 m for 200 kHz, 600 m for 120 kHz, 1200 m for 70 kHz, and 2000 m for 38 and 18 kHz).
-Appropriate cut-off limits will be set for each frequency at the beginning of the survey, ensuring all valid data are retained.
-The acoustic operators must remain vigilant of the water depth and adjust the recording range logged by the EK80 as appropriate; it is paramount that both the pelagic and part of the bottom echo always are included in the recording range for 18 and 38 kHz that are essential for the survey.
-
-@RokasKubilius to provide feedback on the part below
-
-------------------------------------------------------------------------
-
-**The ping rate** of Simrad EK80 will be set to 'maximum' or 'fixed' (e.g., ping interval 2000 ms, that is 1 ping per 2 sec. for bottom depths up to about 1400 m) depending on k-sync acoustic equipment synchronization system needs.
-Frequent EK80 ping rate adjustments (manual or automatic) may be required, depending on bathymetry conditions.
-
-Weather and sea permitting, a **survey speed of 10 knots** will normally be maintained.
-However, the vessel may have to be slowed even further at the request of the cruise leader or acoustic watch-keeper to reduce acoustic noise.
-
-The acoustic nautical area scattering coefficient (NASC) at 38 kHz integrated across the water column for the target species is to be estimated onboard using the LSSS acoustic data post-processing software.
-Target species include taxa listed in Table \@ref(tab:biosamplingtab).
-The acoustic scrutinization, i.e., the splitting of total backscatter into target/mix groups and non-targets such as plankton in the LSSS post-processing system will be carried out twice daily by the cruise leader, co-cruise leader, and instrument chief.
-The Deep Vision subsea video system may be mounted onto the MultPelt trawl upon specific request of the cruise leader to provide in-trawl imagery to aid the scrutinization process.
-The usage of Deep Vision should be cautious, as the Deep Vision system is vitally important for the subsequent surveys.
-
-The **Simrad SU90 sonar** will be operated continuously along and between transects to record acoustic data continuously during the survey.
-
-The sonar must be set to a frequency of 26 kHz, in FM Normal mode and operated using "Trawl 2" (old "Bow up/180 deg") operation mode with the bearing of the vertical beams 90 deg, perpendicular to the vessel direction with a range of 450m and with the horizontal beams set to 450m with a tilt angle of 3 deg.
-Default filter values must be used except for the Noise filter which must be turned off.
-These settings including range and tilt must be kept the same during the whole survey except during trawling operations where the sonar can at times be used actively to focus in on targets.
-If time allows, scrutinizing of sonar data will be done daily.
-
-The two **ADCPs** will also be operated continuously along the survey.
-
-**The EK80 echosounder, the EM710, the SU90 multibeam sonar and ADCPs must run synchronized with each other via k-sync to ensure no interference on the recorded EK80 data.**
-
-------------------------------------------------------------------------
-
-[**Midwater trawling**]{.underline}
+### Midwater trawling
 
 Frequent *ad hoc* target identification tows will be made at the request of the cruise leader/co-cruise leader, or the acoustic watch-keeper, using either the bottom trawl (Gisund Super) with floats, the small pelagic (Åkra trawl) or the large pelagic (MultPelt) trawl.
+The DeepVision (DV) system will be installed and operated in the MultPelt trawl if requested by the Cruise Leader during the regular coverage.
+The video data from the DV will be logged for the trawl hauls where the DV system is used.
 
 Species composition, length frequencies and biological sampling must be done for each trawl sample.
 The number of trawl samples will depend on the density and distribution of acoustic targets observed and the need for species identification.
@@ -323,10 +284,80 @@ Trawls may be requested at any time during day and night.
 The frequency of tows will depend on the presence and degree of mixing of acoustic targets requiring identification as judged by the acoustic watch keeper, but allowance has been made for an average of 6 hours trawling per day.
 This is an average figure, and on some days more than 6 hours may be requested.
 The emphasis will be on catching relatively small quantities of fish in good condition for target identification and to conduct biological analysis.
-To carry out a trawl haul, the ship will break off from the survey grid.
-After completion of the trawl, the ship is to return to the point at which the survey was interrupted.
 
-If there **are strong echoes on the echogram, and a subsequent trawl fails to collect a decent sample (at least 40 fish of the dominant species), the acoustic operator will need to request another trawl straight away to try and get a representative sample.**
+To carry out a trawl haul, the ship will break off from the survey grid.
+After completion of the trawl, the ship is to return to the point at which the acoustic transect was interrupted (with a small overlap between the interrupted and renewed transect). 
+
+
+If there **are strong echoes on the echogram, and a subsequent trawl fails to collect a decent sample (at least 40 fish of the dominant species), the acoustic operator will need to request another trawl straight away to try and get a representative sample.** Targeted pelagic trawl stations will be conducted based on hydroacoustic recordings (EK80) in order to aid acoustic data interpretation.
+Non-targeted ("blind hauls") should also be carried out in the absence of hydroacoustic recordings.
+
+The overall goal is to provide a fish stock biomass index for each target species or species group that is comparable to indices obtained in past surveys with the R/V *Dr. Fridtjof Nansen*.
+The number and position of targeted trawling stations should be carried out in such a way that it ensures both the best possible area acoustic coverage and fish sampling necessary for the acoustic method. 
+
+
+A CTD deployment is to be carried out at each pelagic trawl station down to a maximum depth of 300 m depth, **without** water sampling. 
+
+Detailed sampling protocols for what is considered as standard sampling on the *R/V Dr. Fridtjof Nansen* can be found in the Nansen wiki (<https://nansen-surveys.imr.no/doku.php>).
+Other sampling protocols, area specific information and detailed description of the sampling conducted, will be given below. 
+
+### Acoustics
+
+The EK80, SU90, and one of the ADCP\'s (150 kHz) are the only actively pinging acoustic instruments to be used continuously throughout the Leg 4.2 and 4.3 surveys.
+Occasional use of SH90, EM710, MS70, or ME70 for navigation and scientific experimentation may occur; these will operate synchronized with all other acoustic equipment via k-sync if used while the ship is sailing on the acoustic transect.
+**All actively pinging acoustic instruments used will operate synchronized with each other via k-sync system with the explicit emphasis on EK80 acoustic data quality.** Synchronization of actively pinging acoustic equipment is paramount to avoid interference between the sonars.
+Thus, great care must be taken to ensure that the ping order is set up correctly to avoid interference from the SU90 and ADCP\'s on the EK80 records while ship is sailing on the acoustic transect.
+Echosounders will operate with ship **drop-keel extended**, which reduces backscatter from surface and ship hull generated air bubbles.
+A constant survey speed of 10 knots will normally be maintained but adjusted according to weather and sea conditions.
+However, at times the vessel may have to be slowed (at the request of the acoustic watch-keeper) to reduce acoustic noise experienced by the EK80 system. 
+
+
+**EK80** 
+
+Acoustic backscatter data (Simrad EK80) will be collected continuously with at least 1 ping per second ping rate (1 Hz) with occasional adjustments to address the \"false bottom\" echoes or increase the sampling rate upon shallow/small pelagic fish schools.
+Continuous wave (**\'CW\', narrow-band**) pulses of \'Fast\' taper (denoted \"ramping\" in the EK80 menu) at nominal frequencies of 18, 38, 70, 120, 200, and 333 kHz will be used with 1.024 ms pulse duration.
+The chief instrument operator must ensure that only calibrated EK80 settings are used for on-transect acoustic data collection.
+EK80 calibration is done at the start of the pelagic survey whenever practicable (the preferred option).
+Otherwise, the most recent valid EK80 calibration of acceptable quality is used.
+Acoustic data will be **logged to 550m depth** (survey area bathymetry extent is 20-500 m) and extended as needed on deeper monitoring lines.
+The recording range can be adjusted according to the bottom depth in shallow waters, but acoustic records must always include the entire water column and part of the sea bottom echo while sailing on the acoustic transect.
+This requires that the acoustic operators remain aware of the water depth and adjust the maximum depth logged by the EK80 as appropriate.
+The effective echosounder operational range is frequency-dependent.
+The recording range of the higher nominal acoustic frequencies can be set separately to reduce the size of the acoustic data files (e.g., 150 m for 333 kHz and 300 m for 200 kHz).
+The acoustic nautical area backscattering coefficient (NASC) at 38 kHz integrated across the water column for the target species / acoustic categories will be estimated on board using the LSSS acoustic data post-processing software.
+Priority target species have been selected with the aim to produce abundance estimate indexes for these species.
+Scrutinization exercises, i.e., splitting total backscatter into target/mix groups and non-targets such as plankton will be carried out during daily acoustic data scrutinization sessions by the instrument chief, the cruise leader and the co-cruise leader.
+The scrutinized acoustic data are to be stored at 1 NM resolution in the LSSS system.
+The Deep Vision system will be used to aid acoustic data interpretation whenever it is available. 
+
+**EK80 calibration** 
+
+Simrad EK80 echosounder calibration will be conducted during Leg 4.3.
+If successful and results are of acceptable quality, this EK80 calibration results will be used for both Leg 4.2 and 4.3 EK80 scrutinized acoustic data output.
+The Simrad EK80 (provisionally Elephant Bay, Angola) and WBAT echosounders will be calibrated using standard methods and spheres (Demer et al., 2015).
+Both **narrowband and broadband** pulse settings will be calibrated with priority on narrowband pulse calibration.
+For broadband pulse calibrations, the calibration sphere diameter will be chosen based on the best fit for the bandwidth in question in terms of the \"null\" positions in the frequency response of the sphere.
+A second calibration target of a different size will be used where needed to ensure calibration data across the entire bandwidth of the chosen acoustic pulse and the two calibration results merged as per EK80 software procedures for it.
+The complete broadband pulse settings calibration is extensive and may need to be compromised/reduced due to time and local conditions constraints (e.g., no dual-sphere calibration per acoustic channel).
+An additional weight (900g led) may be used to stabilize spheres of smaller size (e.g., WC38.1, WC35, WC25, WC22, and WC20) when calibrating ship echosounders.
+It will be suspended (bottom depth allowing) 8 m below the calibration target by 0.4mm diameter nylon line.
+WC57.2, Cu64, or Cu60 can be used alone with no additional weights.
+WBAT will be calibrated while suspended in water by ship crane at 2 m depth using dedicated WBAT metal frame with calibration \'arms\' extended (calm water is paramount).
+The spheres will be suspended by three lines (0.4 mm diameter nylon) 6-8 m below the transducers. 
+
+**SU90** 
+
+The Simrad SU90 fisheries sonar will be used to record acoustic backscatter data continuously during the 4.2 and 4.3 surveys.
+The sonar must be set to a frequency of 26 kHz, in FM Normal mode and operated using \"Trawl 2\" (old \"Bow up/180 deg\") operation mode with the bearing of the vertical beams 90 deg, perpendicular to the vessel direction with a range of 450m and with the horizontal beams set to 450m with a tilt angle of 3 deg.
+Default filter values must be used except for the noise filter which must be turned off.
+These settings including range and tilt must be kept the same during the whole survey except during trawling operations where the sonar can at times be used actively to focus in on targets. 
+
+**ADCP** 
+
+The ship mounted 150 kHz ADCP will operate continuously during the Leg 4.2 and 4.3 surveys.
+For more details see section 3.2.4. 
+
+------------------------------------------------------------------------
 
 ## **Meteorological and hydrographic sampling in surface water**
 
@@ -353,8 +384,9 @@ Water samples will be collected from the sensor's water outflow to measure pH an
 ### *Current speed and direction measurements - ADCP*
 
 Ocean current data is collected with a vessel-mounted Teledyne RDI Ocean Surveyor Acoustic Doppler Profiler operating at 150 kHz with a depth range of 400 m.
-The ADCP runs in narrow band mode and averages data in 8 m vertical bins.
-Heading, pitch, roll and positional data are acquired by a Kongsberg Marine SEAPATH unit.
+The 75 kHz unit is currently out of order and will not be ready for use during Leg 5. 
+
+
 Teledyne's VmDAS software is used to collect the raw current data, whereas the data is processed using software created at IMR.
 
 ## **Hydrographic sampling in the water column**
@@ -383,7 +415,6 @@ Additional sampling devices will be deployed for collection of plankton (includi
 
 The water samples from the Niskin bottles attached to the Rosette will be used for measurements of pH, total alkalinity, dissolved nutrients (nitrite, nitrate, silicate, and phosphate), dissolved oxygen, chlorophyll a and salinity.
 Detailed sampling protocols for these parameters can be found in the Nansen manual site (<http://nansen-surveys.imr.no/doku.php?id=ctd_lab_information>).
-
 
 ### Ocean Acidification parameters - pH and total alkalinity
 
@@ -414,10 +445,6 @@ Samples are first measured without acid for chlorophyll *a* determination and th
 The 10AU fluorometer is calibrated once a year with standard solutions created from a chlorophyll *a* solid from spinach.
 In addition, blank measurements with 90% acetone and stability measurements with a 10AU Solid Secondary Standard are carried out before and after every sample set analysis.
 
-Water samples for phytoplankton community composition analysis will be collected at the stations of the five national monitoring lines (Cunene, Namibe, Lobito, Luanda, Congo).
-Water will be collected at predefined depths (5, 15, 25, 50, 75 m) with Niskin bottles on the CTD-Rosette, with \*\*75 m\*\* as the maximum depth of sample collection.
-Samples will be fixed in 2% formaldehyde solution.
-
 ## **Zooplankton**
 
 Zooplankton samples are to be collected at three "superstation" stations positioned at the isobaths 30 m, 100 m, and 500 m).
@@ -440,6 +467,7 @@ The exact procedure to be followed is described in detail in the **Nansen Plankt
 Ichthyoplankton is collected at the same super stations as the zooplankton samples are collected, with double oblique tows of a Bongo net (60 cm diameter) equipped with 405 μm nets.
 The Bongo will be towed obliquely within 5 m above the bottom or a maximum depth of 200 m to the surface at deep stations.
 **Wire speed and the vessel speed should strictly follow the Nansen Plankton Guidelines (see <https://nansen-surveys.imr.no/doku.php?id=plankton_lab_information>)**.\
+
 Once the Bongo net is on board, the samples will be transferred in the lab and will be processed as follows:
 
 • The sample of the right net (H) will be preserved directly in 95% ethanol.
@@ -475,14 +503,14 @@ The bulk of neuston samples also collected with the Manta trawl should be preser
 In case of lack of time for sorting or adverse weather conditions, samples should be directly preserved in 96% ethanol and processed later.
 Non-methylated ethanol should be used in all cases.
 
-
 ## **Biological sampling of fisheries resources**
 
 According to the size of the catch, either the whole catch is sorted and measured, or subsamples are collected, and total catch estimated from subsample ratios.
 
-At all trawl hauls, the catch is sorted according to species, and number and weight measurements will be completed for all species caught.
+At all trawl hauls, the catch is sorted according to species, and number and weight measurements will be completed for all taxa caught.
+For priority species, length and weight for individuals will be recorded using an electronic fish meter connected to a customized data acquisition system (Fish2Data and Biotic Editor) running on the server of the vessel.
 
-For the defined priority species length and weight are recorded using an electronic fish meter connected to a standard data acquisition system used on board the vessel (Fish2Data and Biotic Editor) that is connected to the server of the vessel.
+
 Biological sampling will be completed for defined priority species (Table \@ref(tab:biosamplingtab)).
 
 The fish lab workflow overview and the specific scales to be used on the survey are described in [ANNEX III](#ANNEX_III) and [ANNEX IV](#ANNEX_IV). As a preparation for the work in the fish lab, an onboard training course on the use of the electronic fish meter, Fish2Data and Biotic Editor software will be provided at the beginning of the survey.
@@ -515,17 +543,18 @@ set_table_properties(ft_biosamplingtab,layout = "autofit")
 
 <!-- *Not relevant for the survey.* -->
 
+\############################################
+
+\############################################
+
 ### Pelagic species
 
-The primary objectives of sampling midwater trawl catches are to obtain information on species composition and size frequency to allow acoustic estimation of the biomass of the different species.
+The primary objectives of sampling midwater trawl catches are to obtain information on species composition and size frequency to allow the calculation of acoustic biomass indices of the different species.
 
 [**No fish or any other organisms are to be taken from the deck or from the trawl without the expressed permission of the fish team leader.**]
 
 **Fish team leaders must ensure adherence BY ALL FISH TEAM MEMBERS to the sampling protocol given below.**
 
-@ Cruise leaders/co-cruise leaders and fish lab team leaders: Correct the following section between hashtags accordingly
-
-#######################################
 The following tasks are to be carried out:
 
 1.  **Estimation of species composition** of the catch through sorting and weighing of species-specific sub-samples.
@@ -544,30 +573,27 @@ Care should be taken that this sub-sample covers the size range observed in the 
 
 **LENGTH FREQUENCY DETERMINATIONS AND FULL BIOLOGICALS MUST BE DONE FOR EVERY SINGLE TRAWL.**
 
-### *Other trawl-related sampling*
+\#############################################
 
-#### *Fish and macroinvertebrates samples for regional taxonomy course and post-survey taxonomic studies* {.unnumbered}
+\#############################################
 
-Unidentified fish and macroinvertebrates taxa are to be preserved according to standard protocols.
+## *Other trawl-related sampling*
 
-#### *Cartilaginous fish* {.unnumbered}
+### *Cartilaginous fish* {.unnumbered}
 
 Individual length and weight, sex and maturity status shall be measured of all cartilaginous fish caught.
 
-Vulnerable species that are alive shall be released as soon as possible after the catch is on deck.
+Vulnerable species that are still alive, after the catch is brought on deck, shall be released as soon as possible.
 If the individuals are too large to weigh individually only length is to be measured.
 
-The protocol that will be followed for cartilaginous will be the same as for demersal / pelagic resources described above.
-
-Specimens for taxonomic courses will be collected also following the protocol described above.
+The protocol that will be followed for cartilaginous will be the same as for demersal / pelagic resources described above.Specimens for taxonomic courses will be collected also following the protocol described above.
 Species that cannot be identified should be preserved in formalin or frozen (and labelled according to the procedure above) and sent to taxonomic experts for identification after the survey.
 
-#### *Samples for food safety studies and nutrition* {.unnumbered}
+### *Samples for food safety studies and nutrition* {.unnumbered}
 
--------------------------------------------------------
+------------------------------------------------------------------------
 
-
-#### *Marine debris* {.unnumbered}
+### *Marine debris* {.unnumbered}
 
 Marine debris will be registered and classified at each station according to the categories listed in the sampling protocol for marine litter (<https://nansen-surveys.imr.no/doku.php?id=biological_sampling_procedures>).
 All pieces of litter should be weighed and counted, and when possible, photos should be taken of the individual pieces for a reference catalogue.
@@ -581,13 +607,25 @@ Data should be recorded in designated Excel sheet and photos should be clearly l
 
 <!-- Not relevant for the survey. -->
 
-### *Pelagic fish biomass estimated based on acoustics (EK80)*
+### *Pelagic fish biomass estimated based on acoustic* **on acoustic backscatter** (EK80)
 
 The biomass indices of priority pelagic fish will be estimated by the acoustic estimate method (<https://nansen-surveys.imr.no/doku.php?id=biomass_calculations>) using the [StoX (stoxproject.github.io)](https://stoxproject.github.io/StoX/) software.
 
-This requires as input, the integrated acoustic backscatter (S~A~/NASC) per 10 NM or shorter ESDU for each of the species listed, the species composition from the trawls, the length frequency per species and the length frequency sample mass per species, the transect length and the survey area (per stratum). The survey area will be stratified by region and depth (20-100 m, 100-200 m, 200-300 m, 300-500m).
+
+Biomass indices will be estimated as total biomass and by length groups (for the species with sufficient length data).
+
+\#############################################
+
+\#############################################
+
+This requires as input, the integrated acoustic backscatter (S~A~/NASC) per 10 NM or shorter ESDU for each of the species listed, the species composition from the trawls, the length frequency per species and the length frequency sample mass per species, the transect length and the survey area (per stratum).
+The survey area will be stratified by region and depth (20-100 m, 100-200 m, 200-300 m, 300-500m).
 
 Biomass indices will be estimated as total biomass per species per stratum and as numbers at length per stratum (for the species with sufficient length data) and for the total survey area.
+
+\##############################################
+
+\#############################################
 
 Allocation of acoustic densities to species groups will be done according to Table \@ref(tab:acousticcattab) for the relevant to the survey acoustic groups only.
 
@@ -612,7 +650,7 @@ set_table_properties(ft_acousticcattab,layout = "autofit")
 
 \newpage
 
-# **DATA COLLECTED AND STANDARD PROCEDURE FOR HANDING OVER SAMPLES TO PARTNERS**
+## **Data collected and standard procedure for handling over samples to partners**
 
 In line with the Nansen Data Policy, the Cruise Leader is to ensure that each national institution represented in the survey receives a copy of the draft report and the basic data (e.g. catch data) pertaining to the particular survey and for **their national waters** before leaving the vessel.
 
@@ -623,12 +661,12 @@ The different types of data expected to be recorded, their storage and delivery 
 Finally, the samples to be collected, their preservation and planned follow-up work is detailed in Table \@ref(tab:collectedsamplestab) ([ANNEX VII](#ANNEX_VII)).
 
 The Cruise Leader is expected to document what data and samples have been shared and with whom.
-
+The Team leaders for the various laboratories are responsible for ensuring that a copy of all the data collected, according to the data [management plan](https://nansen-surveys.imr.no/lib/exe/fetch.php?media=nansen-surveys:data_managemen_plan_dfnansen_dok06022.pdf) are brought to land.
+The Cruise leader and the Chief instrument engineer are responsible for ensuring that all relevant files for the acoustic data are copied and to oversee that all the other data are copied as described above.
+The Chief engineer is responsible for delivering the copied data to NMD.
 The cruise participants are expected to sign and conform to the Data policy of the EAF-Nansen Programme.
-
-Persons responsible for samples need to inform about the status of analysis, and report about this at the post-survey meeting, as well as send a copy of the analysis/results to IMR ([nansen_data\@hi.no](mailto:nansen_data@hi.no)).
-
-IMR, as a data custodian for the EAF-Nansen Programme, is required to have an overview of the samples/analysis at any point in time to;
+Persons responsible for samples need to inform about the status of analysis, and report about this at the post-survey meeting as well as send a copy of the analysis/results to IMR ([nansen_data\@hi.no](mailto:nansen_data@hi.no)).
+IMR, as a data custodian for the EAF-Nansen Programme, is required to have an overview of the samples/analysis at any point in time to:
 
 1.  Ensure that data life-cycle management is carried out in the expected way
 
@@ -640,7 +678,7 @@ IMR, as a data custodian for the EAF-Nansen Programme, is required to have an ov
 
 5.  Plan efficiently future surveys in the same area.
 
--------------------------------------------------------
+------------------------------------------------------------------------
 
 # **REFERENCES** {.unnumbered}
 
