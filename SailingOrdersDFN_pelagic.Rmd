@@ -288,13 +288,11 @@ The emphasis will be on catching relatively small quantities of fish in good con
 To carry out a trawl haul, the ship will break off from the survey grid.
 After completion of the trawl, the ship is to return to the point at which the acoustic transect was interrupted (with a small overlap between the interrupted and renewed transect). 
 
-
 If there **are strong echoes on the echogram, and a subsequent trawl fails to collect a decent sample (at least 40 fish of the dominant species), the acoustic operator will need to request another trawl straight away to try and get a representative sample.** Targeted pelagic trawl stations will be conducted based on hydroacoustic recordings (EK80) in order to aid acoustic data interpretation.
 Non-targeted ("blind hauls") should also be carried out in the absence of hydroacoustic recordings.
 
 The overall goal is to provide a fish stock biomass index for each target species or species group that is comparable to indices obtained in past surveys with the R/V *Dr. Fridtjof Nansen*.
 The number and position of targeted trawling stations should be carried out in such a way that it ensures both the best possible area acoustic coverage and fish sampling necessary for the acoustic method. 
-
 
 A CTD deployment is to be carried out at each pelagic trawl station down to a maximum depth of 300 m depth, **without** water sampling. 
 
@@ -303,19 +301,18 @@ Other sampling protocols, area specific information and detailed description of 
 
 ### Acoustics
 
-The EK80, SU90, and one of the ADCP\'s (150 kHz) are the only actively pinging acoustic instruments to be used continuously throughout the Leg 4.2 and 4.3 surveys.
+The EK80, SU90, and one of the ADCP's (150 kHz) are the only actively pinging acoustic instruments to be used continuously throughout the Leg 4.2 and 4.3 surveys.
 Occasional use of SH90, EM710, MS70, or ME70 for navigation and scientific experimentation may occur; these will operate synchronized with all other acoustic equipment via k-sync if used while the ship is sailing on the acoustic transect.
 **All actively pinging acoustic instruments used will operate synchronized with each other via k-sync system with the explicit emphasis on EK80 acoustic data quality.** Synchronization of actively pinging acoustic equipment is paramount to avoid interference between the sonars.
-Thus, great care must be taken to ensure that the ping order is set up correctly to avoid interference from the SU90 and ADCP\'s on the EK80 records while ship is sailing on the acoustic transect.
+Thus, great care must be taken to ensure that the ping order is set up correctly to avoid interference from the SU90 and ADCP's on the EK80 records while ship is sailing on the acoustic transect.
 Echosounders will operate with ship **drop-keel extended**, which reduces backscatter from surface and ship hull generated air bubbles.
 A constant survey speed of 10 knots will normally be maintained but adjusted according to weather and sea conditions.
 However, at times the vessel may have to be slowed (at the request of the acoustic watch-keeper) to reduce acoustic noise experienced by the EK80 system. 
 
-
 **EK80** 
 
-Acoustic backscatter data (Simrad EK80) will be collected continuously with at least 1 ping per second ping rate (1 Hz) with occasional adjustments to address the \"false bottom\" echoes or increase the sampling rate upon shallow/small pelagic fish schools.
-Continuous wave (**\'CW\', narrow-band**) pulses of \'Fast\' taper (denoted \"ramping\" in the EK80 menu) at nominal frequencies of 18, 38, 70, 120, 200, and 333 kHz will be used with 1.024 ms pulse duration.
+Acoustic backscatter data (Simrad EK80) will be collected continuously with at least 1 ping per second ping rate (1 Hz) with occasional adjustments to address the "false bottom" echoes or increase the sampling rate upon shallow/small pelagic fish schools.
+Continuous wave (**'CW', narrow-band**) pulses of 'Fast' taper (denoted "ramping" in the EK80 menu) at nominal frequencies of 18, 38, 70, 120, 200, and 333 kHz will be used with 1.024 ms pulse duration.
 The chief instrument operator must ensure that only calibrated EK80 settings are used for on-transect acoustic data collection.
 EK80 calibration is done at the start of the pelagic survey whenever practicable (the preferred option).
 Otherwise, the most recent valid EK80 calibration of acceptable quality is used.
@@ -336,19 +333,19 @@ Simrad EK80 echosounder calibration will be conducted during Leg 4.3.
 If successful and results are of acceptable quality, this EK80 calibration results will be used for both Leg 4.2 and 4.3 EK80 scrutinized acoustic data output.
 The Simrad EK80 (provisionally Elephant Bay, Angola) and WBAT echosounders will be calibrated using standard methods and spheres (Demer et al., 2015).
 Both **narrowband and broadband** pulse settings will be calibrated with priority on narrowband pulse calibration.
-For broadband pulse calibrations, the calibration sphere diameter will be chosen based on the best fit for the bandwidth in question in terms of the \"null\" positions in the frequency response of the sphere.
+For broadband pulse calibrations, the calibration sphere diameter will be chosen based on the best fit for the bandwidth in question in terms of the "null" positions in the frequency response of the sphere.
 A second calibration target of a different size will be used where needed to ensure calibration data across the entire bandwidth of the chosen acoustic pulse and the two calibration results merged as per EK80 software procedures for it.
 The complete broadband pulse settings calibration is extensive and may need to be compromised/reduced due to time and local conditions constraints (e.g., no dual-sphere calibration per acoustic channel).
 An additional weight (900g led) may be used to stabilize spheres of smaller size (e.g., WC38.1, WC35, WC25, WC22, and WC20) when calibrating ship echosounders.
 It will be suspended (bottom depth allowing) 8 m below the calibration target by 0.4mm diameter nylon line.
 WC57.2, Cu64, or Cu60 can be used alone with no additional weights.
-WBAT will be calibrated while suspended in water by ship crane at 2 m depth using dedicated WBAT metal frame with calibration \'arms\' extended (calm water is paramount).
+WBAT will be calibrated while suspended in water by ship crane at 2 m depth using dedicated WBAT metal frame with calibration 'arms' extended (calm water is paramount).
 The spheres will be suspended by three lines (0.4 mm diameter nylon) 6-8 m below the transducers. 
 
 **SU90** 
 
 The Simrad SU90 fisheries sonar will be used to record acoustic backscatter data continuously during the 4.2 and 4.3 surveys.
-The sonar must be set to a frequency of 26 kHz, in FM Normal mode and operated using \"Trawl 2\" (old \"Bow up/180 deg\") operation mode with the bearing of the vertical beams 90 deg, perpendicular to the vessel direction with a range of 450m and with the horizontal beams set to 450m with a tilt angle of 3 deg.
+The sonar must be set to a frequency of 26 kHz, in FM Normal mode and operated using "Trawl 2" (old "Bow up/180 deg") operation mode with the bearing of the vertical beams 90 deg, perpendicular to the vessel direction with a range of 450m and with the horizontal beams set to 450m with a tilt angle of 3 deg.
 Default filter values must be used except for the noise filter which must be turned off.
 These settings including range and tilt must be kept the same during the whole survey except during trawling operations where the sonar can at times be used actively to focus in on targets. 
 
@@ -385,7 +382,6 @@ Water samples will be collected from the sensor's water outflow to measure pH an
 
 Ocean current data is collected with a vessel-mounted Teledyne RDI Ocean Surveyor Acoustic Doppler Profiler operating at 150 kHz with a depth range of 400 m.
 The 75 kHz unit is currently out of order and will not be ready for use during Leg 5. 
-
 
 Teledyne's VmDAS software is used to collect the raw current data, whereas the data is processed using software created at IMR.
 
@@ -510,7 +506,6 @@ According to the size of the catch, either the whole catch is sorted and measure
 At all trawl hauls, the catch is sorted according to species, and number and weight measurements will be completed for all taxa caught.
 For priority species, length and weight for individuals will be recorded using an electronic fish meter connected to a customized data acquisition system (Fish2Data and Biotic Editor) running on the server of the vessel.
 
-
 Biological sampling will be completed for defined priority species (Table \@ref(tab:biosamplingtab)).
 
 The fish lab workflow overview and the specific scales to be used on the survey are described in [ANNEX III](#ANNEX_III) and [ANNEX IV](#ANNEX_IV). As a preparation for the work in the fish lab, an onboard training course on the use of the electronic fish meter, Fish2Data and Biotic Editor software will be provided at the beginning of the survey.
@@ -610,7 +605,6 @@ Data should be recorded in designated Excel sheet and photos should be clearly l
 ### *Pelagic fish biomass estimated based on acoustic* **on acoustic backscatter** (EK80)
 
 The biomass indices of priority pelagic fish will be estimated by the acoustic estimate method (<https://nansen-surveys.imr.no/doku.php?id=biomass_calculations>) using the [StoX (stoxproject.github.io)](https://stoxproject.github.io/StoX/) software.
-
 
 Biomass indices will be estimated as total biomass and by length groups (for the species with sufficient length data).
 
