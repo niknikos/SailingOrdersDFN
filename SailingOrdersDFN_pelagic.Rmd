@@ -801,7 +801,7 @@ set_table_properties(ft_matstagetab,layout = "autofit")
 
 \newpage
 
-```{r fatstageanchtab, echo=FALSE, tidy=TRUE, label="fatstageanchtab"}
+```{r fatstageanchtab, eval=FALSE, include=FALSE, label="fatstageanchtab", tidy=TRUE}
 ft_fatstageanchtab <- flextable(input_dataframes$fatstageanchtab) %>% theme_booktabs(bold_header = TRUE) %>% bg(bg='transparent', part = "header") 
 #%>% ftExtra::colformat_md()
 ft_fatstageanchtab <- line_spacing(ft_fatstageanchtab, space = 1.0, part = "all")
@@ -818,13 +818,13 @@ set_table_properties(ft_fatstageanchtab,layout = "autofit")
 
 <br>
 
-```{r anchovyfat, echo=FALSE, fig.cap=paste(input_dataframes$fig_captions[input_dataframes$fig_captions$`fig name`=="anchovyfat","caption"]), fig.align='center', fig.width=4, fig.height=6,  label='anchovymat'}
+```{r anchovyfat, eval=FALSE, fig.align='center', fig.cap=paste(input_dataframes$fig_captions[input_dataframes$fig_captions$`fig name`=="anchovyfat","caption"]), fig.height=6, fig.width=4, include=FALSE, label='anchovymat'}
 knitr::include_graphics("./_images/anchovyfat.png")
 ```
 
 \newpage
 
-```{r fatstagesarhtab, echo=FALSE, tidy=TRUE, label="fatstagesarhtab"}
+```{r fatstagesarhtab, eval=FALSE, include=FALSE, label="fatstagesarhtab", tidy=TRUE}
 ft_fatstagesarhtab <- flextable(input_dataframes$fatstagesarhtab) %>% theme_booktabs(bold_header = TRUE) %>% bg(bg='transparent', part = "header") 
 #%>% ftExtra::colformat_md()
 ft_fatstagesarhtab <- line_spacing(ft_fatstagesarhtab, space = 1.0, part = "all")
@@ -841,7 +841,7 @@ set_table_properties(ft_fatstagesarhtab,layout = "autofit")
 
 <br>
 
-```{r sardinefat, echo=FALSE, fig.cap=paste(input_dataframes$fig_captions[input_dataframes$fig_captions$`fig name`=="sardinefat","caption"]), fig.align='center', fig.width=4, fig.height=6,  label='sardinemat'}
+```{r sardinefat, eval=FALSE, fig.align='center', fig.cap=paste(input_dataframes$fig_captions[input_dataframes$fig_captions$`fig name`=="sardinefat","caption"]), fig.height=6, fig.width=4, include=FALSE, label='sardinemat'}
 knitr::include_graphics("./_images/sardinefat.png")
 ```
 
