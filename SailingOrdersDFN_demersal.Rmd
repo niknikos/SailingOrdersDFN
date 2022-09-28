@@ -490,7 +490,8 @@ Extraction of otoliths, parasites and measurements for morphometrics will be car
 <!---BLOCK_LANDSCAPE_START--->
 
 ```{r biosamplingtab, echo=FALSE, tidy=TRUE, label="biosamplingtab"}
-ft_biosamplingtab <- flextable(input_dataframes$biosamplingtab) %>% theme_booktabs(bold_header = TRUE) %>% bg(bg='transparent', part = "header") %>% ftExtra::colformat_md()
+empty_columns <- colSums(is.na(input_dataframes$biosamplingtab)|input_dataframes$biosamplingtab=="")==nrow(input_dataframes$biosamplingtab)
+ft_biosamplingtab <- flextable(input_dataframes$biosamplingtab[,!empty_columns]) %>% theme_booktabs(bold_header = TRUE) %>% bg(bg='transparent', part = "header") %>% ftExtra::colformat_md()
 # Add caption
 autonum <- run_autonum(seq_id = "tab", bkm = "biosamplingtab", pre_label = "Table ")
 ft_biosamplingtab <- set_caption(ft_biosamplingtab, caption = paste(input_dataframes$tab_captions[input_dataframes$tab_captions$`tab name`=="biosamplingtab","caption"]), style = "Table Caption"
