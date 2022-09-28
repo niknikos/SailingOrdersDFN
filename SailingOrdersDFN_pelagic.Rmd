@@ -394,7 +394,8 @@ The Fish2Data software will be pre-configured with the sampling protocol and wil
 <!---BLOCK_LANDSCAPE_START--->
 
 ```{r biosamplingtab, echo=FALSE, tidy=TRUE, label="biosamplingtab"}
-ft_biosamplingtab <- flextable(input_dataframes$biosamplingtab) %>% theme_booktabs(bold_header = TRUE) %>% bg(bg='transparent', part = "header") %>% ftExtra::colformat_md()
+empty_columns <- colSums(is.na(input_dataframes$biosamplingtab)|input_dataframes$biosamplingtab=="")==nrow(input_dataframes$biosamplingtab)
+ft_biosamplingtab <- flextable(input_dataframes$biosamplingtab[,!empty_columns]) %>% theme_booktabs(bold_header = TRUE) %>% bg(bg='transparent', part = "header") %>% ftExtra::colformat_md()
 ft_biosamplingtab <- line_spacing(ft_biosamplingtab, space = 1.0, part = "all")
 # Add caption
 
