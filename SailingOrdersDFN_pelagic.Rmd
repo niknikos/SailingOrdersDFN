@@ -108,7 +108,7 @@ The general objectives of Leg 5 surveys are:
 
 -   Standard biological sampling of prioritized pelagic species (length, weight, sex and maturity).
 
--   Specific biological sampling (otolith extraction for microchemistry) of sardine (**Sardina pilchardus**) and Atlantic chub mackerel (**Scomber colias**).
+-   Specific biological sampling (otolith extraction for microchemistry) of Atlantic chub mackerel (***Scomber colias***).
 
 -   Map the physical and chemical properties of the water column and the subsurface layer at the study area (temperature, salinity, dissolved O~2~, chlorophyll, nutrients, pH and total alkalinity), as well as the underwater currents and light penetration.
 
@@ -116,6 +116,7 @@ The general objectives of Leg 5 surveys are:
 
 -   Sampling for the presence of microplastic particles in surface waters.
 
+-   Dense CTD coverage at the Dakhla master section.
 
 **Survey area**
 
@@ -126,16 +127,19 @@ Leg 5.3 will cover the region from Cape Bojador to Tangier.
 The area to be surveyed by the R/V *Dr. Fridtjof Nansen* in Leg 5, along with the planned acoustic transects, is shown in Figure \@ref(fig:surveyareamap).
 The vessel can safely operate in depths \>20 m, thus acoustic transects will not cover shallower areas.
 
-The end point of Leg 5.2 and start point of Leg 5.3 will be adjusted based on survey progress. If the planned acoustic coverage during Leg 5.2 cannot be achieved, Leg 5.3 will start from where Leg 5.2 stopped, and the planned activities of Leg 5.3 will be adjusted accordingly. If Leg 5.2 achieves the planned acoustic coverage before time, the coverage will be continued, and the planned activities of Leg 5.3 will be adjusted accordingly. Leg 5.1 is to follow the planned coverage and dates without deviation.
+The end point of Leg 5.2 and start point of Leg 5.3 will be adjusted based on survey progress.
+If the planned acoustic coverage during Leg 5.2 cannot be achieved, Leg 5.3 will start from where Leg 5.2 stopped, and the planned activities of Leg 5.3 will be adjusted accordingly.
+If Leg 5.2 achieves the planned acoustic coverage before time, the coverage will be continued, and the planned activities of Leg 5.3 will be adjusted accordingly.
+Leg 5.1 is to follow the planned coverage and dates without deviation.
 
-In the Survey logger, upon completion of activities at Cape Blanc during Leg 5.2, the survey number will be changed from 2022410 to 2022411. It is important that the Cruise Summary Report of each sub-Leg corresponds to the survey numbers.
+In the Survey logger, upon completion of activities at Cape Blanc during Leg 5.2, the survey number will be changed from 2022410 to 2022411.
+It is important that the Cruise Summary Report of each sub-Leg corresponds to the survey numbers.
 
-
-```{r surveyareamap, echo=FALSE, fig.cap=paste(input_dataframes$fig_captions[input_dataframes$fig_captions$`fig name`=="surveyareamap","caption"]), fig.align='center', fig.width=5, fig.height=8,  label='surveyareamap'}
+```{r surveyareamap, echo=FALSE, fig.cap=paste(input_dataframes$fig_captions[input_dataframes$fig_captions$`fig name`=="surveyareamap","caption"]), fig.align='center', fig.width=6, fig.height=6.5,  label='surveyareamap'}
 knitr::include_graphics("./_images/transectsonly.png")
 ```
 
-## **Proposed participation in different legs and experience required**
+## **Proposed participation and experience required**
 
 Typically, the surveys with the R/V *Dr. Fridtjof Nansen* include participants from different countries and institutions.
 Regarding qualifications, a mix of experienced and less experienced scientists /technicians will receive on-the-job training in sampling procedures.
@@ -177,6 +181,7 @@ The specific objectives of the Leg 5 surveys are listed below (note that some of
 -   Hydrography and biogeochemical description:
 
     -   Map the physical and chemical properties of the water column and the subsurface layer at the study area (temperature, salinity, dissolved O~2~, chlorophyll *a*, pH, total alkalinity, pCO₂ and nutrients), as well as the underwater currents and light penetration.
+    -   Cover the Dakhla master section for appending the time-series data of the physical and chemical parameters, crucial for understanding ocean acidification and forcing to contribute to climate change observations.
 
 -   Phytoplankton, zooplankton, ichthyoplankton and microplastics:
 
@@ -191,7 +196,10 @@ The specific objectives of the Leg 5 surveys are listed below (note that some of
     -   Provision of acoustic backscatter estimates (as a proxy for biomass) for the following acoustics groups: sardinella, horse mackerel, sardine ("Pilchard"), Atlantic chub mackerel ("Mackerel") and anchovy.
         Other scatterers will be allocated to "Pelagic Group I" (cluepeoids), "Pelagic Group II" (carangids, scombrids), "Demersal fish", "Mesopelagic fish", "Plankton" or "Other", as appropriate.
 
-    -   Estimating the biomass and population size structure of each sardinella species (*Sardinella maderensis* and *S. aurita*), each horse mackerel species (*Trachurus trachurus*, *T. trecae*,*T. picturatus*), anchovy (*Engraulis encrasicolus*), sardine (*Sardina pilchardus*) and Atlantic chub mackerel (*Scomber colias*) by means of echo integration and midwater trawling. For Pelagic Group I (clupeids) and Pelagic Group II (scombrids, carangids) only biomass estimates to be provided. From Cape Blanc and northwards, *Macroramphosus gracilis* biomass will also be estimated.
+    -   Estimating the biomass and population size structure of each sardinella species (*Sardinella maderensis* and *S. aurita*), each horse mackerel species (*Trachurus trachurus*, *T. trecae*,*T. picturatus*), anchovy (*Engraulis encrasicolus*), sardine (*Sardina pilchardus*) and Atlantic chub mackerel (*Scomber colias*) by means of echo integration and midwater trawling.
+        For Pelagic Group I (clupeids) and Pelagic Group II (scombrids, carangids) only biomass estimates to be provided.
+        From Cape Blanc and northwards, *Macroramphosus* sp.
+        biomass will also be estimated.
 
     -   Collection of biological data (length, wet body weight, sex, gonad maturity stage) for defined priority species (Table \@ref(tab:biosamplingtab)).
 
@@ -205,7 +213,7 @@ The specific objectives of the Leg 5 surveys are listed below (note that some of
 
     -   Collection of rare or unidentified fish species for taxonomy studies.
 
-    -   Collecting samples for analysis of microplastic in fish.
+    -   Collection of samples for analysis of microplastic in fish.
 
     -   Record the occurrence of marine debris collected during midwater trawling by using the available protocol and take photos for future inclusion in the protocol itself.
 
@@ -248,18 +256,27 @@ If the survey conditions are being compromised due to any unforeseen events or b
 2.  The length of all acoustic transects will be shortened from the originally planned 20-500 m depth range, to covering the depths of 20-200 m.
     If a target species is detected at the 200 m isobath, the coverage should be continued until no further occurrence is registered.
 
-3.  The distance between transects will be increased from 10 NM to 15 NM.
+3.  The distance between transects will be increased from 10 NM to a wider distance decided by the cruise leader.
 
-If acoustic transects are shortened, the transects where superstations are included should be covered to their whole extent. The ship will sample the entire shelf from Senegal's border to Guinea-Bissau in the south to the border with Mauritania on Leg 5.1 including The Gambia.
+If acoustic transects are shortened, the transects where superstations are included should be covered to their whole extent.
+The ship will sample the entire shelf from Senegal's border to Guinea-Bissau in the south to the border with Mauritania on Leg 5.1 including The Gambia.
 Subsequently, Mauritania (St. Louis to Cape Blanc) and the region up to Cape Bojador will be surveyed on Leg 5.2.
-Finally, Leg 5.3 will cover the region from Cape Bojador to Tangier, after which the vessel will sail to Las Palmas, Spain. Coverage of Leg 5.2 and Leg 5.3 may be adjusted based on progress on Leg 5.2.
+Finally, Leg 5.3 will cover the region from Cape Bojador to Tangier, after which the vessel will sail to Las Palmas, Spain.
+Coverage of Leg 5.2 and Leg 5.3 may be adjusted based on progress on Leg 5.2.
 
 ### **Superstations**
 
 Specific environmental transects with super-stations will be carried out according to a regular grid with transect spaced apart at (every 60NM).
-An overview of equipment and sampling depths of the superstations conducted at the environmental transects is shown in (Figure \@ref(fig:envtransects)). Typically, these transects cover the depth region from 20 to 500 m, but depending on bottom topography they can extend to 1000 m.
+An overview of equipment and sampling depths of the superstations conducted at the environmental transects is shown in (Figure \@ref(fig:envtransects)).
+Typically, these transects cover the depth region from 20 to 500 m, but depending on bottom topography they can extend to 1000 m.
 
-When these environmental transects are extended, specifically from 20 m to 1000 m bottom depth isobath (CTD to 1000 m, other instruments down to 200 m), they will then be referred to as "Master sections".
+\############ This part needs updating \################
+
+When these environmental transects are extended, specifically from 20 m to 2000 m  isobath (CTD to 1000 m, other instruments down to 200 m), they will then be referred to as "Master sections".
+
+Nikos to follow up
+
+\###############################################
 
 A super-station is defined as a station containing a set of sampling devices deployed in close connection to each other, like a CTD (hydrographic parameters), WP II net (zooplankton), Bongo net (ichthyoplankton) and a manta trawl (microplastics and ichthyoplankton).
 
@@ -267,26 +284,34 @@ CTD deployments will be carried out at super-stations along the environmental tr
 
 Positions of environmental transects and the corresponding super stations and CTD stations are shown for each leg in Figures \@ref(fig:envtrans51), \@ref(fig:envtrans52) and \@ref(fig:envtrans53).
 
+\############# This needs to be discussed with Dave \############
+
+For the Dakhla master section, the respective Cruise Leader will choose the optimal CTD deployments timing in relation to the acoustic transects path.
+
+Nikos to follow up.
+
+\#####################################################
+
 ```{r envtransects, echo=FALSE, fig.cap=paste(input_dataframes$fig_captions[input_dataframes$fig_captions$`fig name`=="envtransects","caption"]), fig.align='center', fig.width=6, fig.height=5, label='envtransects'}
 knitr::include_graphics("./_images/envtransects.png")
 ```
 
-```{r envtrans51, echo=FALSE, fig.cap=paste(input_dataframes$fig_captions[input_dataframes$fig_captions$`fig name`=="envtrans51","caption"]), fig.align='center', fig.width=5, fig.height=8,  label='envtrans51'}
+```{r envtrans51, echo=FALSE, fig.cap=paste(input_dataframes$fig_captions[input_dataframes$fig_captions$`fig name`=="envtrans51","caption"]), fig.align='center', fig.width=5, fig.height=5.5,  label='envtrans51'}
 knitr::include_graphics("./_images/5.1 Cap Skirring-St.Louis.png")
 ```
 
-```{r envtrans52, echo=FALSE, fig.cap=paste(input_dataframes$fig_captions[input_dataframes$fig_captions$`fig name`=="envtrans52","caption"]), fig.align='center', fig.width=5, fig.height=8,  label='envtrans52'}
+```{r envtrans52, echo=FALSE, fig.cap=paste(input_dataframes$fig_captions[input_dataframes$fig_captions$`fig name`=="envtrans52","caption"]), fig.align='center', fig.width=5, fig.height=5.5,  label='envtrans52'}
 knitr::include_graphics("./_images/5.2 St.Louis-Cape Bojador.png")
 ```
 
-```{r envtrans52, echo=FALSE, fig.cap=paste(input_dataframes$fig_captions[input_dataframes$fig_captions$`fig name`=="envtrans53","caption"]), fig.align='center', fig.width=5, fig.height=8,  label='envtrans53'}
+```{r envtrans52, echo=FALSE, fig.cap=paste(input_dataframes$fig_captions[input_dataframes$fig_captions$`fig name`=="envtrans53","caption"]), fig.align='center', fig.width=5, fig.height=5.5,  label='envtrans53'}
 knitr::include_graphics("./_images/5.3 Cape Bojador-Tangier.png")
 ```
 
 ### Midwater trawling
 
-Frequent *ad hoc* target identification tows will be made at the request of the cruise leader/co-cruise leader, or the acoustic watch-keeper, using either the bottom trawl (Gisund Super) with floats, the small pelagic (Åkra trawl) or the large pelagic (MultPelt) trawl. The type of trawl needs to be selected based on bottom depth and objective in communication with the vessel crew. 
-
+Frequent *ad hoc* target identification tows will be made at the request of the cruise leader/co-cruise leader, or the acoustic watch-keeper, using either the bottom trawl (Gisund Super) with floats, the small pelagic (Åkra trawl) or the large pelagic (MultPelt) trawl.
+The type of trawl needs to be selected based on bottom depth and objective in communication with the vessel crew.
 
 Species composition, length frequencies and biological sampling (wet body weight, sex, gonad maturity stage) must be done for each trawl sample.
 The number of trawl samples will depend on the density and distribution of acoustic targets observed and the need for species identification.
@@ -333,28 +358,26 @@ The effective echosounder operational range is frequency-dependent.
 The recording range of the higher nominal acoustic frequencies can be set separately to reduce the size of the acoustic data files (e.g., 150 m for 333 kHz and 300 m for 200 kHz).
 The acoustic nautical area backscattering coefficient (NASC) at 38 kHz integrated across the water column for the target species / acoustic categories will be estimated on board using the LSSS acoustic data post-processing software.
 Priority target species have been selected with the aim to produce abundance estimate indexes for these species.
-Scrutinization exercises, i.e., splitting total backscatter into target/mix groups and non-targets such as plankton will be carried out during daily acoustic data scrutinization sessions by the instrument chief, the cruise leader and the co-cruise leader.
+Scrutinization exercises, i.e., splitting total backscatter into target/mix groups and non-targets such as plankton will be carried out daily by the instrument chief, the cruise leader and the co-cruise leader(s).
 The scrutinized acoustic data are to be stored at 1 NM resolution in the LSSS system.
-The Deep Vision system will be used to aid acoustic data interpretation whenever it is available. 
+
 
 **EK80 calibration** 
 
-Simrad EK80 echosounder calibration will be conducted at the start of Leg 5.1. If unsuccessful, further attempts will be made at the end of Leg 5.1 or the beginning of 5.2. 
-The Simrad EK80 will be calibrated using standard methods and spheres (Demer et al., 2015), provisionally off of Dakar, as in 2019.
+Simrad EK80 echosounder calibration will be conducted at the start of Leg 5.1.
+If unsuccessful, further attempts will be made at the end of Leg 5.1 or the beginning of 5.2.
+The Simrad EK80 will be calibrated using standard methods and spheres (Demer *et al.*, 2015), provisionally off of Dakar, as in 2019.
 Both **narrowband and broadband** pulse settings will be calibrated with priority on narrowband pulse calibration.
 For broadband pulse calibrations, the calibration sphere diameter will be chosen based on the best fit for the bandwidth in question in terms of the "null" positions in the frequency response of the sphere.
 A second calibration target of a different size will be used where needed to ensure calibration data across the entire bandwidth of the chosen acoustic pulse and the two calibration results merged as per EK80 software procedures for it.
 The complete broadband pulse settings calibration is extensive and may need to be compromised/reduced due to time and local conditions constraints (e.g., no dual-sphere calibration per acoustic channel).
-An additional weight (900g led) may be used to stabilize spheres of smaller size (e.g., WC38.1, WC35, WC25, WC22, and WC20) when calibrating ship echosounders.
+An additional weight (900g lead) may be used to stabilize spheres of smaller size (e.g., WC38.1, WC35, WC25, WC22, and WC20) when calibrating ship echosounders.
 It will be suspended (bottom depth allowing) 8 m below the calibration target by 0.4mm diameter nylon line.
 WC57.2, Cu64, or Cu60 can be used alone with no additional weights.
 
 **SU90** 
 
-The Simrad SU90 fisheries sonar will be used to record acoustic backscatter data continuously during the 4.2 and 4.3 surveys.
-The sonar must be set to a frequency of 26 kHz, in FM Normal mode and operated using "Trawl 2" (old "Bow up/180 deg") operation mode with the bearing of the vertical beams 90 deg, perpendicular to the vessel direction with a range of 450m and with the horizontal beams set to 450m with a tilt angle of 3 deg.
-Default filter values must be used except for the noise filter which must be turned off.
-These settings including range and tilt must be kept the same during the whole survey except during trawling operations where the sonar can at times be used actively to focus in on targets. 
+The Simrad SU90 fisheries sonar will be not be used during leg 5. 
 
 **ADCP** 
 
@@ -367,11 +390,11 @@ For more details see section 3.2.4. 
 
 ### *Weather Station*
 
-Wind direction, wind speed, air pressure, relative humidity, air temperature and solar radiation data are averaged every 60 seconds and logged continuously from the Aanderaa Automatic Weather Station 2700.
+Wind direction, wind speed, air pressure, relative humidity, air temperature and solar radiation data are averaged every 60 seconds and should be logged continuously from the Aanderaa Automatic Weather Station 2700.
 
 ### *Thermosalinograph*
 
-Two SBE 21 SeaCAT Thermosalinographs (TSG) run continuously during the survey, obtaining samples at 4 m and 6 m depths to measure seawater salinity and temperature every 10 seconds.
+Two SBE 21 SeaCAT Thermosalinographs (TSG) will be run continuously during the survey, obtaining samples at 4 m and 6 m depths to measure seawater salinity and temperature every 10 seconds.
 
 The 4 m TSG measures water from the intake for the engine cooling water, whereas the 6 m TSG measures water from the intake located on the drop keel.
 
@@ -379,7 +402,7 @@ The 4 m TSG is equipped with a Turner Designs C3 Submersible Fluorometer and the
 
 ### *Underway pCO~2~*
 
-Seawater from the vessel's 4 m intake is pumped through the flow head of a CONTROS HydroC^®^ CO~2~ FT sensor where dissolved gases are diffused through a composite membrane into an internal gas circuit leading to a detector chamber.
+Seawater from the vessel's 4 m intake will be pumped through the flow head of a CONTROS HydroC^®^ CO~2~ FT sensor where dissolved gases are diffused through a composite membrane into an internal gas circuit leading to a detector chamber.
 
 The partial pressure of CO₂ is then determined via IR absorption spectrometry.
 
@@ -387,7 +410,7 @@ Water samples will be collected from the sensor's water outflow to measure pH an
 
 ### *Current speed and direction measurements - ADCP*
 
-Ocean current data is collected with a vessel-mounted Teledyne RDI Ocean Surveyor Acoustic Doppler Profiler operating at 150 kHz with a depth range of 400 m.
+Ocean current data will be collected with a vessel-mounted Teledyne RDI Ocean Surveyor Acoustic Doppler Profiler operating at 150 kHz with a depth range of 400 m.
 The 75 kHz unit is currently out of order and will not be ready for use during Leg 5.
 
 Teledyne's VmDAS software is used to collect the raw current data, whereas the data is processed using software created at IMR.
@@ -421,8 +444,8 @@ Detailed sampling protocols for these parameters can be found in the Nansen manu
 
 ### Ocean Acidification parameters - pH and total alkalinity
 
-Seawater samples for the analysis of pH and total alkalinity are collected together in 250 ml borosilicate glass bottles with silicone tubing.
-Samples are collected from the rosette water sampler in accordance with IMR's Standard Depth designations.
+Seawater samples for the analysis of pH and total alkalinity will be collected together in 250 ml borosilicate glass bottles with silicone tubing.
+Samples will be collected from the rosette water sampler in accordance with IMR's Standard Depth designations.
 If oxygen water samples are not being collected, these pH/AT samples will be collected first from the rosette bottles due to their gas sensitivity that will alter the pH.
 
 • pH is determined using an Agilent Cary 8454 UV-Vis Diode Array spectrophotometer and a 2-mM m-cresol purple indicator dye solution.
@@ -434,13 +457,13 @@ To assess the ocean acidification state and change in the region, the pH and tot
 
 ### Dissolved Nutrients
 
-Seawater samples for the analysis of nitrite, nitrate, silicate, and phosphate are collected in 20 ml polyethylene vials at all super-stations and frozen for preservation (Becker et al., 2019).
+Seawater samples for the analysis of nitrite, nitrate, silicate, and phosphate will be collected in 20 ml polyethylene vials at all super-stations and frozen for preservation (Becker et al., 2019).
 When ready for analysis, samples will be thawed in a 50°C water bath for 40 minutes and then allowed to cool to room temperature for 45 minutes (Becker et al., 2019).
 The nutrient samples will be measured on board the vessel before November 2022 with a SEAL QuAAtro39 continuous segmented flow analyser (QuAAtro Methods: Q-070-05 Rev. 7; Q-068-05 Rev. 12; Q-064-05 Rev. 8; Q-038-04 Rev. 4 (multitest MT3B).
 
 ## **Chlorophyll *a* and Phaeopigments**
 
-Seawater samples for the analysis of chlorophyll *a* are collected in 276 ml high-density polyethylene bottles from depths ranging from 5 to 200 m at all super-stations.
+Seawater samples for the analysis of chlorophyll *a* will be collected in 276 ml high-density polyethylene bottles from depths ranging from 5 to 200 m at all super-stations.
 Samples are filtered with 25 mm Munktell MG F filters with a 0.7 µm particle retention on a 200 mm Hg vacuum pumped filtration system.
 The filters are stored in a -20°C freezer until ready for extraction for 15-24 hours with 10 ml of 90% acetone at 4°C.
 Samples are then centrifuged and transferred to cuvettes for analysis on a Turner Designs 10AU Fluorometer (Welschmeyer, 1994; Jeffrey and Humphrey, 1975).
@@ -450,7 +473,9 @@ In addition, blank measurements with 90% acetone and stability measurements with
 
 ## **Zooplankton**
 
-Zooplankton samples are to be collected at three super stations stations positioned at the isobaths 30 m, 100 m, and 500 m). The standard sampling depths for zooplankton will be 30 m, 100 m and 500 m. If a super station is placed at 1000 m isobath due to distance less than 2 NM between the 100 m and 500 m isobath, zooplankton samples are taken at the 1000 m station instead of at 500 m. All samples will be collected by vertical hauls of a WP II  net (56 cm diameter, mesh size 180 µm) at a speed of 0.5 m sec^-1^.
+Zooplankton samples are to be collected at three super  stations positioned at the isobaths 30 m, 100 m, and 500 m).
+If a super station is placed at 1000 m isobath due to distance less than 2 NM between the 100 m and 500 m isobath, zooplankton samples are taken at the 1000 m station instead of at 500 m.
+All samples will be collected by vertical hauls of a WP II net (56 cm diameter, mesh size 180 µm) at a speed of 0.5 m sec^-1^.
 The net will be towed **within 5 m above the bottom** to the surface, or from 200 m depth to the surface at deep stations.
 The plankton leader should ensure that this procedure is followed accurately on deck, write the actual depth of the tow (displayed in the monitor), and take flowmeter counts before and after the tow.
 In summary, the WP II samples will be processed as follows:
@@ -464,7 +489,7 @@ The exact procedure to be followed is described in detail in the **Nansen Plankt
 
 ## **Ichthyoplankton**
 
-Ichthyoplankton is collected at the same super stations as the zooplankton samples are collected, with double oblique tows of a Bongo net (60 cm diameter) equipped with 405 μm nets.
+Ichthyoplankton will be collected at the same super stations as the zooplankton samples are collected, with double oblique tows of a Bongo net (60 cm diameter) equipped with 405 μm nets.
 The Bongo will be towed obliquely within 5 m above the bottom or a maximum depth of 200 m to the surface at deep stations.
 **Wire speed and the vessel speed should strictly follow the Nansen Plankton Guidelines (see <https://nansen-surveys.imr.no/doku.php?id=plankton_lab_information>)**.\
 
@@ -491,8 +516,8 @@ The information is also registered in the Survey logger (Toktlogger) system, thr
 
 ## Microplastics
 
-Microplastics are collected at the same superstations as the zooplankton samples with a Manta trawl and the operation is carried out concurrently with the tow of the Bongo net.
-The Manta trawl (19 cm (height) × 61 cm (width), 335 μm mesh size) is towed outside the wake of the vessel at 2-3 knots (ca. 1.5 m/s) for 15 min.
+Microplastics are to be collected at the same superstations as the zooplankton samples with a Manta trawl and with the operation carried out concurrently with the tow of the Bongo net.
+The Manta trawl (19 cm (height) × 61 cm (width), 335 μm mesh size) should be towed outside the wake of the vessel at 2-3 knots (ca. 1.5 m/s) for 15 min.
 Procedures of sampling and sample processing are described in the Nansen Plankton Guidelines (see Nansen wiki).
 Sampling processing in summary involves sorting of:
 
@@ -505,23 +530,26 @@ Non-methylated ethanol should be used in all cases.
 
 ## **Biological sampling of pelagic species from midwater trawl hauls**
 
-The primary objectives of sampling midwater trawl catches are to obtain information on species composition and size frequency to allow the calculation of acoustic biomass indices of the different species. 
-
+The primary objectives of sampling midwater trawl catches are to obtain information on species composition and size frequency to allow the calculation of acoustic biomass indices of the different species.
 
 The following tasks are to be carried out:
 
-1.	Estimation of species composition of the catch through sorting and weighing of species-specific sub-samples. According to the size of the catch, either the whole catch is sorted and measured, or subsamples are taken, and total catch is calculated from subsample ratios.
-2.	Length distributions (Total length to the nearest 0.5 cm) and sample mass (kg to 3 decimal places) of a random sample of at least 100 individuals of priority pelagic species (Table 3) from every trawl must be taken (all individuals of a priority species must be measured in trawls where <100 individuals of this species are captured).
+1.  Estimation of species composition of the catch through sorting and weighing of species-specific sub-samples.
+    According to the size of the catch, either the whole catch is sorted and measured, or subsamples are taken, and total catch is calculated from subsample ratios.
 
-3.	In the case of bi- or multimodal length distributions, a minimum of 200 individuals of this species are to be measured (length weight measurements).
+2.  Length distributions (Total length to the nearest 0.5 cm) and sample mass (kg to 3 decimal places) of a random sample of at least 100 individuals of priority pelagic species (Table 3) from every trawl must be taken (all individuals of a priority species must be measured in trawls where \<100 individuals of this species are captured).
 
-4.	Priority species (Table 3) should be retained for further biological sampling.
+3.  In the case of bi- or multimodal length distributions, a minimum of 200 individuals of this species are to be measured (length weight measurements).
 
-At all trawl hauls, the catch is sorted to the lowest possible taxonomic level. The entire catch is retained onboard until all sampling is completed to ensure sufficient samples of less abundant species. For each taxon, the total number of individuals and total weight measurements will be registered in a customized data acquisition system (Fish2Data and Biotic Editor) running on the server of the vessel. For priority species, measurements of parameters listed in Table 3 will be recorded using the electronic fish meter and a scale, both connected to the Fish2Data system.
+4.  Priority species (Table 3) should be retained for further biological sampling.
+
+At all trawl hauls, the catch should be sorted to the lowest possible taxonomic level.
+The entire catch is retained onboard until all sampling is completed to ensure sufficient samples of less abundant species.
+For each taxon, the total number of individuals and total weight measurements will be registered in a customized data acquisition system (Fish2Data and Biotic Editor) running on the server of the vessel.
+For priority species, measurements of parameters listed in Table 3 will be recorded using the electronic fish meter and a scale, both connected to the Fish2Data system.
 
 The fish lab workflow overview and the specific scales to be used on the survey are described in ANNEX III and ANNEX IV. As a preparation for the work in the fish lab, an onboard training course on the use of the electronic fish meter, Fish2Data and Biotic Editor software will be provided at the beginning of the survey.
 The Fish2Data software will be pre-configured with the sampling protocol and will be accessible through the iPads facilitating the biological measurements.
-
 
 <!---BLOCK_LANDSCAPE_START--->
 
@@ -550,27 +578,21 @@ set_table_properties(ft_biosamplingtab,layout = "autofit")
 
 <!-- *Not relevant for the survey.* -->
 
-\############################################
-
-\############################################
-
 ### Sampling procedure of priority species at each trawl station
 
 Adherence to the sampling protocol given below is paramount and the Fish lab team leaders are responsible for taking and registering the samples correctly.
 
-For sex and maturity determination 3 fish per 0.5 cm length group will be examined at each fishing station. 
+For sex and maturity determination 3 fish per 0.5 cm length group will be examined at each fishing station.
 
-Otoliths sampling for microchemistry analysis (Scomber colias and Sardina pilchardus) is to be carried out as following:
-1.	A sample of 30 juveniles for each of the two species (immature individuals) is to be taken within each 3-degree latitude area from the southern border of Senegal until Tangier. The 30 juveniles should be collected from stations located at <100 m depth (inshore stations). If 30 juveniles are not available at one station, then the additional juveniles to meet the 30 individuals target should be collected from another inshore station within the same area of 3 degrees latitude. 
-2.	A second sample of 30 adults (mature individuals) for each of the two species is to be sampled in the same manner as for the juveniles.
-3.	A third sample of 30 adults (mature individuals) for each of the two species is to be sampled in the same 3-degree latitude areas, but from stations located offshore and >100 m depth.
+Otoliths sampling for microchemistry analysis (*Scomber colias*) is to be carried out as follows:
 
-Otolith sampling from anchovies (Engraulis encrasicolus) is to be carried out per x degrees latitude, at one offshore and one inshore station (upon availability of specimens) for anchovies. This part is pending input from Morocco (see previous commen. After the input the fish2data config will be explained here. Input is due on Thursday afternoon). 
+-   A sample of 30 juveniles  (immature individuals) is to be taken within each 3-degree latitude area from the southern border of Senegal until Tangier.
+    The 30 juveniles should be collected from stations located at \<100 m depth (inshore stations).
+    If 30 juveniles are not available at one station, then the additional juveniles to meet the 30 individuals target should be collected from another inshore station within the same area of 3 degrees latitude.
 
+-   A second sample of 30 adults (mature individuals) is to be sampled in the same manner as for the juveniles.
 
-\#############################################
-
-\#############################################
+-   A third sample of 30 adults (mature individuals) is to be sampled in the same 3-degree latitude areas, but from stations located offshore and \>100 m depth.
 
 ## *Other trawl-related sampling*
 
@@ -578,18 +600,21 @@ Otolith sampling from anchovies (Engraulis encrasicolus) is to be carried out pe
 
 Individual length and weight, sex and maturity status shall be measured of all cartilaginous fish caught.
 
-Vulnerable species that are still alive, after the catch is brought on deck, shall be released as soon as possible.
+Vulnerable species that are still alive, after the catch is brought on deck, should be released as soon as possible. It is however important that the species has been determined and the necessary parameters have been recorded before release.
 If the individuals are too large to weigh individually only length is to be measured.
 
-The protocol that will be followed for cartilaginous will be the same as for demersal / pelagic resources described above.Specimens for taxonomic courses will be collected also following the protocol described above.
-Species that cannot be identified should be preserved in formalin or frozen (and labelled according to the procedure above) and sent to taxonomic experts for identification after the survey.
-
+The protocol that will be followed for cartilaginous will be the same as for demersal / pelagic resources described above.
+Species that cannot be identified should be photographed and frozen (and labelled according to the procedure above) and sent to taxonomic experts for identification after the survey.
 
 ------------------------------------------------------------------------
 
 ### *Marine debris* {.unnumbered}
 
-Marine debris will be registered and classified at each station according to the categories listed in the sampling protocol for marine litter (https://nansen-surveys.imr.no/doku.php?id=biological_sampling_procedures). All pieces of litter should be weighed and counted, and when possible, a reference photo should be taken of the catch at each station. Individual photos should be taken of any unusual findings for use in a reference catalogue. Data should be recorded either using F2D or in a designated Excel sheet, and saved under the BIOTIC folder in the survey catalogue. Photos must be clearly labelled with survey and station number, and saved in a folder in the work catalogue marked ‘Marine Debris’.
+Marine debris will be registered and classified at each station according to the categories listed in the sampling protocol for marine litter (<https://nansen-surveys.imr.no/doku.php?id=biological_sampling_procedures>).
+All pieces of litter should be weighed and counted, and when possible, a reference photo should be taken of the catch at each station.
+Individual photos should be taken of any unusual findings for use in a reference catalogue.
+Data should be recorded either using F2D or in a designated Excel sheet, and saved under the BIOTIC folder in the survey catalogue.
+Photos must be clearly labelled with survey and station number, and saved in a folder in the work catalogue marked 'Marine Debris'.
 
 <!-- #### *Epibenthos* {.unnumbered} -->
 
@@ -607,12 +632,14 @@ Biomass indices will be estimated as total biomass and by length groups (for the
 
 \#############################################
 
-\#############################################
+\######### To be discussed with Fabian \############
 
 This requires as input, the integrated acoustic backscatter (S~A~/NASC) per 10 NM or shorter ESDU for each of the species listed, the species composition from the trawls, the length frequency per species and the length frequency sample mass per species, the transect length and the survey area (per stratum).
 The survey area will be stratified by region and depth (20-100 m, 100-200 m, 200-300 m, 300-500m).
 
 Biomass indices will be estimated as total biomass per species per stratum and as numbers at length per stratum (for the species with sufficient length data) and for the total survey area.
+
+Nikos to follow up
 
 \##############################################
 
@@ -641,7 +668,7 @@ set_table_properties(ft_acousticcattab,layout = "autofit")
 
 \newpage
 
-## **Data collected and standard procedure for handling over samples to partners**
+## **Data collected and standard procedure for handing over samples to partners**
 
 In line with the Nansen Data Policy, the Cruise Leader is to ensure that each national institution represented in the survey receives a copy of the draft report and the basic data (e.g. catch data) pertaining to the particular survey and for **their national waters** before leaving the vessel.
 
