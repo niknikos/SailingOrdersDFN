@@ -635,7 +635,7 @@ Biomass indices will be estimated as total biomass and by length groups (for the
 \######### To be discussed with Fabian \############
 
 This requires as input, the integrated acoustic backscatter (S~A~/NASC) per 10 NM or shorter ESDU for each of the species listed, the species composition from the trawls, the length frequency per species and the length frequency sample mass per species, the transect length and the survey area (per stratum).
-The survey area will be stratified by region and depth (20-100 m, 100-200 m, 200-300 m, 300-500m).
+The survey area will be stratified by region and depth (20-50m, 50-100 m, 100-200 m, 200-300 m, 300-500m).
 
 Biomass indices will be estimated as total biomass per species per stratum and as numbers at length per stratum (for the species with sufficient length data) and for the total survey area.
 
