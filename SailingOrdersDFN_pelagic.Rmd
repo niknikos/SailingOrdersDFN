@@ -249,7 +249,7 @@ Calibration of echosounders will take place in Senegal at the beginning of Leg 5
 
 If the survey conditions are being compromised due to any unforeseen events or bad weather the survey effort will be adjusted according to the following ranking:
 
-1.  The length of every second acoustic transect will be shortened from the original planned 20-500 m depth range, to covering the depths from 20-200 m.
+1.  The length of every second acoustic transect (alternating or in pairs) will be shortened from the original planned 20-500 m depth range, to covering the depths from 20-200 m.
     If a target species is detected at the 200 m isobath, the coverage should be continued until no further occurrence is registered.
     As target species mostly aggregate in shallower areas, this will ensure sufficient coverage of the relevant distribution areas.
 
@@ -270,27 +270,13 @@ Specific environmental transects with super-stations will be carried out accordi
 An overview of equipment and sampling depths of the superstations conducted at the environmental transects is shown in (Figure \@ref(fig:envtransects)).
 Typically, these transects cover the depth region from 20 to 500 m, but depending on bottom topography they can extend to 1000 m.
 
-\############ This part needs updating \################
-
-When these environmental transects are extended, specifically from 20 m to 2000 m  isobath (CTD to 1000 m, other instruments down to 200 m), they will then be referred to as "Master sections".
-
-Nikos to follow up
-
-\###############################################
+The Dakhla master section will be sampled at the predefined stations where CTD deployments will be carried out. Water samples will be taken at XX depths according to standard IMR protocols. At each station the deployment of the CTD will be carried to the maximum depth possible. The exact station locations are provided in Annex 8.
 
 A super-station is defined as a station containing a set of sampling devices deployed in close connection to each other, like a CTD (hydrographic parameters), WP II net (zooplankton), Bongo net (ichthyoplankton) and a manta trawl (microplastics and ichthyoplankton).
 
 CTD deployments will be carried out at super-stations along the environmental transects involving historical monitoring transect as well as at every pelagic trawl station (except when a trawl station is repeated) up to a depth of 300 m.
 
 Positions of environmental transects and the corresponding super stations and CTD stations are shown for each leg in Figures \@ref(fig:envtrans51), \@ref(fig:envtrans52) and \@ref(fig:envtrans53).
-
-\############# This needs to be discussed with Dave \############
-
-For the Dakhla master section, the respective Cruise Leader will choose the optimal CTD deployments timing in relation to the acoustic transects path.
-
-Nikos to follow up.
-
-\#####################################################
 
 ```{r envtransects, echo=FALSE, fig.cap=paste(input_dataframes$fig_captions[input_dataframes$fig_captions$`fig name`=="envtransects","caption"]), fig.align='center', fig.width=6, fig.height=5, label='envtransects'}
 knitr::include_graphics("./_images/envtransects.png")
@@ -377,7 +363,7 @@ WC57.2, Cu64, or Cu60 can be used alone with no additional weights.
 
 **SU90** 
 
-The Simrad SU90 fisheries sonar will be not be used during leg 5. 
+The Simrad SU90 fisheries sonar will be used to record acoustic backscatter data continuously during the leg 5 surveys. The sonar must be set to a frequency of 26 kHz, in FM Normal mode and operated using “Trawl 2” (old “Bow up/180 deg”) operation mode with the bearing of the vertical beams 90 deg, perpendicular to the vessel direction with a range of 450m and with the horizontal beams set to 450m with a tilt angle of 3 deg. Default filter values must be used except for the noise filter which must be turned off. These settings including range and tilt must be kept the same during the whole survey except during trawling operations where the sonar can at times be used actively to focus in on targets. 
 
 **ADCP** 
 
@@ -606,7 +592,6 @@ If the individuals are too large to weigh individually only length is to be meas
 The protocol that will be followed for cartilaginous will be the same as for demersal / pelagic resources described above.
 Species that cannot be identified should be photographed and frozen (and labelled according to the procedure above) and sent to taxonomic experts for identification after the survey.
 
-------------------------------------------------------------------------
 
 ### *Marine debris* {.unnumbered}
 
@@ -630,20 +615,10 @@ The biomass indices of priority pelagic fish will be estimated by the acoustic e
 
 Biomass indices will be estimated as total biomass and by length groups (for the species with sufficient length data).
 
-\#############################################
-
-\######### To be discussed with Fabian \############
-
 This requires as input, the integrated acoustic backscatter (S~A~/NASC) per 10 NM or shorter ESDU for each of the species listed, the species composition from the trawls, the length frequency per species and the length frequency sample mass per species, the transect length and the survey area (per stratum).
-The survey area will be stratified by region and depth (20-50m, 50-100 m, 100-200 m, 200-300 m, 300-500m).
+The survey area will be stratified by region. 
 
 Biomass indices will be estimated as total biomass per species per stratum and as numbers at length per stratum (for the species with sufficient length data) and for the total survey area.
-
-Nikos to follow up
-
-\##############################################
-
-\#############################################
 
 Allocation of acoustic densities to species groups will be done according to Table \@ref(tab:acousticcattab) for the relevant to the survey acoustic groups only.
 
