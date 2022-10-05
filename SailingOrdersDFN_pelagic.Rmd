@@ -927,12 +927,14 @@ set_table_properties(ft_collectedsamplestab,layout = "autofit")
 
 <!---BLOCK_LANDSCAPE_STOP--->
 
-\newpage
+## ANNEX VIII. Acoustics transects and CTD stations
 
-## ANNEX VIII. Acoustics transects
-
-```{r transectpostab, eval=FALSE, include=FALSE, label="transectpostab", tidy=TRUE}
-ft_transectpostab <- flextable(input_dataframes$transectpostab) %>% theme_booktabs(bold_header = TRUE) %>% bg(bg='transparent', part = "header") 
+```{r transectpostab, eval=TRUE, echo=FALSE, label="transectpostab", tidy=TRUE}
+ft_transectpostab <- input_dataframes$transectpostab %>% 
+  mutate(Lon=round(as.numeric(Lon),2),Lat=round(as.numeric(Lat),2)) %>%
+  select(-Depth) %>%  
+  flextable() %>%  
+  theme_booktabs(bold_header = TRUE) %>% bg(bg='transparent', part = "header") 
 #%>% ftExtra::colformat_md()
 ft_transectpostab <- line_spacing(ft_transectpostab, space = 1.0, part = "all")
 # Add caption
@@ -946,20 +948,61 @@ set_table_properties(ft_transectpostab,layout = "autofit")
 
 ```
 
-<br>
+\newpage
 
-```{r transectranktab, eval=FALSE, include=FALSE, label="transectranktab", tidy=TRUE}
-ft_transectranktab <- flextable(input_dataframes$transectranktab) %>% theme_booktabs(bold_header = TRUE) %>% bg(bg='transparent', part = "header") %>% ftExtra::colformat_md()
-ft_transectranktab <- line_spacing(ft_transectranktab, space = 1.0, part = "all")
-
+```{r masterpostab, eval=TRUE, echo=FALSE, label="masterpostab", tidy=TRUE}
+ft_ctdpostab <-   input_dataframes$ctdpostab %>% 
+   mutate(Lon=round(as.numeric(Lon),2),Lat=round(as.numeric(Lat),2)) %>%
+  filter(str_detect(Transect,"aster")) %>%  flextable() %>% 
+  theme_booktabs(bold_header = TRUE) %>% bg(bg='transparent', part = "header") 
+#%>% ftExtra::colformat_md()
+ft_ctdpostab <- line_spacing(ft_ctdpostab, space = 1.0, part = "all")
 # Add caption
-autonum <- run_autonum(seq_id = "tab", bkm = "transectranktab", pre_label = "Table ")
-ft_transectranktab <- set_caption(ft_transectranktab, caption = paste(input_dataframes$tab_captions[input_dataframes$tab_captions$`tab name`=="transectranktab","caption"]), style = "Table Caption"
+autonum <- run_autonum(seq_id = "tab", bkm = "masterpostab", pre_label = "Table ")
+ft_ctdpostab <- set_caption(ft_ctdpostab, caption = paste(input_dataframes$tab_captions[input_dataframes$tab_captions$`tab name`=="ctdpostab","caption"]), style = "Table Caption"
                              , autonum=autonum
                              )
 
 # # set table width to span page width
-set_table_properties(ft_transectranktab,layout = "autofit")
+set_table_properties(ft_ctdpostab,layout = "autofit")
+
+```
+
+\newpage
+
+
+```{r ctdpostab, eval=TRUE, echo=FALSE,label="ctdpostab", tidy=TRUE}
+ft_ctdpostab <-   input_dataframes$ctdpostab %>% 
+   mutate(Lon=round(as.numeric(Lon),2),Lat=round(as.numeric(Lat),2)) %>%
+  filter(!str_detect(Transect,"aster")) %>%  flextable() %>% 
+  theme_booktabs(bold_header = TRUE) %>% bg(bg='transparent', part = "header") 
+#%>% ftExtra::colformat_md()
+ft_ctdpostab <- line_spacing(ft_ctdpostab, space = 1.0, part = "all")
+# Add caption
+autonum <- run_autonum(seq_id = "tab", bkm = "ctdpostab", pre_label = "Table ")
+ft_ctdpostab <- set_caption(ft_ctdpostab, caption = paste(input_dataframes$tab_captions[input_dataframes$tab_captions$`tab name`=="ctdpostab","caption"]), style = "Table Caption"
+                             , autonum=autonum
+                             )
+
+# # set table width to span page width
+set_table_properties(ft_ctdpostab,layout = "autofit")
+
+```
+
+\newpage
+
+```{r transectranktab, eval=FALSE, include=FALSE, label="transectranktab", tidy=TRUE}
+# ft_transectranktab <- flextable(input_dataframes$transectranktab) %>% theme_booktabs(bold_header = TRUE) %>% bg(bg='transparent', part = "header") %>% ftExtra::colformat_md()
+# ft_transectranktab <- line_spacing(ft_transectranktab, space = 1.0, part = "all")
+# 
+# # Add caption
+# autonum <- run_autonum(seq_id = "tab", bkm = "transectranktab", pre_label = "Table ")
+# ft_transectranktab <- set_caption(ft_transectranktab, caption = paste(input_dataframes$tab_captions[input_dataframes$tab_captions$`tab name`=="transectranktab","caption"]), style = "Table Caption"
+#                              , autonum=autonum
+#                              )
+# 
+# # # set table width to span page width
+# set_table_properties(ft_transectranktab,layout = "autofit")
 
 ```
 
